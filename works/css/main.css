@@ -60,11 +60,46 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-* {box-sizing: border-box;}
-body {background: #000; color: #fff;}
-h1, h2, h3 {color: #a6e22e;}
-.mcontainer {width: 900px; padding: 30px; margin: 0 auto; background: #272822;}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #000;
+  font-size: 14x;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+}
+a {color: #81a1b2;}
+h1 {
+    font-size: 34px;
+    margin: 0 0 20px;
+}
+.description {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 10px;
+}
+.container {
+    width: 910px;
+    padding: 30px 0;
+    margin: 0 auto;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+}
 
+.thumb {
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+}
+.thumb img {box-shadow: 0 0 8px #aaa;}
 
 
 
