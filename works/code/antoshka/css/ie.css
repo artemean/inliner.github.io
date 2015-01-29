@@ -1,0 +1,42 @@
+.top_line, .prod_catalog, .sbm, .f_inp, .feedback textarea, .side_menu_in, .brd, .globe, .ik_select_link, .ik_select_list, .red_tag, .buy, .ora_tag, .simple_popup_in, .big_sbm {behavior:url(js/PIE.htc); position:relative;}
+.before {//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', 'Вопрос: ')); /* хак для ие6 и 7 */}
+.after {	//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', 'Ответ: ')); /* хак для ие6 и 7 */}
+
+.login {width:24.45%; float:right;}
+*+html .cart_content {width:24.63%;}
+*+html .js {position:relative;}
+.prod_catalog {top:99px;}
+*+html .prod_catalog {display:inline;}
+.top_line {width:99.5%; margin:0 auto;}
+.navigation {float:left; width:51.5%; font-size:12px;}
+.question {width:23.5%;}
+.how_popup {width:23.5%; left:51.5%;}
+.overlay {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);}
+*+html .cities dl {width:97%;}
+*+html .column {display:inline;}
+.pattern {filter:
+        progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=0, Strength=3)
+        progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=180, Strength=3);
+}
+
+.side_menu li {background:url(../images/a6.png) 0 6px no-repeat;}
+.side_menu .active li {background:url(../images/a7.png) 0 6px no-repeat;}
+.content {position:relative;}
+.sbm {overflow:visible}
+*+html .pagination li {display:inline; margin:0 2px 0 3px; vertical-align:middle;}
+*+html .ik_select {display:inline; }
+.ora_tag {background:#ec650f url(../images/b8.gif) 0 0 repeat-x;}
+*+html .tm_filter span span {zoom:1;}
+*+html .ex .ammount {display:inline;}
+*+html .filter2 div {display:inline;}
+*+html .ttl h2{display:inline;}
+*+html .total .ammount{display:inline;}
+*+html .total {zoom:1;}
+.ammount input {height:22px; padding:2px 0 0; }
+.incat .active a {background:#ec6811 url(../images/b7.gif) 0 0 repeat-x;}
+.total {background:#e7e7e7 url(../images/b9.gif) 0 0 repeat-x;}
+.big_sbm {background:#f94d01 url(../images/b10.gif) 0 0 repeat-x;}
+.list_sel span:hover, .table_sel span:hover {border-bottom:1px #97e601 solid;}
+.active_l span:hover {border-bottom:0;}
+*+html .w50 {width:46.9%;}
+*+html .status_check {zoom:1;}

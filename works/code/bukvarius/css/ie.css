@@ -1,0 +1,13 @@
+.inpt2, .s_inp {behavior:url(js/PIE.htc); position:relative;}
+.popup .inpt2, .popup .s_inp, .login .inpt2 {position:static;}
+.overlay {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=65);}
+.popup {filter:progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=135, Strength=6);}
+.main {filter:progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=135, Strength=6);}
+*+html .navigation ul {margin:0 0 0 -80px;}
+*+html .ui-datepicker {width:185px;}
+*+html .container {zoom:1;}
+*+html .s_inp {display:inline;}
+.side_block, .items, .cab span, .reg span {zoom:1; position:relative;}
+*+html .pad_price .inpt2, *+html .item_card_info .old_price, *+html .item_card_info .price, *+html .item_card_info .cart_ico {display:inline;}
+.over {position:relative;}
+*+html .cart_ico {display:inline-block;}

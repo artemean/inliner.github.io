@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!--placeholder for IE-->
+<!--[if lte IE 9]>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('input[placeholder], textarea[placeholder]').placeholder();
+	});
+</script>
+<![endif]-->
+</head>
+<body class="main_body">
+	<div class="main">
+		<header class="main_header">
+			<div class="logo">
+				<div class="company_name">SECURE<span>CAM</span></div>
+				решения для  <span class="hl">IP</span>  видеонаблюдения
+			</div>
+			<nav class="top_nav">
+				<ul>
+					<li class="active"><a href="#">Главная</a></li>
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">Продажа</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Монтаж</a></li>
+					<li><a href="#">Статьи и обзоры</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="phone">+ 7 (495) 927-01-03</div>
+			<form action="" class="site_search">
+				<fieldset>
+					<input type="text" class="s_inp" placeholder="Введите артикул или наименование товара" />
+					<input type="submit" class="s_sbm" value="" />
+				</fieldset>
+			</form>
+		</header>
+		
+		<!--content-->
+		<div class="wrap">
+			<section class="content">
+				<div class="slides">
+					<div class="cycle-slideshow" 
+					data-cycle-fx=scrollHorz
+					data-cycle-timeout=3000
+					data-cycle-slides="> div"
+					data-cycle-pager="#custom-pager"
+					data-cycle-pager-template="<a href=#> {{slideNum}} </a>"
+					>
+						<div class="single_slide clearfloat">
+							<div class="in_slide">
+								<div class="slide_ttl">HikVision DS-2CD2112-l</div>
+								<div class="slide_desc">
+									<strong>Антивандальная</strong>
+									Купольная камера с ИК-подсветкой
+								</div>
+								<div class="prc">всего 8 600р</div>
+								<div class="smaller">+ скидки партнерам!</div>
+								<a href="#" class="green_but">хочу купить</a>
+							</div>
+							<img src="images/cam1.jpg" width="219" height="206" alt="MoneyBack" />
+						</div>
+						<div class="single_slide clearfloat">
+							<div class="in_slide">
+								<div class="slide_ttl">HikVision BD-4CD43005</div>
+								<div class="slide_desc">
+									<strong>Антинормальная</strong>
+									Купольная камера
+								</div>
+								<div class="prc">всего 9 500р</div>
+								<div class="smaller">+ скидки партнерам!</div>
+								<a href="#" class="green_but">хочу купить</a>
+							</div>
+							<img src="images/cam2.jpg" width="219" height="206" alt="MoneyBack" />
+						</div>
+						<div class="single_slide clearfloat">
+							<div class="in_slide">
+								<div class="slide_ttl">SkyWalker DS-7CD500</div>
+								<div class="slide_desc">
+									<strong>Аматериальная</strong>
+									Купольная камера с ионной пушкой
+								</div>
+								<div class="prc">всего 10 200р</div>
+								<div class="smaller">+ скидки арканианцам!</div>
+								<a href="#" class="green_but">хочу купить</a>
+							</div>
+							<img src="images/cam3.jpg" width="219" height="206" alt="MoneyBack" />
+						</div>
+					</div>
+					<!-- empty element for pager links -->
+					<div id="custom-pager"></div>
+				</div>
+				<div class="company_name">SECURE<span>CAM</span></div>
+				<p>Наша компания специализируется на решениях для видеонаблюдения, основанных на IP-технологиях. У нас вы найдете широкий спектр оборудования: IP-камеры и кожухи к ним, сетевые видеорегистраторы, программное обеспечение и сетевое оборудование от ведущих производителей: <a href="#">ACTi</a>, <a href="#">AXIS</a>, <a href="#">GEOVISION</a>, <a href="#">HIKVISION</a>, <a href="#">SONY</a>, <a href="#">D-Link</a> и других.</p>
+				
+				<div class="banner"><a href="#"><img src="images/banner1.jpg" width="700" height="113" alt="Banner" /></a></div>
+
+				<div class="mtitle">Монтаж систем видеонаблюдения. Предварительный расчет</div>
+				<div class="calc">
+					<table><col class="col1" /><col class="col2" />
+						<tr>
+							<td class="tl">Уровень качества</td>
+							<td>
+								<select>
+									<option>Высокий</option>
+									<option>Средний</option>
+									<option>Низкий</option>
+								</select>
+							</td>
+							<td class="ds">(разрешение камер, качество комплектующих, скорость передачи данных)</td>
+						</tr>
+						<tr>
+							<td class="tl">Количество камер</td>
+							<td>
+								<div class="spin">
+									<label>На улице</label>
+									<input class="spinner" type="text" />
+								</div>
+								<div class="spin">
+									<label>В помещении</label>
+									<input class="spinner" type="text" />
+								</div>
+							</td>
+							<td class="ds">(Вы должны выбрать хотя бы одну камеру для заказа)</td>
+						</tr>
+						<tr>
+							<td class="tl">Срок хранения видео</td>
+							<td>
+								<div class="uislider">
+									<div class="slider-range"></div>
+									<div class="range">
+										<span class="dark">0</span>
+										<span>21</span>
+										<span>27</span>
+										<span>35</span>
+									</div>
+								</div>
+							</td>
+							<td class="ds">(Срок хранения видео зависит от ёмкости жёсткого диска)</td>
+						</tr>
+						<tr>
+							<td class="tl">Монтаж системы</td>
+							<td>
+								<select>
+									<option>Без монтажа</option>
+									<option>С монтажем</option>
+								</select>
+							</td>
+							<td class="ds">(Простой монтаж включает прокладку в гофрошланге. Средней сложности — в коробе. Сложный монтаж применяется при высоте выше трёх метров и включает проходку стен)</td>
+						</tr>
+					</table>
+				</div>
+				<div class="total">
+					<a href="#" class="send">Отправить заявку</a>
+					Примерная стоимость:  <span class="green">0 руб.</span>
+				</div>
+
+				<div class="mtitle">Популярные товары</div>
+				<div class="popular clearfloat">
+					<div class="single_product clearfloat">
+						<div class="product_info">
+							<div class="prod_name">ACTi E33</div>
+							<p>ACTi E33 Внешняя ip камера с подсветкой.</p>
+							<div class="price">24 840 руб.</div>
+							<a href="#" class="greenbut2">ПРОСМОТР</a>
+						</div>
+						<div class="product_img"><a href="#"><img src="images/prod1.jpg" width="104" height="77" alt="Камера" /></a></div>
+					</div>
+					<div class="single_product clearfloat">
+						<div class="product_info">
+							<div class="prod_name">ACTi E33</div>
+							<p>ACTi E33 Внешняя ip камера с подсветкой.</p>
+							<div class="price">24 840 руб.</div>
+							<a href="#" class="greenbut2">ПРОСМОТР</a>
+						</div>
+						<div class="product_img"><a href="#"><img src="images/prod2.jpg" width="90" height="76" alt="Камера" /></a></div>
+					</div>
+					<div class="single_product clearfloat">
+						<div class="product_info">
+							<div class="prod_name">ACTi E33</div>
+							<p>ACTi E33 Внешняя ip камера с подсветкой.</p>
+							<div class="price">24 840 руб.</div>
+							<a href="#" class="greenbut2">ПРОСМОТР</a>
+						</div>
+						<div class="product_img"><a href="#"><img src="images/prod3.jpg" width="99" height="74" alt="Камера" /></a></div>
+					</div>
+					<div class="single_product clearfloat">
+						<div class="product_info">
+							<div class="prod_name">ACTi E33</div>
+							<p>ACTi E33 Внешняя ip камера с подсветкой.</p>
+							<div class="price">24 840 руб.</div>
+							<a href="#" class="greenbut2">ПРОСМОТР</a>
+						</div>
+						<div class="product_img"><a href="#"><img src="images/prod4.jpg" width="68" height="88" alt="Камера" /></a></div>
+					</div>
+				</div>
+				
+				<div class="mtitle">Сертификаты и лицензии</div>
+				<div class="certs">
+					<a href="#"><img src="images/cert1.jpg" width="63" height="93" alt="Сертификат" /></a>
+					<a href="#"><img src="images/cert2.jpg" width="113" height="93" alt="Сертификат" /></a>
+					<a href="#"><img src="images/cert1.jpg" width="63" height="93" alt="Сертификат" /></a>
+					<a href="#"><img src="images/cert1.jpg" width="63" height="93" alt="Сертификат" /></a>
+					<a href="#"><img src="images/cert1.jpg" width="63" height="93" alt="Сертификат" /></a>
+					<a href="#"><img src="images/cert1.jpg" width="63" height="93" alt="Сертификат" /></a>
+					<a href="#"><img src="images/cert1.jpg" width="63" height="93" alt="Сертификат" /></a>
+					<a href="#"><img src="images/cert1.jpg" width="63" height="93" alt="Сертификат" /></a>
+				</div>
+
+				<div class="mtitle">IP камеры видеонаблюдения</div>
+				<div class="quotation">
+					<q>За безопасность надо платить, за ее отсутствие - расплачиваться</q><br />
+					 <cite>(У. Черчиль)</cite>
+				</div>
+
+				<p>Безопасность и стабильность - одни из важнейших составляющих человеческого бытия, без них все становится пылью, которая развеется, стоит лишь подуть ветру зависти и зла, нечестности и корыстолюбства.</p>
+				<p>Добро пожаловать на наш торговый портал. Мы продаем не товары, мы реализуем ваше спокойствие и уверенность в завтрашнем дне, мы - это SECURECAM.ru - новая ветка бизнеса торгового дома "Вектрус". У нас вы сможете подобрать и купить <a href="#">сетевые ip камеры</a> самых известных и проверенных производителей. Сотрудничая с нами, вы приобретаете товар с первых рук, с необходимой гарантией и сервисом. </p>
+				<p><strong>Ip камеры видеонаблюдения</strong> - это уникальные устройства, которые являют собой видеокамеру и компьютер, объединенные в одном надежном корпусе. Все что происходит в зоне доступа всевидящего ока ip камеры наблюдения, в реальном времени передается через сеть к заинтересованному в данных пользователю. Для того чтобы просматривать передаваемый видеопоток, записывать и хранить отснятое, управлять режимом воспроизведения достаточно пройти авторизацию в сети. </p>
+				<p><strong>Ip камеры видеонаблюдения</strong> - это отличная возможность контролировать любую ситуацию, держать свою руку на пульсе времени, а значит, предупредить опасность или даже мелкую неприятность.</p>
+			</section>
+		</div>
+		<!--/content-->
+
+		<!--left sidebar-->
+		<aside class="left_sidebar">
+			<div class="sttl">КАТАЛОГ</div>
+			<ul class="side_menu">
+				<li><a href="#">IP-камеры внутренние</a><span class="toggler"></span>
+					<ul>
+						<li><a href="#">Пункт один</a></li>
+						<li><a href="#">Пункт два</a></li>
+						<li><a href="#">Пункт три</a></li>
+						<li><a href="#">Пункт четыре</a></li>
+					</ul>
+				</li>
+				<li><a href="#">IP-камеры наружные</a><span class="toggler"></span></li>
+				<li><a href="#">Камеры с PTZ</a><span class="toggler"></span>
+					<ul>
+						<li><a href="#">Пункт один</a></li>
+						<li><a href="#">Пункт два</a></li>
+						<li><a href="#">Пункт три</a></li>
+					</ul>
+				</li>
+				<li><a href="#">NVR видеорегистраторы</a><span class="toggler"></span></li>
+				<li><a href="#">Кожухи, кронштейны, БП</a><span class="toggler"></span></li>
+				<li><a href="#">Объективы, ИК-подсветка</a><span class="toggler"></span></li>
+				<li class="active"><a href="#">Видеосерверы</a><span class="toggler"></span>
+					<ul>
+						<li><a href="#">Пункт один</a></li>
+						<li><a href="#">Пункт два</a></li>
+						<li><a href="#">Пункт три и четыре и пять и шесть и семьсот</a></li>
+						<li><a href="#">Пункт четыре</a></li>
+						<li><a href="#">Пункт пять</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Тепловизорные камеры</a><span class="toggler"></span></li>
+				<li><a href="#">Сетевое оборудование</a><span class="toggler"></span>
+					<ul>
+						<li><a href="#">Пункт один</a></li>
+						<li><a href="#">Пункт два</a></li>
+						<li><a href="#">Пункт три</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Программное обеспечение</a><span class="toggler"></span></li>
+				<li><a href="#">Комплекты видеонаблюдения</a><span class="toggler"></span></li>
+				<li><a href="#">Прочие товары</a><span class="toggler"></span>
+					<ul>
+						<li><a href="#">Пункт один</a></li>
+						<li><a href="#">Пункт два</a></li>
+						<li><a href="#">Пункт три</a></li>
+						<li><a href="#">Пункт четыре</a></li>
+						<li><a href="#">Пункт пять</a></li>
+						<li><a href="#">Пункт шесть</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="cart_content">
+				<table>
+					<tr>
+						<td><div class="sttl">КОРЗИНА</div></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>пусто</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>доставка:</td>
+						<td>0 р.</td>
+					</tr>
+					<tr>
+						<td>всего:</td>
+						<td>0 р.</td>
+					</tr>
+				</table>
+				<div class="centered"><a href="#" class="go">ОФОРМИТЬ</a></div>
+				<div class="corner"></div>
+			</div>
+			
+			<div class="sttl">СТАТЬИ И ОБЗОРЫ</div>
+			<ul class="s_list">
+				<li><a href="#">Новая внешняя купольная камера HikVision DS-2CD2332-I на платформе Raptor уже в продаже!</a></li>
+				<li><a href="#">Камеры «рыбий глаз» - всевидящее око. Обзор.</a></li>
+				<li><a href="#">IP-камеры Hikvision на платформе The Raptor</a></li>
+				<li><a href="#">Критерии выбора IP камер для распознавания лиц и номеров</a></li>
+				<li><a href="#">Программный модуль контроля кассовых операций Trassir ACTIVE-POS</a></li>
+			</ul>
+			<div class="more"><a href="#">еще статьи...</a></div>
+
+			<div class="sttl">ПРОИЗВОДИТЕЛИ</div>
+			<ul class="simple_list">
+				<li><a href="#">ACTi</a></li>
+				<li><a href="#">AXIS</a></li>
+				<li><a href="#">SONY</a></li>
+				<li><a href=#"">GEOVISION</a></li>
+				<li><a href="#">Hikvision</a></li>
+				<li><a href="#">FUJINON</a></li>
+				<li><a href="#">Arlotto</a></li>
+				<li><a href="#">D-Link</a></li>
+				<li><a href="#">QNAP</a></li>
+				<li><a href="#">Netgear</a></li>
+				<li><a href="#">Trassir</a></li>
+				<li><a href="#">Western Digital</a></li>
+				<li><a href="#">ZyXEL</a></li>
+				<li><a href="#">MICRODIGITAL</a></li>
+				<li><a href="#">AVER</a></li>
+				<li><a href="#">PCnet</a></li>
+				<li><a href="#">Nikomax</a></li>
+			</ul>
+		</aside>
+		<!--/left sidebar-->
+
+		<!--right sidebar-->
+		<aside class="right_sidebar">
+			<div class="region">
+				Регион: <a href="#">Москва</a>
+			</div>
+			<a href="#" class="red_but">Проектирование и монтаж</a>
+
+			<div class="sttl">ТИПОВЫЕ РЕШЕНИЯ</div>
+			<div class="exerpts">
+				<div class="single_ex">
+					<div class="ex_ttl"><a href="#">Готовый комплект для небольшого магазина</a></div>
+					<div class="price">19 340 руб.</div>
+					<p>Комплект для самостоятельно монтажа. Интегрирование по частям аннигилирует выход целевого продукта, механически интерпретируя полученные выражения. </p>
+				</div>
+				<div class="single_ex">
+					<div class="ex_ttl"><a href="#">Готовый комплект для небольшого магазина</a></div>
+					<div class="price">19 340 руб.</div>
+					<p>Комплект для самостоятельно монтажа. Интегрирование по частям аннигилирует выход целевого продукта, механически интерпретируя полученные выражения. </p>
+				</div>
+				<div class="single_ex">
+					<div class="ex_ttl"><a href="#">Готовый комплект для небольшого магазина</a></div>
+					<div class="price">19 340 руб.</div>
+					<p>Комплект для самостоятельно монтажа. Интегрирование по частям аннигилирует выход целевого продукта, механически интерпретируя полученные выражения. </p>
+				</div>
+			</div>
+			<div class="more"><a href="#">все решения...</a></div>
+
+			<div class="sttl">ПРОЕКТЫ И ОТЗЫВЫ</div>
+			<div class="reviews">
+				<div class="single_review clearfloat">
+					<a href="#"><img src="images/img1.jpg" width="83" height="95" alt="Проект1" /></a>
+					<div class="ex_ttl"><a href="#">Дмитрий М. Москва</a></div>
+					<p>Интегрирование по частям аннигилирует целевого</p>
+				</div>
+				<div class="single_review clearfloat">
+					<a href="#"><img src="images/img2.jpg" width="193" height="147" alt="Проект2" /></a>
+					<div class="ex_ttl"><a href="#">Часный дом в Сколково</a></div>
+					<p>Интегрирование по частям аннигилирует целевого продукта</p>
+				</div>
+			</div>
+			<div class="more"><a href="#">еще отзывы...</a></div>
+
+			<div class="sttl">ТЕСТ-ДРАЙВ</div>
+			<div class="test">
+				Возьми систему видеонаблюдения на тест<br />
+				<strong>100% гарантия</strong><br />
+				возврата денег если вас не удоволетворит результат
+				<div class="centered"><img src="images/moneyback.jpg" width="128" height="127" alt="MoneyBack" /></div>
+			</div>
+
+		</aside>
+		<!--/right sidebar-->
+		<div class="cl"></div>
+	</div>
+	<footer class="main_footer">
+		<div class="main">
+			<nav>
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Система скидок</a></li>
+					<li><a href="#">О нашей компании</a></li>
+					<li><a href="#">Способы оплаты</a></li>
+					<li><a href="#">Производители</a></li>
+					<li><a href="#">Статьи и обзоры</a></li>
+					<li><a href="#">Видеоролики</a></li>
+				</ul>
+			</nav>
+			<div class="copy">
+				<strong>&copy; SECURECAM   - ip камеры видеонаблюдения в Москве.</strong><br />
+				Данный сайт носит информационный характер и не является публичной офертой
+			</div>
+			<div class="phone2">+ 7 (495) 927-01-03</div>
+		</div>
+	</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/jquery.cycle2.min.js" type="text/javascript"></script>
+<script src="js/misc.js" type="text/javascript"></script>
+	
+</body>
+</html>

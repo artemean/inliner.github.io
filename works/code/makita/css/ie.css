@@ -1,0 +1,11 @@
+.product, .tabs .current, .sbmtr, .tools_nav {behavior:url(js/PIE.htc); position:relative;}
+*+html .head_nav li, *+html .pagination li, *+html .foot_nav li, *+html .new_price, *+html .add, *+html .tabs li {display:inline;}
+.pd {padding:5px 0 5px 8px!important;}
+
+*+html .cat1.active a {background:url(../images/tools.png) 8px 12px no-repeat;}
+*+html .cat2.active a {background:url(../images/tools.png) 8px -51px no-repeat;}
+*+html .cat3.active a {background:url(../images/tools.png) 8px -98px no-repeat;}
+*+html .cat4.active a {background:url(../images/tools.png) 8px -222px no-repeat;}
+*+html .cat5.active a {background:url(../images/tools.png) 8px -282px no-repeat;}
+*+html .cat6.active a {background:url(../images/tools.png) 8px -339px no-repeat;}
+*+html .cat7.active a {background:url(../images/tools.png) 8px -394px no-repeat;}

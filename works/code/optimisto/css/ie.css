@@ -1,0 +1,9 @@
+.product {behavior:url(js/PIE.htc); position:relative;}
+.before {//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', 'Вопрос: ')); /* хак для ие6 и 7 */}
+.after {	//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', 'Ответ: ')); /* хак для ие6 и 7 */}
+
+*+html .stabs .ui-tabs-nav li {display: inline;}
+*+html .top_navigation li {display: inline;}
+*+html .product_column .b_stars {display: inline;}
+*+html .cat_product_selector .bjqs-markers li {display: inline;}
+*+html .comment_meta .b_stars {display: inline;}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css" type="text/css" />
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<script src="js/html5shiv.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('input[placeholder], textarea[placeholder]').placeholder();
+	});
+</script>
+<![endif]-->
+</head>
+<body class="contacts_body">
+	<div class="container">
+		<div class="top_head">
+			<div class="wrap">
+				<nav>
+					<ul>
+						<li class="hilight"><a href="#">Каталог</a></li>
+						<li><a href="#">О магазине</a></li>
+						<li class="hilight"><a href="#">Оплата</a></li>
+						<li class="hilight"><a href="#">Доставка</a></li>
+						<li><a href="#">Новости</a></li>
+						<li class="hilight"><a href="#">Оптовикам</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="top_r">
+					<span class="enter">Вход</span>
+					<span class="dvr">|</span>
+					<a href="#">Регистрация</a>
+				</div>
+				<div class="login_popup">
+					<form action="some.php">
+						<fieldset>
+							<div class="tin"><label for="tin1">Логин / E-mail:</label><br /><input id="tin1" type="text" class="l_inp" /></div>
+							<div class="tin"><label for="tin2">Пароль:</label><br /><input id="tin2" type="password" class="l_inp" /></div>
+							<input type="submit" class="r_sbm" value="Войти" />
+							<div class="tchb"><input type="checkbox" class="l_chb" id="chb100" /><label for="chb100">чужой компьютер</label></div>
+							<a href="#" class="forget">Забыли пароль?</a>
+							<span class="cls"></span>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="mbg">
+			<!-- Header -->
+			<header class="main_head">
+				<div class="logo"><a href="#"><img src="images/logo.png" width="281" height="133" alt="" /></a></div>
+				<div class="where">
+					<div class="map">
+						<img src="images/map.png" width="137" height="125" alt="" />
+						<a href="#">Схема проезда</a>
+					</div>
+					<address>г. Москва, Торговый комплекс<br />
+					<span class="bigger">Митинский радиорынок</span><br />
+					ПАВИЛЬОН № 295 (2-й этаж)</address>
+			
+					<span class="bigger">Время работы павильона</span><br />
+					пн-пт 10.00-19.00, <span class="red">сб, вс - выходной</span><br />
+					<span class="email"><a href="mailto:mirbatareek@mail.ru"><img src="images/eml.png" width="215" height="28" alt="" /></a></span>
+				</div>
+				<div class="phones">
+					<div class="centered">24/7 КРУГЛОСУТОЧНО Ежедневно</div>
+					<div class="phones_wrap">
+						<img src="images/phone1.png" width="248" height="35" alt="Номер телефона" />
+						<img src="images/phone2.png" width="248" height="35" alt="Номер телефона" />
+					</div>
+					<div class="box">
+						При заказе <span class="red">от 4 000</span> руб <span class="red">доставка по Москве БЕСПЛАТНО</span>
+					</div>
+				</div>
+				<ul class="product_cats">
+					<li><span><a href="#">Батарейки</a></span></li>
+					<li><span><a href="#">Аккумуляторы</a></span></li>
+					<li><span><a href="#">Зарядные устройства</a></span></li>
+					<li class="current"><span><a href="#">Блоки питания</a></span></li>
+					<li><span><a href="#">Освещение</a></span></li>
+					<li><span><a href="#">Звонки</a></span></li>
+					<li><span><a href="#">Электротовары</a></span></li>
+					<li><span><a href="#">Автомобильные видео регистраторы</a></span></li>
+					<li><span><a href="#">Комплектующие</a></span></li>
+				</ul>
+				<form action="some.php" class="site_search">
+					<fieldset>
+						<div class="lbl">ПОИСК<br /> ПО КАТАЛОГУ</div>
+						<input type="text" class="inp" />
+						<input type="submit" value="" class="s_sbm" />
+					</fieldset>
+				</form>
+				<div class="cart_content">
+					<a href="#" class="r_btn">ЗАКАЗАТЬ</a>
+					<span class="bolder">Всего товаров:</span> 5<br />
+					<span class="bolder">На сумму:</span> 1 234 руб.
+				</div>
+			</header>
+			<!-- /Header -->
+			
+			<!--content-->
+			<section class="content">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a> | <a href="#">Регистрация</a>
+				</div>
+				<form action="some.php">
+					<fieldset>
+						<div class="cart_content_block">
+							<table><col class="col1" /><col class="col2" /><col class="col3" /><col class="col4" /><col class="col5" /><col class="col6" /><col class="col7" />
+								<tr>
+									<th colspan="2"><div class="ttl">Выбранные товары</div></th>
+									<th>Количество</th>
+									<th>Цена</th>
+									<th>Старая цена</th>
+									<th>Сумма</th>
+									<th></th>
+								</tr>
+								<tr>
+									<td class="thumb_td"><a href="#"><img src="images/thumb2.jpg" width="48" height="70" alt="" /></a></td>
+									<td>
+										<div class="item_title"><a href="#">Элементы питания ENERGIZER BASE LR03/E92 AAA</a></div>
+										<span class="bolder">Характеристики:</span>  Батарейки размер ААА, Бейс, в блистере 4 шт.
+										<br />
+										<span class="bolder">Упаковка:</span>  4/48
+									</td>
+									<td><input type="text" class="spinner" value="1" /></td>
+									<td>50 руб.</td>
+									<td class="old_price">95 руб.</td>
+									<td>100 руб.</td>
+									<td><a href="#" class="remove"></a></td>
+								</tr>
+								<tr>
+									<td class="thumb_td"><a href="#"><img src="images/thumb2.jpg" width="48" height="70" alt="" /></a></td>
+									<td>
+										<div class="item_title"><a href="#">Элементы питания ENERGIZER BASE LR03/E92 AAA</a></div>
+										<span class="bolder">Характеристики:</span>  Батарейки размер ААА, Бейс, в блистере 4 шт.
+										<br />
+										<span class="bolder">Упаковка:</span>  4/48
+									</td>
+									<td><input type="text" class="spinner" value="1" /></td>
+									<td>50 руб.</td>
+									<td class="old_price">95 руб.</td>
+									<td>100 руб.</td>
+									<td><a href="#" class="remove"></a></td>
+								</tr>
+								<tr>
+									<td class="thumb_td"><a href="#"><img src="images/thumb2.jpg" width="48" height="70" alt="" /></a></td>
+									<td>
+										<div class="item_title"><a href="#">Элементы питания ENERGIZER BASE LR03/E92 AAA</a></div>
+										<span class="bolder">Характеристики:</span>  Батарейки размер ААА, Бейс, в блистере 4 шт.
+										<br />
+										<span class="bolder">Упаковка:</span>  4/48
+									</td>
+									<td><input type="text" class="spinner" value="1" /></td>
+									<td>50 руб.</td>
+									<td class="old_price">95 руб.</td>
+									<td>100 руб.</td>
+									<td><a href="#" class="remove"></a></td>
+								</tr>
+							</table>
+							<div class="total">Итоговый заказ на сумму:<span class="bbb">300 руб.</span></div>
+						</div>
+						<div class="bbk">
+							<div class="ttl3">Доставка</div>
+							<div class="df"><input type="radio" id="rd1" name="shp" /><label for="rd1">Самовывоз</label></div>
+							<div class="df"><input type="radio" id="rd2" name="shp" /><label for="rd2">Доставка курьером в пределах МКАД   <span class="btt">300 руб.</span></label></div>
+							<div class="df"><input type="radio" id="rd3" name="shp" /><label for="rd3">Доставка до транспортной компании  <span class="btt">200 руб.</span></label></div>
+							<div class="df"><input type="radio" id="rd4" name="shp" /><label for="rd4">Доставка за пределы МКАД  до 100 км</label></div>
+						</div>
+						<div class="bbk">
+							<div class="ttl3">Способ оплаты</div>
+							<div class="df"><input type="radio" id="rd5" name="pmnt" /><label for="rd5">Безналичная оплата от юридических лиц</label></div>
+							<div class="df"><input type="radio" id="rd6" name="pmnt" /><label for="rd6">Курьером при получении</label></div>
+							<div class="df"><input type="radio" id="rd7" name="pmnt" /><label for="rd7">Квитанция сбербанка</label></div>
+							<div class="df"><input type="radio" id="rd8" name="pmnt" /><label for="rd8">Электронная оплата ROBOKASSA</label></div>
+						</div>
+						<input type="submit" value="Далее" class="r_sbm" />
+					</fieldset>
+				</form>
+			</section>
+			<!--/content-->
+		</div>
+		
+
+		<footer>
+			<div class="footer_top">
+				<div class="wrap">
+					<div class="cards">
+						<img src="images/master.png" width="36" height="25" alt="" />
+						<img src="images/visa.png" width="36" height="25" alt="" />
+						<img src="images/maestro.png" width="36" height="25" alt="" />
+						<img src="images/visa_e.png" width="36" height="25" alt="" />
+					</div>
+					<div class="f_ttl">МИР БАТАРЕЕК</div>
+					<ul>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">О магазине</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Оптовикам</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap">
+				<address>г. Москва, Торговый комплекс<br />
+				Митинский радиорынок<br />
+				ПАВИЛЬОН № 295 (2-й этаж)</address>
+				<p>mirbatareek.ru<br />&copy; 2006-2013 все права защищены</p>
+				<div class="footer_links">
+					<ul class="s_col">
+						<li><a href="#">Продукция GP Batteries</a></li>
+						<li><a href="#">Бытовые батарейки и аккумуляторы</a></li>
+						<li><a href="#">Зарядные устройства</a></li>
+						<li><a href="#">Батарейки для часов</a></li>
+						<li><a href="#">Аккумуляторы для радиотелефонов</a></li>
+					</ul>
+					<ul class="s_col">
+						<li><a href="#">Аккумуляторы для ноутбуков</a></li>
+						<li><a href="#">Аккумуляторы для видеокамер</a></li>
+						<li><a href="#">Промышленные батареи</a></li>
+						<li><a href="#">Блоки питания</a></li>
+						<li><a href="#">Лампы и светильники</a></li>
+					</ul>
+					<ul class="s_col">
+						<li><a href="#">Фонари и ночники</a></li>
+						<li><a href="#">Звонки</a></li>
+						<li><a href="#">Комплектующие</a></li>
+						<li><a href="#">Электротовары</a></li>
+						<li><a href="#">Автомобильные видеорегистраторы</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="dummy"></div><!-- Этот блок нужен для закрытия логин попапа -->
+
+<script src="js/jquery.tools.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="js/ui.datepicker-ru.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script src="js/misc.js"></script>
+	
+</body>
+</html>

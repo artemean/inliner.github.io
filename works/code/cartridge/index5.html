@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/wSelect.css" type="text/css" />
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!--placeholder for IE-->
+<!--[if lte IE 9]>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('input[placeholder], textarea[placeholder]').placeholder();
+	});
+</script>
+<![endif]-->
+</head>
+<body class="main_body">
+	<div class="main">
+		<header class="main_header">
+			<div class="logo"><a href="#"><img src="images/logo.png" alt="Интернет-магазин №1 лазерных картриджей в России"></a></div>
+			<div class="slogan">Интернет-магазин №1 лазерных картриджей в России</div>
+			<div class="contact">
+				<div class="phone">8 800 523-53-73</div>
+				<div class="email"><a href="mailto:info@print-cartridge.ru">info@print-cartridge.ru</a></div>
+				<div class="support"><a href="#">Онлайн консультант</a></div>
+				<span class="bluebut" id="call_back_but">Обратный звонок</span>
+			</div>
+			<form action="some.php" class="site_search">
+				<fieldset>
+					<input type="text" class="s_inp" placeholder="Быстрый поиск товара" />
+					<input type="submit" class="s_sbm" value="" />
+				</fieldset>
+			</form>
+			<div class="region_select">
+				<span class="lbl">Ваш Регион</span>
+				<select id="reg_sel" class="sel">
+					<option value="example">Ленинградская область</option>
+					<option value="example">Московская область</option>
+					<option value="example">Тверская область</option>
+					<option value="example">Новгородская область</option>
+					<option value="example">Архангельская область‎</option>
+					<option value="example">Ленинградская область</option>
+					<option value="example">Московская область</option>
+					<option value="example">Тверская область</option>
+					<option value="example">Новгородская область</option>
+					<option value="example">Архангельская область‎</option>
+				</select>
+			</div>
+			<div class="user_block">
+				<div class="utop">
+					<a href="#">Максимов Е.А.</a>
+				</div>
+				<div class="cart_content">
+					<b>КОРЗИНА:</b>  <a href="#">15</a>, на <a href="#">109 750 р.</a>
+					<span class="orabut"><a href="#">Оформить</a></span>
+				</div>
+				<div class="exit"><a href="#">Выход</a></div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="wrap clearfloat"><!--content-->
+			<section class="content">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a> / Личный кабинет
+				</div>
+				<h1>Личный кабинет</h1>
+				
+				<div class="username">
+					<div class="un">Максимов Евгений Александрович&nbsp;&nbsp;&nbsp;&nbsp;|</div>
+					<div class="pr">Моя скидка: 10%</div>
+				</div>
+
+				<div class="tabs">
+					<ul>
+						<li id="tab1">Мои заказы</li>
+						<li id="tab2">Мои настройки</li>
+					</ul>
+				</div>
+				<div id="tab_content1" class="intab">
+					<table class="s_table">
+						<col class="col1" />
+						<col class="col2" />
+						<col class="col3" />
+						<col class="col4" />
+						<col class="col5" />
+						<col class="col6" />
+						<tr>
+							<th>Дата</th>
+							<th>Заказ</th>
+							<th>Наименование</th>
+							<th>Получение</th>
+							<th>Сумма</th>
+							<th>Статус</th>
+						</tr>
+						<tr>
+							<td>13.09.2013</td>
+							<td><a href="#">99939668</a></td>
+							<td><a href="#">Картридж Samsung CLP-310/315 CLT-K409S с чипом (Совместимый)</a></td>
+							<td>Доставка, Санкт-Петербург, пр-кт Энтузиастов, д.47</td>
+							<td>10 391 руб.</td>
+							<td>текущий</td>
+						</tr>
+						<tr>
+							<td>07.09.2013</td>
+							<td><a href="#">99939668</a></td>
+							<td><a href="#">Картридж Lexmark №1 Z735/X2350 18C0781E/18CX781E (Оригинал)</a></td>
+							<td>Самовывоз, <a href="#">Обводный канал, 38</a></td>
+							<td>2 300 руб.</td>
+							<td>завершен</td>
+						</tr>
+						<tr>
+							<td>11.08.2013</td>
+							<td><a href="#">99939668</a></td>
+							<td><a href="#">Картридж Samsung CLP-310/315 CLT-K409S с чипом (Совместимый)</a></td>
+							<td>Доставка, EMS</td>
+							<td>7 200 руб.</td>
+							<td>завершен</td>
+						</tr>
+						<tr>
+							<td>08.07.2013</td>
+							<td><a href="#">99939668</a></td>
+							<td><a href="#">Картридж Lexmark №1 Z735/X2350 18C0781E/18CX781E (Оригинал)</a></td>
+							<td>Самовывоз, <a href="#">Обводный канал, 38</a></td>
+							<td>6 231 руб.</td>
+							<td>просрочен</td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="tab_content2" class="intab">
+					<table class="s_table ntb">
+						<col class="col7" />
+						<col class="col8" />
+						<col class="col9" />
+						<tr><th colspan="3">Данные для покупок</th></tr>
+						<tr>
+							<td>Ваше имя</td>
+							<td><input type="text" class="inpt" /></td>
+							<td><input type="submit" value="Сохранить" class="sbm2" /></td>
+						</tr>
+						<tr>
+							<td>Дата рождения</td>
+							<td>29.12.1987</td>
+							<td><span class="js">Изменить</span></td>
+						</tr>
+						<tr>
+							<td>E-mail</td>
+							<td>konstantin.pol@ya.ru</td>
+							<td><span class="js">Изменить</span></td>
+						</tr>
+						<tr>
+							<td>Мобильный телефон</td>
+							<td>+7(905) 202-82-01</td>
+							<td><span class="js">Изменить</span></td>
+						</tr>
+					</table>
+					<table class="s_table ntb nbg">
+						<col class="col10" />
+						<col class="col11" />
+						<col class="col12" />
+						<tr>
+							<th colspan="3">Смена пароля</th>
+						</tr>
+						<tr>
+							<td>Старый пароль</td>
+							<td><input type="text" class="inpt inp2" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Новый пароль</td>
+							<td><input type="text" class="inpt inp2" /></td>
+							<td>не менее 6-ти символов</td>
+						</tr>
+						<tr>
+							<td>Подтвердить пароль</td>
+							<td><input type="text" class="inpt inp2" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" value="Сохранить" class="sbm2" /></td>
+							<td></td>
+						</tr>
+					</table>
+					
+				</div>
+
+			</section>
+			<!--/content-->
+
+			<!--sidebar-->
+			<aside class="sidebar">
+				<div class="filter">
+					<div class="gray_ttl"><h3>подобрать картридж</h3></div>
+					<div class="infilter">
+						<form action="some.php">
+							<fieldset>
+								<div class="ln"><input type="radio" name="model" class="rad" id="rad1" /><label for="rad1">модель принтера</label></div>
+								<div class="ln"><input type="radio" name="model" class="rad" id="rad2" /><label for="rad2">модель картриджа</label></div>
+								<div class="ln lnsel">
+									<label for="">Производитель</label>
+									<select class="sel">
+										<option>Выбрать</option>
+										<option>Samsung</option>
+										<option>Epson</option>
+										<option>Canon</option>
+										<option>Lexmark</option>
+									</select>
+								</div>
+								<div class="ln lnsel">
+									<label for="">Марка</label>
+									<select class="sel">
+										<option>Выбрать</option>
+										<option>ca123</option>
+										<option>ep214</option>
+										<option>sa987</option>
+										<option>Lexmark</option>
+									</select>
+								</div>
+								<input type="submit" value="Подобрать" class="graybut" />
+							</fieldset>
+						</form>
+					</div>
+				</div>
+
+				<ul class="brands">
+					<li><a href="#">Brother</a></li>
+					<li><a href="#">Canon</a></li>
+					<li><a href="#">Epson</a></li>
+					<li><a href="#">HP</a></li>
+					<li><a href="#">Lexmark</a></li>
+					<li><a href="#">Panasonic</a></li>
+					<li><a href="#">Samsung</a></li>
+					<li><a href="#">Sharp</a></li>
+					<li><a href="#">Toshiba</a></li>
+					<li><a href="#">XEROX</a></li>
+				</ul>
+			</aside>
+			<!--/sidebar-->
+		</div>
+	</div>
+	<footer class="main_footer">
+		<div class="main">
+			<div class="copy">
+				&copy; 2013 рrint-cartridge.ru<br />
+				Интернет-магазин №1 лазерных картриджей в России
+			</div>
+			<ul class="f1">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Розничным клиентам</a></li>
+				<li><a href="#">Корпоративным клиентам</a></li>
+			</ul>
+			<ul class="f2">
+				<li><a href="#">Гарантии</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+				<li><a href="#">Новости и акции</a></li>
+				<li><a href="#">Помощь</a></li>
+			</ul>
+			<div class="contacts">
+				<div class="phone">8 800 523-53-73</div>
+				<a href="mailto:info@print-cartridge.ru">info@print-cartridge.ru</a>
+			</div>
+
+		</div>
+	</footer>
+	<div class="popup" id="call_back">
+		<div class="ttl">Обратный звонок</div>
+		<div class="popup_in">
+			<form action="some.php">
+				<fieldset>
+					<input type="text" class="inp" placeholder="Имя" />
+					<input type="text" class="inp" placeholder="Телефон" />
+					<input type="submit" value="отправить заявку" class="orangebut" />
+				</fieldset>
+			</form>
+		</div>
+		<div class="close"></div>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/wSelect.min.js" type="text/javascript"></script>
+<script src="js/jquery.cycle2.min.js" type="text/javascript"></script>
+<script src="js/jquery.cycle2.tile.min.js" type="text/javascript"></script>
+<script src="js/jquery.cycle2.center.min.js" type="text/javascript"></script>
+<script src="js/misc.js" type="text/javascript"></script>
+	
+</body>
+</html>

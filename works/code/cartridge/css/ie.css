@@ -1,0 +1,5 @@
+.product {behavior:url(js/PIE.htc); position:relative;}
+.before {//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', 'Вопрос: ')); /* хак для ие6 и 7 */}
+.after {	//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', 'Ответ: ')); /* хак для ие6 и 7 */}
+
+*+html .main_header nav ul li {display:block; float:left; padding: 36px 28px 0; height:64px;}

@@ -1,0 +1,372 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    /*font-size: 1em;
+    line-height: 1.4;*/
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: local('вє'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('../fonts/MyriadPro-Bold.eot');
+    src: local('вє'), url('../fonts/MyriadPro-Bold.woff') format('woff'), url('../fonts/MyriadPro-Bold.ttf') format('truetype'), url('../fonts/MyriadPro-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-Cond';
+    src: url('../fonts/MyriadPro-Cond.eot');
+    src: local('вє'), url('../fonts/MyriadPro-Cond.woff') format('woff'), url('../fonts/MyriadPro-Cond.ttf') format('truetype'), url('../fonts/MyriadPro-Cond.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {font-family: 'MyriadPro-Regular', sans-serif;}
+html, body {height: 100%;}
+.containr {width: 940px; margin: 0 auto;}
+.main_head {background: #fff; background: rgba(255, 255, 255, 0.3); position: fixed; width: 100%; top: 0; left: 0; padding: 27px 0 0; height: 73px; z-index: 999; transition:background 0.5s;}
+.opaque {background: rgba(255, 255, 255, 0.9); transition:background 0.5s;}
+.main_head .containr  {position: relative;}
+.callback  {position: absolute; right: 0; top: 5px;}
+.logo {padding-left: 20px;}
+
+.phone {color: #006d44; font-size: 40px; position: absolute; right: 190px; top: 0px; font-family: 'MyriadPro-Cond';}
+.g_button {font-family: sans-serif; vertical-align: middle; background: #006d44; border-radius: 18px; display: inline-block; color: #fff; text-decoration: none; padding: 0 21px; height: 35px; line-height: 35px; font-size: 14px; text-transform: uppercase; transition:background 0.7s; cursor: pointer;}
+.g_button:hover {background: #008e59; transition:background 0.7s;}
+.g_big {font-size: 22px; border-radius: 30px; padding: 0 34px; height: 64px; line-height: 64px;}
+
+.slogan {margin-bottom: 35px; padding: 30px 30px 25px; background: #3E3E3E; background: rgba(62,62,62,0.8); border-radius: 10px; color: #fff; font-size: 31px; text-transform: uppercase; text-align: left;}
+.slogan strong {color: #ffc600; font-size: 54px; display: block; font-family: 'MyriadPro-Bold'; line-height: 56px; margin: 10px 0 10px;}
+.slogan em {font-size: 21px; font-style: normal;}
+.block1 {height: 788px; background: url(../img/img1.jpg) 50% no-repeat; background-attachment: fixed; background-size:cover;}
+.block1 .containr {padding: 277px 0 0 330px; width: 610px; text-align: right;}
+.block3 {background: url(../img/img2.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
+.block5 {background: url(../img/img3.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
+.block7 {background: url(../img/img4.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
+.block8 {padding: 80px 0 70px;}
+
+.ttl {text-transform: uppercase; font-size: 40px; font-weight: normal; margin: 0 0 50px; text-align: center;}
+.ttl2 {color: #006d44; font-size: 25px; text-transform: uppercase; padding: 0 0 30px;}
+.sub_ttl {color: #006d44; text-align: center; text-transform: uppercase; font-size: 21px;}
+.white_ttl {color: #fff;}
+.dark {color: #fff;}
+.holder {padding: 72px 0;}
+.work_holder {padding: 72px 0 10px;}
+.w50 {width: 50%; float: left; box-sizing:border-box; padding: 0 0 0 40px; background: url(../img/dash.gif) 0 0 repeat-y;}
+.w50:first-child {background: none; padding: 0 40px 0 0;}
+.w50:first-child .ttl2 {text-align: right; padding-right: 10px;}
+
+.slider {margin: 40px 0 35px;}
+
+.all_reasons {overflow: hidden;}
+.all_re {width: 960px; text-align: center;}
+.dib {display: inline-block; width: 301px; padding: 0 15px 16px 0; }
+.reason {background: #000; background: rgba(0,0,0,0.8); padding: 0 0 0 30px; width: 271px; height: 128px; display: table; vertical-align: top; text-align: left;}
+.reason p {font-size: 14px; color: #c1c1c1; margin: 5px 0 0;}
+.reason strong {font-family: 'MyriadPro-Bold'; text-transform: uppercase; font-size: 15px;}
+.number {color: #fed136; font-size: 65px; padding-right: 21px; width: 34px; display: table-cell; vertical-align: middle;}
+.reason_i {width: 184px; padding-right: 20px; display: table-cell; vertical-align: middle;}
+
+.problem_item, .solution_item {min-height: 75px; padding: 9px 0; display: table; width: 100%; position: relative;}
+.problem_item .tx {padding: 0 34px 0 0; text-align: right;}
+.solution_item .tx {padding: 0  0 0 34px;}
+.tx {vertical-align: middle; display: table-cell; font-family: 'MyriadPro-Bold'; font-size: 18px;}
+.explain {vertical-align: middle; display: table-cell; font-size: 14px; color: #888; padding: 0 0 0 34px;}
+.problem_item .explain {text-align: right; padding:0 34px 0 0;}
+.advant {padding: 20px 0;}
+.icon {width: 74px; height: 74px; background-image: url(../img/icons1.png); background-repeat: no-repeat; vertical-align: middle; display: table-cell; cursor: pointer;}
+.dust {background-position: 0 0;}
+.surf {background-position: 0 -91px;}
+.wet {background-position: 0 -180px;}
+.cracks {background-position: 0 -269px;}
+.corros {background-position: 0 -360px;}
+.tires {background-position: 0 -448px;}
+.mold {background-position: 0 -536px;}
+.dust2 {background-position: -251px 0;}
+.surf2 {background-position: -251px -91px;}
+.wet2 {background-position: -251px -180px;}
+.cracks2 {background-position: -251px -269px;}
+.corros2 {background-position: -251px -360px;}
+.tires2 {background-position: -251px -448px;}
+.mold2 {background-position: -251px -536px;}
+
+.dust:hover {background-position: -82px 0;}
+.surf:hover {background-position: -82px -91px;}
+.wet:hover {background-position: -82px -180px;}
+.cracks:hover {background-position: -82px -269px;}
+.corros:hover {background-position: -82px -360px;}
+.tires:hover {background-position: -82px -448px;}
+.mold:hover {background-position: -82px -536px;}
+.dust2:hover {background-position: -332px 0;}
+.surf2:hover {background-position: -332px -91px;}
+.wet2:hover {background-position: -332px -180px;}
+.cracks2:hover {background-position: -332px -269px;}
+.corros2:hover {background-position: -332px -360px;}
+.tires2:hover {background-position: -332px -448px;}
+.mold2:hover {background-position: -332px -536px;}
+
+.workflow {background: url(../img/line2.png) 275px 155px no-repeat; padding-left: 120px; width: 820px;}
+.work_item {margin: 0 67px 42px 0; float: left;}
+.work_item img {display: block; margin: 0 0 16px;}
+.numb {font-family: 'MyriadPro-Bold'; font-size: 44px; float: left; padding: 0 9px 0 4px;}
+.work_txt {font-size: 17px; text-transform: uppercase; padding: 5px 0 26px;}
+.third {width: 265px;}
+.heading {font-family: 'MyriadPro-Bold'; font-size: 39px; color: #fff; margin: 0 0 45px; text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.52); text-transform: uppercase;}
+
+.btg {font-size: 40px; color: #006d44; text-transform: uppercase; display: inline-block; margin-right: 40px;}
+.btg span {color: #222;}
+.ask {color: #ffb400; font-size: 25px; display: inline-block; font-family: sans-serif;}
+.ask a {color: #ffb400; border-bottom: 1px dashed; text-decoration: none;}
+.ask a:hover {border-bottom: 0;}
+.man {float: left; width: 530px; height: 485px; margin-left: -68px; background: url(../img/man.png) 0 100% no-repeat;}
+.dcf {float: left; width: 456px; padding: 105px 0 0;}
+
+.m_wrap {min-height: 100%; /* equal to footer height */ margin-bottom: -104px; }
+.m_wrap:after {content: ""; display: block; }
+.main_footer, .m_wrap:after {height: 50px;}
+.main_footer {background: #d2d2d2; padding: 30px 0; font-size: 14px; color: #555;}
+.main_footer address {font-style: normal; padding: 0 0 10px;}
+.main_footer .containr {position: relative;}
+.main_footer .phone {font-family: 'MyriadPro-Regular'; color: #000; right: -32px;}
+.social {margin: 0; padding: 0; list-style: none; height: 41px; position: absolute; top: 5px; left: 370px;}
+.social li {float: left; padding-right: 10px;}
+.social li a {display: block; width: 41px; height: 41px;}
+.tw a {background: url(../img/icons2.png) 0 0 no-repeat;}
+.fb a {background: url(../img/icons2.png) -50px 0 no-repeat;}
+.pin a {background: url(../img/icons2.png) -100px 0 no-repeat;}
+.gp a {background: url(../img/icons2.png) -150px 0 no-repeat;}
+.tw a:hover {background: url(../img/icons2.png) 0 -61px no-repeat;}
+.fb a:hover {background: url(../img/icons2.png) -50px -61px no-repeat;}
+.pin a:hover {background: url(../img/icons2.png) -100px -61px no-repeat;}
+.gp a:hover {background: url(../img/icons2.png) -150px -61px no-repeat;}
+.email {color: #555; font-size: 14px; position: absolute; right: 0; top: 42px;}
+
+.jcarousel li {float: left; margin: 0 20px; text-align: center; color: #006d44; text-align: center; text-transform: uppercase; font-size: 21px; max-width: 595px;}
+.jcarousel img {display: block; margin: 0 0 40px;}
+.jcarousel ul {width: 20000em; position: relative; list-style: none; margin: 0; padding: 0;}
+.jcarousel {position: relative; overflow: hidden;}
+.jcarousel-wrapper {position: relative;}
+.jcarousel-control-prev, .jcarousel-control-next {position: absolute; top: 168px; z-index: 199; display: block; width: 55px; height: 55px; text-indent: -9999px;}
+.jcarousel-control-prev {left: 50%; margin-left: -285px; background: url(../img/arr.png) 0 0 no-repeat;}
+.jcarousel-control-next {right: 50%; margin-right: -285px; background: url(../img/arr.png) 100% 0 no-repeat;}
+
+/* --- POPUP properties --- */
+.popup {display: none; position:fixed; left:50%; top:200px; margin-left:-200px; padding:30px; width:400px; z-index:2000;}
+.popup form {}
+.overlay {display:none; background:#000; bottom:0; left:0; opacity:0.8; position:fixed; right:0; top:0; z-index:1000;}
+.sinp {display:block; margin:0 0 15px; height:31px; padding:0 10px; width:183px; border:0; background:none; color:#8f8f8f; font-style:italic; text-align:center;}
+.popup_ttl {color:#fff; text-transform:uppercase; font-size:20px; font-weight:bold; margin:0 0 25px; text-align:center;}
+.ssbm {width:157px; padding:0; color:#c10000; font-family:'Ubuntu Condensed', Arial, sans-serif; font-size:20px; text-transform:uppercase; margin:22px 0 0 22px; border:0; background:none;}
+
+.inp, .sbm {margin: 0 0 18px; border: 0; background: #fff; padding: 20px 30px; text-align: center; font-size: 20px; font-family: 'MyriadPro-Regular', sans-serif; width:340px; border-radius: 30px; outline: 0;}
+.sbm {width: 400px!important; background: #006d44; color: #fff; transition:background 0.7s;}
+.sbm:hover {background: #008e59; transition:background 0.7s;}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

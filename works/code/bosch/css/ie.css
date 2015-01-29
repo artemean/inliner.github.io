@@ -1,0 +1,24 @@
+.product {behavior:url(js/PIE.htc); position:relative;}
+.before {//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', 'Вопрос: ')); /* хак для ие6 и 7 */}
+.after {	//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', 'Ответ: ')); /* хак для ие6 и 7 */}
+
+*+html .slidesjs-pagination li {display: inline;}
+.breadcrumbs a {background:url(../images/tri2.png) 0 7px no-repeat;}
+.promo span {background:#ff1521 url(../images/b1.gif) 0 0 no-repeat;}
+.item_block {background:url(../images/dot.gif) 0 0 repeat-y;}
+.faux_cols {background:url(../images/dot2.gif) 501px 0 repeat-y;}
+.content.left .faux_cols {background:url(../images/dot2.gif) 450px 0 repeat-y;}
+.f2, .f3, .f4, .f5 {background:url(../images/dot3.gif) 0 0 no-repeat;}
+.directions, .compare, .cart_content {background:url(../images/dot3.gif) 0 8px no-repeat;}
+.small_item {background:url(../images/dot.gif) 0 0 repeat-y;}
+.checkout {background:url(../images/b2.gif) 0 0 repeat-x;}
+.add {background:url(../images/plus.gif) 0 6px no-repeat;}
+.catalog_item {background:url(../images/dot5.gif) 0 100% repeat-x;}
+.finder td {background:url(../images/dot4.gif) 0 4px no-repeat;}
+.main_header {background:url(../images/dots.png) 491px 52px no-repeat;}
+*+html .tbs li {display: inline;}
+.main_navigation ul li {position: relative;}
+
+*+html .main_navigation ul li {text-decoration: none;}
+*+html .main_navigation a {text-decoration:underline;}
+*+html .main_navigation a:hover {text-decoration: none;}

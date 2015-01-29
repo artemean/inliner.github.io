@@ -1,0 +1,15 @@
+.green_but {background:#638e05 url(../images/bg2.gif) 0 0 repeat-x;}
+.green_but:hover {background:#72a602 url(../images/bg2.gif) 0 -64px repeat-x;}
+.top_nav a {padding: 10px 20px;}
+.main_footer nav li {padding: 0 18px;}
+.s_list li {padding:6px 0 7px 12px; background:url(../images/bul1.gif) 0 12px no-repeat;}
+.simple_list li {padding: 0 0 2px 12px; background:url(../images/bul1.gif) 0 5px no-repeat;}
+.side_menu li {padding:6px 0 7px 12px; border-top: 1px #dde0e2 solid; background:url(../images/bul1.gif) 0 12px no-repeat;}
+.ui-tabs-nav li {padding:4px 7px 5px;}
+
+*+html .range {text-justify: newspaper; zoom:1;}
+*+html .range span {
+	text-align: left;
+	//display : inline;
+	//zoom : 1;
+}

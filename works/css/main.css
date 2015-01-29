@@ -66,7 +66,7 @@ textarea {
   box-sizing: border-box;
 }
 body {
-  background: #fff;
+  background: #f5fdf0;
   color: #000;
   font-size: 14x;
   font-family: 'Roboto Condensed', sans-serif;
@@ -77,15 +77,20 @@ h1 {
     font-size: 34px;
     margin: 0 0 20px;
 }
+.container {
+    background: #fff;
+    width: 980px;
+    padding: 30px;
+    margin: 0 auto;
+    border-left:1px solid #b4cda3;
+    border-right:1px solid #b4cda3;
+}
 .description {
     text-align: center;
     padding: 30px 0;
     margin-bottom: 10px;
 }
-.container {
-    width: 910px;
-    padding: 30px 0;
-    margin: 0 auto;
+.works {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4;
@@ -100,14 +105,10 @@ h1 {
     display: inline-block;
 }
 .thumb img {box-shadow: 0 0 8px #aaa;}
-
-
-
-
-
-
-
-
+.thumb a {text-decoration: none;}
+.thumb a:hover {color: #366b87;}
+.pname {padding: 8px 0 0;}
+.source {padding: 0 0 8px;}
 
 
 

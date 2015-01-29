@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/wSelect.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css' />
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!--placeholder for IE-->
+<!--[if lte IE 9]>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('input[placeholder], textarea[placeholder]').placeholder();
+	});
+</script>
+<![endif]-->
+</head>
+<body class="main_body">
+	<div class="bg">
+		<div class="main">
+			<header class="main_header">
+				<div class="logo"><a href="#"><img src="images/optimisto_logo.png" width="159" height="73" alt="Optimisto" /></a></div>
+				<form action="" class="site_search">
+					<fieldset>
+						<input type="text" id="project" class="inp" placeholder="Более 10 000 товаров" />
+						<input type="hidden" id="project-id">
+						<input type="submit" class="sbm" value="" />
+					</fieldset>
+				</form>
+				<div class="phone">
+					044 355-03-89
+					<div class="more_phones">
+						<div class="mpi">
+							<div class="tel1">044 355-03-89</div>
+							<div class="mts">050 840-15-60</div>
+							<div class="ks">098 517-08-18</div>
+							<div class="life">093 934-08-24</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart_count empty_cart"><div class="incrt">0</div></div>
+				<div class="login not_logged_in"><span>Вход</span></div>
+				<nav class="top_navigation">
+					<ul>
+						<li><span class="tbb"><a href="#">Мужские</a></span>
+							<div class="sub_menu">
+								<ul class="clearfloat">
+									<li><a href="#">Категории</a>
+										<ul>
+											<li><a href="#">Классические</a></li>
+											<li><a href="#">Офисные</a></li>
+											<li><a href="#">Солнцезащитные</a></li>
+											<li><a href="#">Ультрафиолетовые</a></li>
+											<li class="all"><a href="#">Все категории</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Бренды</a>
+										<ul>
+											<li><a href="#">Bikkembergs</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li><a href="#">Giorgio Armani</a></li>
+											<li><a href="#">Gucci</a></li>
+											<li><a href="#">John Richmond</a></li>
+											<li class="all"><a href="#">Все бренды</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Стоимость</a>
+										<ul>
+											<li><a href="#">от 100 до 1500 грн</a></li>
+											<li><a href="#">от 1500 до 2000 грн</a></li>
+											<li><a href="#">от 2000 до 5000 грн</a></li>
+											<li><a href="#">от 5000 до 2000 грн</a></li>
+											<li class="all"><a href="#">Весь ценовой диапазон</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="bnr">
+									<a href="#"><img src="images/ban1.jpg" width="298" height="77" alt="Gucci" /></a>
+									<a href="#"><img src="images/ban2.jpg" width="298" height="77" alt="Prada" /></a>
+								</div>
+							</div>
+						</li>
+						<li><span class="tbb"><a href="#">Женские</a></span>
+							<div class="sub_menu">
+								<ul class="clearfloat">
+									<li><a href="#">Стоимость</a>
+										<ul>
+											<li><a href="#">от 100 до 1500 грн</a></li>
+											<li><a href="#">от 1500 до 2000 грн</a></li>
+											<li><a href="#">от 2000 до 5000 грн</a></li>
+											<li class="all"><a href="#">Весь ценовой диапазон</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Категории</a>
+										<ul>
+											<li><a href="#">Офисные</a></li>
+											<li><a href="#">Солнцезащитные</a></li>
+											<li><a href="#">Ультрафиолетовые</a></li>
+											<li class="all"><a href="#">Все категории</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Бренды</a>
+										<ul>
+											<li><a href="#">Bikkembergs</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li><a href="#">Giorgio Armani</a></li>
+											<li><a href="#">Gucci</a></li>
+											<li><a href="#">John Richmond</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li class="all"><a href="#">Все бренды</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="bnr">
+									<a href="#"><img src="images/ban1.jpg" width="298" height="77" alt="Gucci" /></a>
+									<a href="#"><img src="images/ban2.jpg" width="298" height="77" alt="Prada" /></a>
+								</div>
+							</div>
+						</li>
+						<li><span class="tbb"><a href="#">Бренды</a></span>
+							<div class="sub_menu">
+								<ul class="clearfloat">
+									<li><a href="#">Стоимость</a>
+										<ul>
+											<li><a href="#">от 100 до 1500 грн</a></li>
+											<li><a href="#">от 1500 до 2000 грн</a></li>
+											<li><a href="#">от 2000 до 5000 грн</a></li>
+											<li class="all"><a href="#">Весь ценовой диапазон</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Категории</a>
+										<ul>
+											<li><a href="#">Офисные</a></li>
+											<li><a href="#">Солнцезащитные</a></li>
+											<li><a href="#">Ультрафиолетовые</a></li>
+											<li class="all"><a href="#">Все категории</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Бренды</a>
+										<ul>
+											<li><a href="#">Bikkembergs</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li><a href="#">Giorgio Armani</a></li>
+											<li><a href="#">Gucci</a></li>
+											<li><a href="#">John Richmond</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li class="all"><a href="#">Все бренды</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="bnr">
+									<a href="#"><img src="images/ban1.jpg" width="298" height="77" alt="Gucci" /></a>
+									<a href="#"><img src="images/ban2.jpg" width="298" height="77" alt="Prada" /></a>
+								</div>
+							</div>
+						</li>
+						<li><span class="tbb"><a href="#">ККЗ</a></span>
+							<div class="sub_menu">
+								<ul class="clearfloat">
+									<li><a href="#">Категории</a>
+										<ul>
+											<li><a href="#">Классические</a></li>
+											<li><a href="#">Офисные</a></li>
+											<li><a href="#">Солнцезащитные</a></li>
+											<li><a href="#">Ультрафиолетовые</a></li>
+											<li class="all"><a href="#">Все категории</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Бренды</a>
+										<ul>
+											<li><a href="#">Bikkembergs</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li><a href="#">Giorgio Armani</a></li>
+											<li><a href="#">Gucci</a></li>
+											<li><a href="#">John Richmond</a></li>
+											<li class="all"><a href="#">Все бренды</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Стоимость</a>
+										<ul>
+											<li><a href="#">от 100 до 1500 грн</a></li>
+											<li><a href="#">от 1500 до 2000 грн</a></li>
+											<li><a href="#">от 2000 до 5000 грн</a></li>
+											<li><a href="#">от 5000 до 2000 грн</a></li>
+											<li class="all"><a href="#">Весь ценовой диапазон</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><span class="tbb"><a href="#">Лаборатория</a></span>
+							<div class="sub_menu">
+								<ul class="clearfloat">
+									<li><a href="#">Категории</a>
+										<ul>
+											<li><a href="#">Классические</a></li>
+											<li><a href="#">Офисные</a></li>
+											<li><a href="#">Солнцезащитные</a></li>
+											<li><a href="#">Ультрафиолетовые</a></li>
+											<li class="all"><a href="#">Все категории</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Стоимость</a>
+										<ul>
+											<li><a href="#">от 100 до 1500 грн</a></li>
+											<li><a href="#">от 1500 до 2000 грн</a></li>
+											<li><a href="#">от 2000 до 5000 грн</a></li>
+											<li><a href="#">от 5000 до 2000 грн</a></li>
+											<li class="all"><a href="#">Весь ценовой диапазон</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Бренды</a>
+										<ul>
+											<li><a href="#">Bikkembergs</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li><a href="#">Giorgio Armani</a></li>
+											<li><a href="#">Gucci</a></li>
+											<li><a href="#">John Richmond</a></li>
+											<li class="all"><a href="#">Все бренды</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><span class="tbb"><a href="#">Outlet</a></span>
+							<div class="sub_menu">
+								<ul class="clearfloat">
+									<li><a href="#">Стоимость</a>
+										<ul>
+											<li><a href="#">от 100 до 1500 грн</a></li>
+											<li><a href="#">от 1500 до 2000 грн</a></li>
+											<li><a href="#">от 2000 до 5000 грн</a></li>
+											<li><a href="#">от 5000 до 2000 грн</a></li>
+											<li class="all"><a href="#">Весь ценовой диапазон</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Категории</a>
+										<ul>
+											<li><a href="#">Классические</a></li>
+											<li><a href="#">Офисные</a></li>
+											<li><a href="#">Солнцезащитные</a></li>
+											<li><a href="#">Ультрафиолетовые</a></li>
+											<li class="all"><a href="#">Все категории</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Бренды</a>
+										<ul>
+											<li><a href="#">Bikkembergs</a></li>
+											<li><a href="#">Carrera</a></li>
+											<li><a href="#">Emporio Armani</a></li>
+											<li><a href="#">Giorgio Armani</a></li>
+											<li><a href="#">Gucci</a></li>
+											<li><a href="#">John Richmond</a></li>
+											<li class="all"><a href="#">Все бренды</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			
+			<!--content-->
+			<div class="content">
+				<div class="promoblock clearfloat">
+					<div class="banner1"><a href="#"><img src="images/gifts.png" width="191" height="330" alt="Подарки" /></a></div>
+					<div class="promo" id="banner_slider">
+						<ul class="bjqs">
+							<li>
+								<div class="what">
+									<img src="images/gucci.png" width="180" height="29" alt="Gucci" />
+									<div class="brd">Новые коллекции</div>
+									<div class="who">
+										<a href="#" class="bul">Мужские</a>
+										<a href="#" class="bul">Женские</a>
+									</div>
+								</div>
+								<div class="big_img"><img src="images/glasses1.jpg" width="439" height="314" alt="Glasses" /></div>
+							</li>
+							<li>
+								<div class="what">
+									<img src="images/gucci.png" width="160" height="20" alt="Gucci" />
+									<div class="brd">Новые коллекции</div>
+									<div class="who">
+										<a href="#" class="bul">Женские</a>
+										<a href="#" class="bul">Мужские</a>
+									</div>
+								</div>
+								<div class="big_img"><img src="images/glasses1.jpg" width="339" height="214" alt="Glasses" /></div>
+							</li>
+							<li>
+								<div class="what">
+									<img src="images/gucci.png" width="180" height="29" alt="Gucci" />
+									<div class="brd">Старые коллекции</div>
+									<div class="who">
+										<a href="#" class="bul">Мужские</a>
+										<a href="#" class="bul">Женские</a>
+									</div>
+								</div>
+								<div class="big_img"><img src="images/glasses2.jpg" width="439" height="314" alt="Glasses" /></div>
+							</li>
+							<li>
+								<div class="what">
+									<img src="images/gucci.png" width="180" height="29" alt="Gucci" />
+									<div class="brd">Здесь текст</div>
+									<div class="who">
+										<a href="#" class="bul">Женские</a>
+										<a href="#" class="bul">Мужские</a>
+									</div>
+								</div>
+								<div class="big_img"><img src="images/glasses3.jpg" width="439" height="314" alt="Glasses" /></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="teaser clearfloat">
+					<div class="single_teaser t1">
+						<div class="tt">Бесплатная доставка</div>
+						<p>По Киеву и Украине</p>
+					</div>
+					<div class="single_teaser t2">
+						<div class="tt">Выбирай</div>
+						<p>По Киеву привезем несколько пар на выбор</p>
+					</div>
+					<div class="single_teaser t3">
+						<div class="tt">Покупай настоящее</div>
+						<p>Только подлинные очки и аксессуары</p>
+					</div>
+				</div>
+
+				<div class="c_banners clearfloat">
+					<div class="cbn ban1">
+						<a href="#">
+							<img src="images/banner1.png" width="384" height="245" alt="Новые коллекции" />
+							<span class="banner_info">
+								<span class="dtbl">
+									<span class="bn_txt">Новые коллекции</span>
+									<span class="bn_sub">2013</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="cbn ban2">
+						<a href="#">
+							<img src="images/banner2.png" width="286" height="245" alt="Распродажа" />
+							<span class="banner_info">
+								<span class="dtbl">
+									<span class="bn_txt">Распродажа</span>
+									<span class="bn_sub">Коллекция 2012</span>
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="cbn ban3">
+						<a href="#">
+							<img src="images/banner3.png" width="287" height="245" alt="Коллекция ОФИС" />
+							<span class="banner_info">
+								<span class="dtbl">
+									<span class="bn_txt">Коллекция «ОФИС»</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="s_banners clearfloat">
+					<div class="sbn ban4">
+						<a href="#b1">
+							<img src="images/banner4.png" width="246" height="155" alt="" />
+							<span class="sbn_txt">Очки для водителей</span>
+						</a>
+					</div>
+					<div class="sbn ban5">
+						<a href="#b2">
+							<img src="images/banner5.png" width="229" height="154" alt="" />
+							<span class="sbn_txt">Мужские солнцезащитные очки</span>
+						</a>
+					</div>
+					<div class="sbn ban6">
+						<a href="#b3">
+							<img src="images/banner6.png" width="229" height="154" alt="" />
+							<span class="sbn_txt">Женские классические очки</span>
+						</a>
+					</div>
+					<div class="sbn ban7">
+						<a href="#b4">
+							<img src="images/banner7.png" width="246" height="155" alt="" />
+							<span class="sbn_txt">Очки Рейбен</span>
+						</a>
+					</div>
+				</div>
+				<section class="minfo">
+					<h2>Популярные бренды</h2>
+					<div class="brands">
+						<a href="#"><img src="images/gucci2.png" width="105" height="17" alt="" /></a>
+						<a href="#"><img src="images/burberry.png" width="180" height="13" alt="" /></a>
+						<a href="#"><img src="images/armani.png" width="155" height="16" alt="" /></a>
+						<a href="#"><img src="images/prada.png" width="96" height="15" alt="" /></a>
+						<a href="#"><img src="images/lauren.png" width="115" height="18" alt="" /></a>
+					</div>
+					<h2>О магазине</h2>
+					<p>Наручные часы – не только верный помощник в регулировке времени, но и незаменимый аксессуар. Ни один аксессуар не расскажет о своем обладателе настолько много, как часы. Какой стиль предпочитает хозяин, цвет, четкость форм и изгибов, отдает предпочтение классике или модерну, любит спорт или сдержанный стиль механических часов.</p>
+
+					<p>Ведь часы – это не перчатки и их не нужно менять каждый сезон, они выбираются осознанно и приобретаются далеко не на один год. Достаточно лишь взглянуть на запястье, где красуются часы, как можно обрисовать краткую характеристику собеседника. Элегантные мужские часы привлекают внимание окружающих не хуже рельефных бицепсов и сильных рук. </p>
+				</section>
+			</div>
+			<!--/content-->
+			
+
+		</div>
+		<!--footer-->
+		<footer class="main_footer">
+			<div class="main clearfloat">
+				<div class="foot_col">
+					<div class="foot_title">Контакты</div>
+					<div class="pd">
+						<div class="tel1">044 355-03-89</div>
+						<div class="mts">050 840-15-60</div>
+						<div class="ks">098 517-08-18</div>
+						<div class="life">093 934-08-24</div>
+					</div>
+					<address>Киев, ул Вышгородская 41, офис 204</address>
+					<div class="make">
+						Дизайн сайта<br />
+						<a href="#">www.stylepix.net</a>
+					</div>
+				</div>
+				<div class="foot_col">
+					<div class="foot_title">Помощь</div>
+					<ul class="foot_list">
+						<li><a href="#">Служба поддержки</a></li>
+						<li><a href="#">Оформление заказа</a></li>
+						<li><a href="#">Доставка товара</a></li>
+						<li><a href="#">Способы оплаты</a></li>
+						<li><a href="#">Возврат</a></li>
+						<li><a href="#">Правила действия купонов</a></li>
+						<li><a href="#">Публичная оферта</a></li>
+					</ul>
+				</div>
+				<div class="foot_col">
+					<div class="foot_title">О магазине</div>
+					<ul class="foot_list">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Наши преимущества</a></li>
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Работа в Optomisto</a></li>
+						<li><a href="#">Отзывы клиентов</a></li>
+						<li><a href="#">Реквизиты</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="rt">
+					<div class="sf1">
+						<div class="foot_title">Мы в социальных сетях</div>
+						<div class="soc_nets clearfloat">
+							<a href="#" class="vk"></a>
+							<a href="#" class="fb"></a>
+							<a href="#" class="ggl"></a>
+							<a href="#" class="tw"></a>
+							<a href="#" class="yt"></a>
+						</div>
+					</div>
+					<div class="sf2">
+						<div class="foot_title">Принимаем к оплате</div>
+						<div class="clearfloat">
+							<div class="pay cash">Наличные</div>
+							<div class="pay card">Visa / MasterCard</div>
+							<div class="pay wm">Webmoney</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/footer-->
+	</div>
+
+	<!--popups-->
+	<div id="login_popup" class="popup">
+		<div class="inpop">
+			<div class="pop_title"><span class="popface">Вход для клиентов</span></div>
+			<div class="pop_content clearfloat">
+				<div class="why_reg">
+					<div class="ttl">Для чего мне регистрация?</div>
+					<ul class="simple_list">
+						<li>Вы будете тратить меньше времени на оформление заказа</li>
+						<li>Сможете хранить несколько адресов доставки</li>
+						<li>Отслеживать состояние заказов.</li>
+						<li><strong>Для Вас будет действовать скидка на все товары</strong></li>
+					</ul>
+					<div class="sbmt big_sbmt" id="reg_now"><span>Регистрация</span></div>
+				</div>
+				<form action="some.php" class="login_form" method="POST">
+					<fieldset>
+						<div class="sfield">
+							<label for="inp31">Электронная почта</label>
+							<div class="inpt"><input type="text" id="inp31" /></div>
+						</div>
+						<div class="sfield">
+							<label for="inp32">Пароль</label>
+							<div class="inpt"><input type="password" id="inp32" /></div>
+						</div>
+						<div class="right"><a href="#">Напомнить пароль</a></div>
+						<div class="sbmt big_sbmt"><input type="submit" value="Войти" /></div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="register_popup" class="popup">
+		<div class="inpop">
+			<div class="pop_title"><span class="popface">Регистрация</span></div>
+			<div class="pop_content clearfloat">
+				<div class="why_reg">
+					<div class="ttl">Для чего мне регистрация?</div>
+					<ul class="simple_list">
+						<li>Вы будете тратить меньше времени на оформление заказа</li>
+						<li>Сможете хранить несколько адресов доставки</li>
+						<li>Отслеживать состояние заказов.</li>
+						<li><strong>Для Вас будет действовать скидка на все товары</strong></li>
+					</ul>
+				</div>
+				<form action="some.php" class="login_form" method="POST">
+					<fieldset>
+						<div class="sfield">
+							<label for="inp33">Электронная почта</label>
+							<div class="inpt"><input type="text" id="inp33" /></div>
+						</div>
+						<div class="sfield">
+							<label for="inp34">Пароль</label>
+							<div class="inpt"><input type="password" id="inp34" /></div>
+						</div>
+						<div class="sfield">
+							<label for="inp35">Повторить пароль</label>
+							<div class="inpt"><input type="password" id="inp35" /></div>
+						</div>
+						<div class="sbmt big_sbmt"><input type="submit" value="Зарегистрироваться" /></div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery.cycle2.min.js" type="text/javascript"></script>
+<script src="js/jquery.cycle2.center.min.js" type="text/javascript"></script>
+<script src="js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="js/bjqs-1.3.min.js" type="text/javascript"></script>
+<script src="js/wSelect.min.js" type="text/javascript"></script>
+<script src="js/wCheck.min.js" type="text/javascript"></script>
+<script src="js/misc.js" type="text/javascript"></script>
+	
+</body>
+</html>

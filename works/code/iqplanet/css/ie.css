@@ -1,0 +1,22 @@
+.top_line {behavior:url(js/PIE.htc); position:relative;}
+.before {//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', 'Вопрос: ')); /* хак для ие6 и 7 */}
+.after {	//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', 'Ответ: ')); /* хак для ие6 и 7 */}
+
+.overlay {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);}
+
+*+html .column {display:inline;}
+.pattern {filter:
+        progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=0, Strength=3)
+        progid:DXImageTransform.Microsoft.Shadow(color='#888888', Direction=180, Strength=3);
+}
+
+.main_ttl {font-size:36px; letter-spacing:-2px;}
+.tel {font-size:45px;}
+.pros li {font-size:15px; letter-spacing:-1px;}
+.top3 {margin:14px 55px 0 0;}
+.lic {margin:14px 60px 0 0;}
+.inp {height:27px; padding:5px 8px 0;}
+.faq dt {font-family:'Lobster', Arial, cursive; font-size:22px; font-weight:bold; font-style:italic;}
+.map {font-size:16px;}
+.sinp {padding-top:6px; height:25px;}
+*+html .ssbm {margin:14px 0 0 22px;}

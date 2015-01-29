@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!--placeholder for IE-->
+<!--[if lte IE 9]>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('input[placeholder], textarea[placeholder]').placeholder();
+	});
+</script>
+<![endif]-->
+</head>
+<body class="inner_body">
+	<div class="main">
+		<header class="main_header">
+				<div class="topp">
+					<nav class="top_navigation">
+						<ul>
+							<li><span>О КОМПАНИИ</span>
+								<ul>
+									<li><a href="#">ОФИС</a></li>
+									<li><a href="#">СКЛАД</a></li>
+									<li><a href="#">ПРОИЗВОДСТВО</a></li>
+									<li><a href="#">ПРЕДСТАВИТЕЛЬСТВА</a></li>
+									<li><a href="#">СПЕЦПРЕДЛОЖЕНИЯ И АКЦИИ</a></li>
+									<li><a href="#">ОТЗЫВЫ И ПРЕДЛОЖЕНИЯ</a></li>
+									<li><a href="#">РАБОТА В КОМПАНИИ</a></li>
+								</ul>
+							</li>
+							<li><span>УСЛУГИ</span>
+								<ul>
+									<li><a href="#">ЗАМЕР</a></li>
+									<li><a href="#">ИЗГОТОВЛЕНИЕ ИЗДЕЛИЙ</a></li>
+									<li><a href="#">ДОСТАВКА</a></li>
+									<li><a href="#">МОНТАЖ</a></li>
+									<li><a href="#">ГАРАНТИЯ</a></li>
+									<li><a href="#">ПРОДАЖА ПЛИТКИ</a></li>
+									<li><a href="#">УХОД ЗА КАМНЕМ</a></li>
+									<li><a href="#">ДИЗАЙН ИНТЕРЬЕРА</a></li>
+								</ul>
+							</li>
+							<li><a href="#">ВОПРОС-ОТВЕТ</a></li>
+							<li><a href="#">ВСЁ О КАМНЕ</a></li>
+							<li><a href="#">ДИЗАЙНЕРАМ</a></li>
+							<li><a href="#">КОНТАКТЫ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="logo"><a href="#"><img src="images/logo.png" width="220" height="127" alt="" /></a></div>
+				<div class="contact1">
+					<div class="where">
+						г. Москва, ТВК «ЭКСПОСТРОЙ» 
+	    				<div class="dot1">(м. Профсоюзная) <a href="#">схема проезда</a></div>
+					</div>
+					<div class="phone">+7 (495) <span>940 7525</span></div>
+				</div>
+				<div class="contact2">
+					<div class="where">
+						г. Москва, ул. Студенческая, 20
+	    				<div class="dot2">(м. Студенческая)  <a href="#">схема проезда</a></div>
+					</div>
+					<div class="phone">+7 (495) <span>940 7525</span></div>
+				</div>
+				<form action="some.php" class="site_search">
+					<fieldset>
+						<input type="text" class="s_inp" placeholder="поиск" />
+						<input type="submit" value="" class="s_sbm" />
+					</fieldset>
+				</form>
+				<a href="#" class="call">Заказать обратный звонок</a>
+			</header>
+		
+		<div class="sliders clearfloat">
+			<div class="slider_holder">
+				<div class="slide_ttl">КАТАЛОГ КАМНЯ</div>
+				<div class="cycle-slideshow" 
+					data-index="1"
+					data-cycle-fx=scrollHorz
+					data-cycle-timeout=12000
+					data-cycle-prev="#prev1"
+        			data-cycle-next="#next1"
+					>
+					<!-- empty element for overlay -->
+					<div class="cycle-overlay"></div>
+					
+					<!-- all images must have the same dimentions. dont declare image dimensions in html -->
+					<img src="images/img1.jpg" data-cycle-desc="Funky roots">
+					<img src="images/img2.jpg" data-cycle-desc="The long and winding road">
+					<img src="images/img3.jpg" data-cycle-desc="Sonnenberg Gardens">
+				</div>
+				<!-- prev/next links -->
+				<div class="pn_ctrl">
+					<span id="prev1" class="prev"></span>
+					<span id="next1" class="next"></span>
+				</div>
+
+				<div class="popup_menu">
+					<table>
+						<tr>
+							<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">МРАМОР</a></td>
+							<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ЭКСКЛЮЗИВНЫЙ МРАМОР</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ГРАНИТ</a></td>
+							<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ЭКСКЛЮЗИВНЫЙ ГРАНИТ</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ОНИКС</a></td>
+							<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">NATURA COLLECTION</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ТРАВЕРТИН</a></td>
+							<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ПОЛУДРАГОЦЕННЫЕ КАМНИ</a></td>
+						</tr>
+					</table>
+					<div class="popup_menu_ttl">КАТАЛОГ КАМНЯ</div>
+					<span class="close">закрыть</span>
+				</div>
+			</div>
+			<div class="slider_holder">
+				<div class="slide_ttl">ИЗДЕЛИЯ ИЗ КАМНЯ</div>
+				<div class="cycle-slideshow" 
+					data-index="2"
+					data-cycle-fx=scrollHorz
+					data-cycle-timeout=12000
+					data-cycle-delay=4000
+					data-cycle-prev="#prev2"
+        			data-cycle-next="#next2"
+					>
+					<!-- empty element for overlay -->
+					<div class="cycle-overlay"></div>
+
+					<img src="images/img2.jpg" data-cycle-desc="The long and winding road">
+					<img src="images/img3.jpg" data-cycle-desc="Funky roots">
+					<img src="images/img1.jpg" data-cycle-desc="Sonnenberg Gardens">
+				</div>
+				<!-- prev/next links -->
+				<div class="pn_ctrl">
+					<span id="prev2" class="prev"></span>
+					<span id="next2" class="next"></span>
+				</div>
+
+				<div class="popup_menu">
+					<table>
+						<tr>
+							<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ПОДОКОННИКИ ИЗ МРАМОРА</a></td>
+							<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">СТУПЕНИ ДЛЯ ЛЕСТНИЦ</a></td>
+							<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ПАННО ИЗ МРАМОРА</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">СТОЛЕШНИЦЫ ДЛЯ КУХНИ</a></td>
+							<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">БАРНЫЕ СТОЙКИ ИЗ КАМНЯ</a></td>
+							<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">БОРДЮРЫ ДЕКОРАТИВНЫЕ</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">СТОЛЕШНИЦЫ ДЛЯ ВАННОЙ</a></td>
+							<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ПЛИТКА ИЗ КАМНЯ</a></td>
+							<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">МОЗАИКА ИЗ МРАМОРА</a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ПОЛЫ ИЗ КАМНЯ</a></td>
+							<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">КАМИНЫ ИЗ МРАМОРА</a></td>
+							<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+							<td><a href="#">ВИДЫ ОБРАБОТКИ ТОРЦА</a></td>
+						</tr>
+					</table>
+					<div class="popup_menu_ttl">ИЗДЕЛИЯ ИЗ КАМНЯ</div>
+					<span class="close">закрыть</span>
+				</div>
+			</div>
+			<div class="slider_holder">
+				<div class="slide_ttl">ПОРТФОЛИО</div>
+				<div class="cycle-slideshow"
+					data-index="3"
+					data-cycle-fx=scrollHorz
+					data-cycle-timeout=12000
+					data-cycle-delay=8000
+					data-cycle-prev="#prev3"
+        			data-cycle-next="#next3"
+					>
+					<!-- empty element for overlay -->
+					<div class="cycle-overlay"></div>
+
+					<img src="images/img3.jpg" data-cycle-desc="Sonnenberg Gardens">
+					<img src="images/img1.jpg" data-cycle-desc="Funky roots">
+					<img src="images/img2.jpg" data-cycle-desc="The long and winding road">
+				</div>
+				<!-- prev/next links -->
+				<div class="pn_ctrl">
+					<span id="prev3" class="prev"></span>
+					<span id="next3" class="next"></span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<section class="products">
+				<div class="breadcrumbs">
+					<a href="#">главная</a>
+					мрамор
+				</div>
+				<div class="comparison">
+					<div class="c_ttl">CРАВНЕНИЕ КАМНЕЙ</div>
+					добавлено: 2 камня
+					<div class="buts">
+						<a href="#" class="dark_button">сравнить</a>
+						<a href="#" class="light_button">очистить</a>
+					</div>
+				</div>
+				<h1>Мрамор</h1>
+				<p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p>
+
+				<div class="filter">
+					<table>
+						<tr>
+							<td>
+								<label>Наличие на складе</label>
+								<select>
+									<option>весь каталог</option>
+									<option>в наличии</option>
+									<option>на заказ</option>
+								</select>
+							</td>
+							<td>
+								<label>Цвет</label>
+								<select>
+									<option>все цвета</option>
+									<option>белый</option>
+									<option>черный</option>
+								</select>
+							</td>
+							<td>
+								<label>Страна</label>
+								<select>
+									<option>все страны</option>
+									<option>Россия</option>
+									<option>Украина</option>
+								</select>
+							</td>
+							<td>
+								<label>Быстрый подбор</label>
+								<input type="text" placeholder="введите название камня" />
+							</td>
+						</tr>
+					</table>
+					<div class="abc">
+						<a href="#">А</a>
+						<a href="#">Б</a>
+						<a href="#">В</a>
+						<a href="#">Г</a>
+						<a href="#">Д</a>
+						<a href="#">Е</a>
+						<a href="#">Ж</a>
+						<a href="#">З</a>
+						<a href="#">И</a>
+						<a href="#">К</a>
+						<a href="#">Л</a>
+						<a href="#">М</a>
+						<a href="#">Н</a>
+						<a href="#">О</a>
+						<a href="#">П</a>
+						<a href="#">Р</a>
+						<a href="#">С</a>
+						<a href="#">Т</a>
+						<a href="#">У</a>
+						<a href="#">Ф</a>
+						<a href="#">Х</a>
+						<a href="#">Ц</a>
+						<a href="#">Ч</a>
+						<a href="#">Ш</a>
+						<a href="#">Щ</a>
+						<a href="#">Э</a>
+						<a href="#">Ю</a>
+						<a href="#">Я</a>
+					</div>
+					<div class="abc">
+						<a href="" class="dark_button">весь каталог</a>
+						<a href="#">A</a>
+						<a href="#">B</a>
+						<a href="#">C</a>
+						<a href="#">D</a>
+						<a href="#">E</a>
+						<a href="#">F</a>
+						<a href="#">G</a>
+						<a href="#">H</a>
+						<a href="#">I</a>
+						<a href="#">J</a>
+						<a href="#">K</a>
+						<a href="#">L</a>
+						<a href="#">M</a>
+						<a href="#">N</a>
+						<a href="#">O</a>
+						<a href="#">P</a>
+						<a href="#">Q</a>
+						<a href="#">R</a>
+						<a href="#">S</a>
+						<a href="#">T</a>
+						<a href="#">U</a>
+						<a href="#">V</a>
+						<a href="#">W</a>
+						<a href="#">X</a>
+						<a href="#">Y</a>
+						<a href="#">Z</a>
+					</div>
+				</div>
+				
+				<div class="bordered">
+					<div class="extra">
+						<div class="view_count">
+							Отобразить на странице:
+							<a href="#">16</a>
+							<a href="#">32</a>
+							<a href="#">48</a>
+							<a href="#">все</a>
+						</div>
+						<div class="displayed">Камней: 72, показано: 16</div>
+					</div>
+					<div class="patterns clearfloat">
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957454_Afyon_White_Select.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957470_Alba_Chiara.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943765_Antracite_Brown.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943806_Antracite_Grey.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957492_Bardiglio_Imperiale.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344953605_Bardiglio_Nuvolato.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957514_Basaltina.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344953627_Bianco_Carrara_C.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957454_Afyon_White_Select.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957470_Alba_Chiara.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943765_Antracite_Brown.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943806_Antracite_Grey.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+						</div>
+				</div>
+				
+				<div class="catalog clearfloat">
+					<div class="c1">
+						<div class="ttl">Каталог камня</div>
+						<div class="gbg">
+							<table>
+								<tr>
+									<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">МРАМОР</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ГРАНИТ</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ОНИКС</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ТРАВЕРТИН</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ЭКСКЛЮЗИВНЫЙ МРАМОР</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ЭКСКЛЮЗИВНЫЙ ГРАНИТ</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">NATURA COLLECTION</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ПОЛУДРАГОЦЕННЫЕ КАМНИ</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="c2">
+						<div class="ttl">Изделия из камня</div>
+						<div class="gbg">
+							<table>
+								<tr>
+									<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ПОДОКОННИКИ ИЗ МРАМОРА</a></td>
+									<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ПЛИТКА ИЗ КАМНЯ</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">СТОЛЕШНИЦЫ ДЛЯ КУХНИ</a></td>
+									<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">КАМИНЫ ИЗ МРАМОРА</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">СТОЛЕШНИЦЫ ДЛЯ ВАННОЙ</a></td>
+									<td><a href="#"><img src="images/stone3.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ПАННО ИЗ МРАМОРА</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ПОЛЫ ИЗ КАМНЯ</a></td>
+									<td><a href="#"><img src="images/stone4.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">БОРДЮРЫ ДЕКОРАТИВНЫЕ</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">СТУПЕНИ ДЛЯ ЛЕСТНИЦ</a></td>
+									<td><a href="#"><img src="images/stone1.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">МОЗАИКА ИЗ МРАМОРА</a></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">БАРНЫЕ СТОЙКИ ИЗ КАМНЯ</a></td>
+									<td><a href="#"><img src="images/stone2.png" width="65" height="55" alt="" /></a></td>
+									<td><a href="#">ВИДЫ ОБРАБОТКИ ТОРЦА</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="excerpt_wrap">
+					<div class="excerpt normal_excerpt">
+						<div class="ttl">Почему мрамор так разнообразен?</div>
+						<p>Как и когда-то, мрамор в интерьере остается показателем благосостояния и хорошего вкуса. Его красота восхищает, покоряет и создает ни с чем несравнимое ощущение соприкосновения с величием античности и совершенством Ренессанса.</p>
+						<p>Красота мрамора – в его нежной, бархатистой структуре. Он не похож на другие камни – в нем нет грубости и резкости. Разные сорта мрамора в той или иной степени обладают светопроницаемостью. Благодаря этому свойству на поверхности камня образуется переменчивая светотень, игра которой завораживает.</p>
+						<p>Название «мрамор» появилось в Древней Греции, и означает оно «безупречно-белый блестящий камень». Греки ценили именно белый мрамор, практически лишенный рисунка – из него они создавали идеальные по своей красоте статуи.</p>
+						<p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p>
+						<p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p><p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p>
+						<p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p><p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p>
+						<p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p><p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p>
+						<p>Мрамор – камень, который еще много веков назад был признан одним из лучших материалов для отделки зданий и создания роскошных, аристократичных, изысканных интерьеров. Со времен Древней Эллады изменилось многое, технологии позволяют создавать самые разные материалы, но благородный натуральный мрамор и по сей день не утерял своей актуальности.</p>
+					</div>
+				</div>
+				<div class="trigger">
+					<div class="trg">
+						<span class="trig1">показать текст</span>
+						<span class="trig2">скрыть текст</span>
+					</div>
+				</div><div class="cl"></div>
+			</section>
+			<section class="watched">
+				<div class="ttl">
+					Вы смотрели
+					<div class="show"><b>6</b> камней | показано: <b>4</b> | <a href="#">показать все</a></div>
+				</div>
+				<div class="excerpt_wrap">
+					<div class="excerpt">
+						<div class="patterns clearfloat">
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957454_Afyon_White_Select.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957470_Alba_Chiara.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943765_Antracite_Brown.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943806_Antracite_Grey.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957492_Bardiglio_Imperiale.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344953605_Bardiglio_Nuvolato.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957514_Basaltina.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344953627_Bianco_Carrara_C.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957454_Afyon_White_Select.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344957470_Alba_Chiara.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943765_Antracite_Brown.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+							<div class="single_pattern">
+								<a href="#"><img src="images/1344943806_Antracite_Grey.jpg" width="210" height="140" alt="" /></a>
+								<div class="pattern_name">
+									Абсолют Блэк
+									<div class="eng">Absolute Black</div></div>
+								<div class="centered"><a href="#" class="compare">добавить к сравнению</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="trigger">
+					<div class="trg">
+						<span class="trig1">показать все</span>
+						<span class="trig2">скрыть все</span>
+					</div>
+				</div><div class="cl"></div>
+			</section>
+		</div>
+
+		<footer class="main_footer">
+			<div class="promos clearfloat">
+				<div class="img_block">
+					<div class="img_block_ttl"><a href="#">Посмотреть фильм SLC</a></div>
+					<a href="#"><img src="images/img5.jpg" width="305" height="157" alt="" /></a>
+				</div>
+				<div class="img_block">
+					<div class="img_block_ttl"><a href="#">УХОД ЗА КАМЕМ</a></div>
+					<a href="#"><img src="images/img6.jpg" width="305" height="157" alt="" /></a>
+				</div>
+				<div class="img_block measure">
+					<div class="img_block_ttl"><a href="#">ЗАКАЗАТЬ ВЫЕЗД ЗАМЕРЩИКА</a></div>
+					<a href="#"><img src="images/img7.jpg" width="305" height="157" alt="" /></a>
+				</div>
+			</div>
+			<div class="topp">
+				<nav class="top_navigation">
+					<ul>
+						<li><span>О КОМПАНИИ</span>
+							<ul>
+								<li><a href="#">ОФИС</a></li>
+								<li><a href="#">СКЛАД</a></li>
+								<li><a href="#">ПРОИЗВОДСТВО</a></li>
+								<li><a href="#">ПРЕДСТАВИТЕЛЬСТВА</a></li>
+								<li><a href="#">СПЕЦПРЕДЛОЖЕНИЯ И АКЦИИ</a></li>
+								<li><a href="#">ОТЗЫВЫ И ПРЕДЛОЖЕНИЯ</a></li>
+								<li><a href="#">РАБОТА В КОМПАНИИ</a></li>
+							</ul>
+						</li>
+						<li><span>УСЛУГИ</span>
+							<ul>
+								<li><a href="#">ЗАМЕР</a></li>
+								<li><a href="#">ИЗГОТОВЛЕНИЕ ИЗДЕЛИЙ</a></li>
+								<li><a href="#">ДОСТАВКА</a></li>
+								<li><a href="#">МОНТАЖ</a></li>
+								<li><a href="#">ГАРАНТИЯ</a></li>
+								<li><a href="#">ПРОДАЖА ПЛИТКИ</a></li>
+								<li><a href="#">УХОД ЗА КАМНЕМ</a></li>
+								<li><a href="#">ДИЗАЙН ИНТЕРЬЕРА</a></li>
+							</ul>
+						</li>
+						<li><a href="#">ВОПРОС-ОТВЕТ</a></li>
+						<li><a href="#">ВСЁ О КАМНЕ</a></li>
+						<li><a href="#">ДИЗАЙНЕРАМ</a></li>
+						<li><a href="#">КОНТАКТЫ</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="infooter">
+				<div class="logo"><a href="#"><img src="images/logo2.png" width="100" height="59" alt="" /></a></div>
+				<div class="goup">вернуться наверх</div>
+				<div class="ext">
+					Copyright &copy; 2008 - 2013 | SLC | Все права защищены. <br />
+					м. Студенческая | ул. Студенческая, 20 | +7 (495) 940-75-20<br />
+					м. Профсоюзная | ТВК «Экспострой» | +7 (495) 940-75-25<br />
+				</div>
+				<div class="make">Создание сайта: <a href="http://www.recreator.ru">www.recreator.ru</a></div>
+			</div>
+		</footer>
+	</div>
+	<div class="popup callback">
+		<div class="popup_ttl">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</div>
+		<span class="close">закрыть</span>
+		<form action="some.php">
+			<fieldset>
+				<div class="np"><input type="text" class="inp" placeholder="Имя:*" required /></div>
+				<div class="np">
+					<input type="text" class="inp" placeholder="Телефон:*" required />
+					<div class="sm">Пример: 7(495)1234568</div>
+				</div>
+				<div class="np"><input type="text" class="inp" placeholder="E-mail:*" required /></div>
+				<div class="np">
+					<div class="sm">Введите код с картинки*:</div>
+					<input type="text" class="kod" />
+				</div>
+				<div class="captcha clearfloat">
+					<img src="images/cap.png" alt="" />
+					<a href="#" class="refresh">Обновить</a>
+				</div>
+				<div class="rq">* - обязательные поля для заполнения</div>
+				<input type="submit" class="btn" value="Заказать " />
+			</fieldset>
+		</form>
+	</div>
+	<div class="popup order_measure">
+		<div class="popup_ttl">ОСТАВИТЬ ЗАЯВКУ</div>
+		<span class="close">закрыть</span>
+		<form action="some.php">
+			<fieldset>
+				<div class="np"><input type="text" class="inp" placeholder="Имя:" required /></div>
+				<div class="np"><input type="text" class="inp" placeholder="Телефон:" required /></div>
+				<div class="np"><input type="text" class="inp" placeholder="E-mail:" required /></div>
+				<div class="np"><textarea class="tar" cols="30" rows="10" placeholder="Текст сообщения:"></textarea></div>
+				<div class="np2"><input type="checkbox" class="chb" id="chb1" /><label for="chb1">требуются монтажные работы</label></div>
+				<div class="np2"><input type="checkbox" class="chb" id="chb2" /><label for="chb2">доставка</label></div>
+				<br />
+				<input type="submit" class="btn" value="Оставить заявку " />
+			</fieldset>
+		</form>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/jquery.cycle2.min.js" type="text/javascript"></script>
+<script src="js/misc.js" type="text/javascript"></script>
+	
+</body>
+</html>

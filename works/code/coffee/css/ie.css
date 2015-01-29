@@ -1,0 +1,4 @@
+.framed_img img, .person img, .side_img img, .head_nav .active a, .feedback_form .inp, .feedback_form  textarea, .sbm {behavior:url(js/PIE.htc); position:relative;}
+
+*+html .lang li {display:block; float:left;}
+*+html .slidesjs-pagination li {display:inline;}

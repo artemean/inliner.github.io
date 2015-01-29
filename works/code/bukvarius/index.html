@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.1.custom.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" />
+
+<!--[if IE]>
+<link rel="stylesheet" href="css/ie_all.css" type="text/css" />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class="main_body">
+	<div class="main">
+		<div class="top_line">
+			<ul class="icons">
+				<li class="home"><a title="На главную" href="#"></a></li>
+				<li class="sitemap"><a title="Карта сайта" href="#"></a></li>
+				<li class="email"><a title="Написать письмо" href="#"></a></li>
+				<li class="fav"><a title="В избранное" href="#"></a></li>
+			</ul>
+			<a href="#" class="reg"><span>Регистрация</span></a>
+			<div class="cab"><span>Вход в личный кабинет</span></div>
+			<div class="login">
+				<div class="enter"><span>Вход в личный кабинет</span></div>
+				<form action="some.php">
+					<fieldset>
+						<label for="log3">логин</label>
+						<div class="inpt2"><input id="log3" type="text" /></div>
+						<label for="log4">пароль</label>
+						<div class="inpt2"><input id="log4" type="password" /></div>
+						<input type="submit" class="sbm" value="войти" />
+						<a href="#">Забыли пароль?</a><br />
+						<a href="#">Регистрация</a>
+					</fieldset>
+				</form>
+				<span class="close"></span>
+			</div>
+		</div>
+		<header>
+			<div class="logo"><a href="#"><img src="images/logo.png" width="265" height="86" alt="Буквариус лого" /></a></div>
+			<div class="slogan">Онлайн-магазин учебников и методической литературы с доставкой по всей России</div>
+			<table class="navigation">
+				<tr>
+					<td class="active"><a href="#">О магазине</a></td>
+					<td><a href="#">Оплата и доставка</a></td>
+					<td><a href="#">Пресс-центр</a></td>
+					<td><a href="#">Оптовикам</a></td>
+					<td><a href="#">Наши партнеры</a></td>
+					<td>
+						<a href="#">Нужна помощь?</a>
+						<ul>
+							<li><a href="#">Как сделать заказ?</a></li>
+							<li><a href="#">Расширенный поиск продукции</a></li>
+							<li><a href="#">Часто задаваемы вопросы</a></li>
+						</ul>
+					</td>
+					<td><a href="#">Контакты</a></td>
+				</tr>
+			</table>
+			<div class="cart_block">
+				<div class="cart_block_ttl">Корзина заказов</div>
+				<div class="cart_count">у вас <a href="#">10 товаров</a><br />
+				на сумму <span class="cart_total">69 999 руб.</span></div>
+				<a href="#" class="n_color">Оформить заказ</a> | <a href="#">Статус заказа</a><br />
+				<a href="#">История заказов</a> | <a href="#">Избранное</a>
+			</div>
+			<div class="contacts_block">
+				<div class="phones"><b><span class="code">+7(495)</span> 961-23-62</b> <span class="under">(г.Москва)</span><br />
+				<b>8 800 2000 00</b> <span class="under">(бесплатно по России)</span></div>
+				<div class="sub_contacts">
+					<span class="js">обратный звонок</span><br />
+					<a href="mailto:mail@e-mail.com">mail@e-mail.com</a><br />
+					Режим работы:<br />
+					<span class="hilight">10:00 - 20:00</span> будни
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="wrapper">
+				<div class="content">
+					<div class="searcher">
+						<span class="js">Расширенный поиск по каталогу</span>
+						<div class="ttl">Поиск книги</div>
+						<form action="some.php">
+							<fieldset>
+								<div class="inp">
+									<div class="inpt">
+										<input type="text" class="inptr" value="Хочу найти книгу!" onfocus="javascript:if(this.value=='Хочу найти книгу!') this.value='';" onblur="javascript:if(this.value=='') this.value='Хочу найти книгу!';" />
+										<input type="submit" value="" class="sbmtr" title="Начать поиск" />
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="promo" id="j_slides">
+						<div class="promo_in slides_container">
+							<div class="promo_item" style="background:url(images/promo2.jpg) 0 0 no-repeat;"><a href="#"></a></div><!-- Фоном, потому что баннеры должны быть резиновыми -->
+							<div class="promo_item" style="background:url(images/promo1.jpg) 0 0 no-repeat;"><a href="#"></a></div>
+							<div class="promo_item" style="background:url(images/promo3.jpg) 0 0 no-repeat;"><a href="#"></a></div>
+						</div>
+					</div>
+					<div class="right_link"><a href="#">все новинки</a></div>
+					<div class="b_title new_books"><h2>Новинки</h2></div>
+					<div class="items">
+						<div class="items_in">
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book1.jpg" width="100" height="137" alt="Книга" /></a><span class="ora_lable">New</span></div>
+								<div class="item_ttl"><a href="#">Английский для детей с аудиодиском</a></div>
+								<div class="old_price">1 950.00 Р</div>
+								<div class="price"><a href="#" class="in_cart is_in_cart" title="В корзине"></a>21 750.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book2.jpg" width="100" height="100" alt="Книга" /></a><span class="ora_lable">New</span></div>
+								<div class="item_ttl"><a href="#">Английский для детей с аудиодиском</a></div>
+								<div class="old_price"></div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>2 350.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book3.jpg" width="100" height="138" alt="Книга" /></a><span class="ora_lable">New</span></div>
+								<div class="item_ttl"><a href="#">После трех уже поздно</a></div>
+								<div class="old_price">1 950.00 Р</div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>1 350.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book4.jpg" width="100" height="137" alt="Книга" /></a><span class="ora_lable">New</span></div>
+								<div class="item_ttl"><a href="#">Учебник для старших классов</a></div>
+								<div class="old_price"></div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>1 350.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book1.jpg" width="100" height="137" alt="Книга" /></a><span class="ora_lable">New</span></div>
+								<div class="item_ttl"><a href="#">Английский для детей с аудиодиском</a></div>
+								<div class="old_price">1 950.00 Р</div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>21 750.00 Р</div>
+							</div>
+						</div>
+					</div>
+					<div class="right_link"><a href="#">все спецпредложения</a></div>
+					<div class="b_title special"><h2>Спецпредложения</h2></div>
+					<div class="items">
+						<div class="items_in">
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book5.jpg" width="100" height="139" alt="Книга" /></a><span class="red_lable">!!</span></div>
+								<div class="item_ttl"><a href="#">Английский для детей с аудиодиском</a></div>
+								<div class="old_price">1 950.00 Р</div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>21 750.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book6.jpg" width="100" height="137" alt="Книга" /></a><span class="red_lable">!!</span></div>
+								<div class="item_ttl"><a href="#">Английский для учителей средней школы</a></div>
+								<div class="old_price"></div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>2 350.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book7.jpg" width="100" height="138" alt="Книга" /></a><span class="red_lable">!!</span></div>
+								<div class="item_ttl"><a href="#">Учебник для всех</a></div>
+								<div class="old_price">1 950.00 Р</div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>1 350.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book8.jpg" width="100" height="138" alt="Книга" /></a><span class="red_lable">!!</span></div>
+								<div class="item_ttl"><a href="#">Книга - секрет успеха, как начать успевать все</a></div>
+								<div class="old_price"></div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>1 350.00 Р</div>
+							</div>
+							<div class="single_item">
+								<div class="item_img"><a href="#"><img src="images/book1.jpg" width="100" height="137" alt="Книга" /></a><span class="red_lable">!!</span></div>
+								<div class="item_ttl"><a href="#">Английский для детей с аудиодиском</a></div>
+								<div class="old_price">1 950.00 Р</div>
+								<div class="price"><a href="#" class="in_cart" title="В корзину"></a>21 750.00 Р</div>
+							</div>
+						</div>
+					</div>
+					<div class="b_title art"><h2>Онлайн-магазин учебников и методической литературы</h2></div>
+					<article>
+						<p>Полный ассортимент школьных учебников, методических и дидактических пособий, словарей, сборников ЕГЭ, справочников, художественной литературы по школьной программе, интерактивных учебных пособий; Комплектацию различных заказов – от школьной библиотеки до индивидуального комплекта; Оперативную доставку учебной литературы до школ и библиотек; Бонусные программы и выгодные для клиентов акции;</p>
+						<p>Оперативную доставку учебной литературы до школ и библиотек; Бонусные программы и выгодные для клиентов акции; Персональное обслуживание, профессиональные консультации, удобство оформления и быстроту выполнения заказов; Организацию семинаров, презентаций и встреч с авторами учебников; Оформление пакета необходимых отчетных документов.</p>
+						<p>Оперативную доставку учебной литературы до школ и библиотек; Бонусные программы и выгодные для клиентов акции; Персональное обслуживание, профессиональные консультации, удобство оформления и быстроту выполнения заказов; Организацию семинаров, презентаций и встреч с авторами учебников; Оформление пакета необходимых отчетных документов.</p>
+					</article>
+				</div>
+			</div>
+			<aside>
+				<div class="nav_ttl">Каталог</div>
+				<ul class="side_nav">
+					<li><a href="#">Дошкольная литература</a></li>
+					<li><a href="#">Начальная школа 1-4 класс</a></li>
+					<li><a href="#">Основная школа 5-9 класс</a></li>
+					<li><a href="#">Старшая школа 10-11 класс</a></li>
+					<li><a href="#">Внеклассное чтение</a></li>
+					<li><a href="#">Итоговая аттестация</a></li>
+					<li><a href="#">Спец. Коррекц. Программы</a></li>
+					<li><a href="#">Методическая литература </a></li>
+					<li><a href="#">Профессиональное образование</a></li>
+					<li><a href="#">Журналы, бланки, книги учета.</a></li>
+				</ul>
+				<div class="question">
+					<div class="cons"><span class="link_consult">Нужна консультация? Задайте Ваш вопрос!</span></div>
+					<a href="#" class="all_q">Все часто задаваемы вопросы</a>
+				</div>
+				<div class="side_block">
+					<div class="sb_title"><h3>Полезные статьи</h3></div>
+					<div class="sb_hold">
+						<div class="excerpt">
+							<h4><a href="#">Статьи представлены по рубрикам.</a></h4>
+							<p> Изначально выводятся все статьи со всех рубрик. Это анонс статьи.</p>
+							<a href="#" class="readmore">читать дальше</a>
+						</div>
+						<div class="excerpt">
+							<h4><a href="#">Статьи представлены по рубрикам.</a></h4>
+							<p> Изначально выводятся все статьи со всех рубрик. Это анонс статьи.</p>
+							<a href="#" class="readmore">читать дальше</a>
+						</div>
+						<a href="#" class="all_art">все статьи</a>
+					</div>
+				</div>
+				<div class="side_block news_block">
+					<div class="sb_title"><h3>Новости Книг</h3></div>
+					<div class="sb_hold">
+						<div class="excerpt news_ex">
+							<span class="n_date">25 ноября 2012</span>
+							<p><a href="#">Изначально выводятся все статьи со всех рубрик. Это анонс статьи.</a></p>
+						</div>
+						<div class="excerpt news_ex">
+							<span class="n_date">25 ноября 2012</span>
+							<p><a href="#">Изначально выводятся все статьи со всех рубрик. Это анонс статьи.</a></p>
+						</div>
+						<a href="#" class="all_art">все новости</a>
+					</div>
+				</div>
+				<div class="side_block shop_block">
+					<div class="sb_title"><h3>Новое в магазине</h3></div>
+					<div class="sb_hold">
+						<div class="excerpt news_ex">
+							<span class="n_date">25 ноября 2012</span>
+							<p><a href="#">Изначально выводятся все статьи со всех рубрик. Это анонс статьи.</a></p>
+						</div>
+						<div class="excerpt news_ex">
+							<span class="n_date">25 ноября 2012</span>
+							<p><a href="#">Изначально выводятся все статьи со всех рубрик. Это анонс статьи.</a></p>
+						</div>
+						<a href="#" class="all_art">все новое</a>
+					</div>
+				</div>
+			</aside>
+			<footer>
+				<table class="footer_nav">
+					<tr>
+						<td class="active"><a href="#">О магазине</a></td>
+						<td><a href="#">Оплата и доставка</a></td>
+						<td><a href="#">Пресс-центр</a></td>
+						<td><a href="#">Оптовикам</a></td>
+						<td><a href="#">Наши партнеры</a></td>
+						<td><a href="#">Нужна помощь?</a></td>
+						<td><a href="#">Контакты</a></td>
+					</tr>
+				</table>
+				<div class="copyright">
+					<div>Сopyright 2012<br />
+					<a href="#">Буквариус</a></div>
+					Все права защищены
+				</div>
+				<div class="s_map"><a href="#">карта сайта</a></div>
+				<div class="contacts_block">
+					<div class="phones"><b><span class="code">+7(495)</span> 961-23-62</b> <span class="under">(г.Москва)</span><br />
+					<b>8 800 2000 00</b> <span class="under">(бесплатно по России)</span></div>
+					<div class="sub_contacts">
+						<span class="js">обратный звонок</span><br />
+						<a href="mailto:mail@e-mail.com">mail@e-mail.com</a><br />
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="popup consult">
+		<div class="popup_ttl">Задать вопрос</div>
+		<form action="some.php">
+			<fieldset>
+				<table><col class="col1" /><col />
+					<tr>
+						<td><label for="inp100">Фамилия:</label></td>
+						<td><div class="inpt2"><input id="inp100" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp101">Имя<span class="ora">*</span>:</label></td>
+						<td><div class="inpt2"><input id="inp101" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp102"><span class="ora">Укажите Ваш E-mail*</span>:</label></td>
+						<td><div class="inpt2"><input id="inp102" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp103">Укажите Ваш телефон:</label></td>
+						<td><div class="inpt2"><input id="inp103" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label>Ваш вопрос<span class="ora">*</span>:</label></td>
+						<td><div class="inpt2"><textarea rows="4" cols="30"></textarea></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp">Введите код<span class="ora">*</span></label></td>
+						<td>
+							<div class="captcha"><img src="images/captcha.png" width="132" height="27" alt="" /></div>
+							<div class="inpt2 t_code"><input id="inp" type="text" /></div>
+							<p class="clear ora">Обращаем Ваше внимание, что все поля, отмеченные символом *, являются обязательными для заполнения!</p>
+							<input type="submit" class="s_sbm" value="отправить" />
+						</td>
+					</tr>
+				</table>
+				<p class="thanks">Спасибо! Ваш вопрос принят и будет обработан нашими специалистами в ближайшее время.</p>
+			</fieldset>
+		</form>
+		
+		<span class="close"></span>
+	</div>
+
+<script src="js/jquery-1.9.1.min.js" type="text/javascript" ></script>
+<script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript" ></script>
+<script src="js/ui.datepicker-ru.js" type="text/javascript" ></script>
+<script src="js/slides.min.jquery.js" type="text/javascript" ></script>
+<script src="js/jquery.jscrollpane.min.js" type="text/javascript" ></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript" ></script>
+<script src="js/jquery.customSelect.min.js" type="text/javascript" ></script>
+<script src="js/misc.js" type="text/javascript" ></script>
+	
+</body>
+</html>

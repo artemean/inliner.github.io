@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="images/favicon.ico" type="image/png" rel="icon">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="js/misc.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<script src="js/ie.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class="inner_body">
+	<div class="main">
+		<header>
+			<nav class="navigation">
+				<ul>
+					<li><a href="#">Фоторамки</a></li>
+					<li><a href="#">Фотоальбомы</a></li>
+					<li><a href="#">Свет</a></li>
+					<li><a href="#">Декор и зеркала</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Энциклопедия</a></li>
+				</ul>
+			</nav>
+			<div class="contact">
+				<div class="phone">+7 (800) <span>700 11 06</span></div>
+				<a href="#">Контакты в вашем городе</a>
+				<div class="sch"><span>График работы</span></div>
+				<div class="schedule">
+					<span class="bold">пн.–пт.</span> 08:00–20:00
+					<span class="bold">cб.</span> 10:00–15:00
+				</div>
+			</div>
+			<div class="logo"><a href="#"><img src="images/logo.png" width="224" height="56" alt="СветоСила" /></a></div>
+			<div class="auth">
+				<a class="key" href="#">Вход</a>
+				<a class="reg" href="#">Регистрация</a>
+				<div class="buts">
+					<a href="#">О компании</a><a href="#">Cкидки</a><a href="#">Доставка</a><!-- Должно быть в одной строке -->
+				</div>
+			</div>
+			<div class="cart_block">
+				<div class="cbin">
+					<a href="#">Корзина</a>
+					36 товаров,<br /> на сумму 23 000 &#8399;
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="breadcrumbs">
+				<a href="#">Главная</a> /&nbsp;
+			</div>
+			<h1>Оформление заказа</h1>
+			<form action="some.php">
+				<fieldset>
+					<table class="checkout">
+						<tr>
+							<th>Шаг 1</th>
+							<th>Шаг 2</th>
+							<th>Шаг 3</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="dlt">Я</div>
+								<div class="rdb"><input type="radio" id="rad1" name="fiz_yur" value="fiz" /><label for="rad1">Физическое лицо</label></div>
+								<div class="form_fields">
+									<div class="ind">
+										<label for="inp1">Контактное лицо (имя и фамилия)</label>
+										<input type="text" id="inp1" class="correct" />
+									</div>
+									<div class="ind">
+										<label for="inp2">Е-mail</label>
+										<input type="text" id="inp2" class="correct" />
+									</div>
+									<div class="ind">
+										<label for="inp3">Городской телефон</label>
+										<input type="text" id="inp3" class="correct" />
+									</div>
+									<div class="ind">
+										<label for="inp4">Мобильный телефон</label>
+										<input type="text" id="inp4" />
+									</div>
+								</div>
+								<div class="rdb"><input type="radio" id="rad2" name="fiz_yur" value="yur" /><label for="rad2">Юридическое лицо</label></div>
+								<div class="form_fields">
+									<div class="ind">
+										<label for="inp5">Название предприятия</label>
+										<input type="text" id="inp5"  class="correct" />
+									</div>
+									<div class="ind">
+										<label for="inp6">Контактное лицо (имя и фамилия)</label>
+										<input type="text" id="inp6" class="correct" />
+									</div>
+									<div class="ind">
+										<label for="inp7">Е-mail</label>
+										<input type="text" id="inp7" class="correct" />
+									</div>
+									<div class="ind">
+										<label for="inp8">Городской телефон</label>
+										<input type="text" id="inp8"/>
+									</div>
+									<div class="ind">
+										<label for="inp9">Мобильный телефон</label>
+										<input type="text" id="inp9" />
+									</div>
+									<div class="ind">
+										<label for="inp10">Доп. инфо</label>
+										<input type="text" id="inp10" />
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="dlt">Тип доставки</div>
+								<div class="rdb"><input type="radio" id="rad3" name="delivery" value="self" /><label for="rad3">Самовывоз</label></div>
+								<div class="rdb"><input type="radio" id="rad4" name="delivery" value="mos" /><label for="rad4">Доставка (Москва и МО)</label></div>
+								<div class="form_fields">
+									<div class="ind">
+										<label for="inp11">Город</label>
+										<input type="text" id="inp11" class="incorrect" />
+										<div class="wrong">Неправильный формат</div>
+									</div>
+									<div class="ind">
+										<label for="inp12">Улица</label>
+										<input type="text" id="inp12" class="correct" />
+									</div>
+									<div class="ind clearfloat">
+										<div class="left">
+											<label for="inp13">Дом</label>
+											<input type="text" id="inp13" class="small_inp" />
+										</div>
+										<div class="left">
+											<label for="inp14">Корпус</label>
+											<input type="text" id="inp14" class="small_inp" />
+										</div>
+									</div>
+									<div class="ind clearfloat">
+										<div class="left">
+											<label for="inp15">Подъезд</label>
+											<input type="text" id="inp15" class="small_inp" />
+										</div>
+										<div class="left">
+											<label for="inp16">Квартира/офис</label>
+											<input type="text" id="inp16" class="small_inp" />
+										</div>
+									</div>
+									<div class="ind">
+										<label for="inp17">Комментарий для курьера</label>
+										<textarea id="inp17" rows="4" cols="19"></textarea>
+									</div>
+								</div>
+								
+								<div class="rdb"><input type="radio" id="rad5" name="delivery" value="inter" /><label for="rad5">Междугородняя доставка</label></div>
+								<div class="form_fields">
+									<div class="ind">
+										<label for="inp18">Город</label>
+										<input type="text" id="inp18" />
+									</div>
+									<div class="ind">
+										<label for="inp19">Индекс</label>
+										<input type="text" id="inp19" />
+									</div>
+									<div class="ind">
+										<label for="inp20">Улица</label>
+										<input type="text" id="inp20" class="correct" />
+									</div>
+									<div class="ind clearfloat">
+										<div class="left">
+											<label for="inp21">Дом</label>
+											<input type="text" id="inp21" class="small_inp" />
+										</div>
+										<div class="left">
+											<label for="inp22">Корпус</label>
+											<input type="text" id="inp22" class="small_inp" />
+										</div>
+									</div>
+									<div class="ind clearfloat">
+										<div class="left">
+											<label for="inp23">Подъезд</label>
+											<input type="text" id="inp23" class="small_inp" />
+										</div>
+										<div class="left">
+											<label for="inp24">Квартира/офис</label>
+											<input type="text" id="inp24" class="small_inp" />
+										</div>
+									</div>
+									<div class="ind">
+										<label for="inp25">Комментарий для курьера</label>
+										<textarea id="inp25" rows="4" cols="19"></textarea>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="dlt">Способ оплаты</div>
+								<div class="rdb"><input type="radio" id="rad6" name="payment" value="cash" /><label for="rad6">Наличный расчет</label></div>
+								<div class="rdb"><input type="radio" id="rad7" name="payment" value="bank" /><label for="rad7">Безналичный расчет</label></div>
+								<div class="form_fields">
+									<div class="infl">
+										<input type="radio" id="rad8" name="pay_type" value="card" /><label for="rad8">Банковская карта</label>
+										<div class="small">Через систему<br /> приема платежей<img src="images/robo.png" width="80" height="15" alt="RoboKassa" /></div>
+									</div>
+									<div class="infl">
+										<input type="radio" id="rad9" name="pay_type" value="emoney" /><label for="rad9">Електронные деньги</label>
+										<div class="small">Через систему<br />приема платежей <img src="images/robo.png" width="80" height="15" alt="RoboKassa" /></div>
+									</div>
+									<div class="infl"><input type="radio" id="rad10" name="pay_type" value="wire" /><label for="rad10">Банковский перевод</label></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div class="submit_here">
+						<input type="submit" class="bbut disabled_bbut" value="Подвердить и оформить заказ" disabled />
+					</div>
+				</fieldset>
+			</form>
+			
+			
+		</div>
+	</div>
+	<footer>
+		<div class="footer_holder clearfloat">
+			<div class="w1">
+				<div class="copy">&copy; OOO «СветоСила», 2003-2011</div>
+				<p>Компания «Светосила» предлагает вашему вниманию широкий ассортимент рамок, в том числе: деревянные рамки, пластиковые, металлические, стеклянные рамки, рамки А3, А4, для сертификатов, дипломов, грамот. У нас вы всегда можете купить рамки или сделать рамки на заказ.</p>
+				<a href="#">О компании</a>
+				<div class="counters">
+					<a href="#"><img src="images/counter1.png" width="88" height="31" alt="" /></a>
+					<a href="#"><img src="images/counter2.png" width="31" height="31" alt="" /></a>
+				</div>
+			</div>
+			<div class="w2">
+				<div class="ftl">Принимаем к оплате</div>
+				<div class="payments">
+					<span class="rk"></span>
+					<span class="es"></span>
+					<span class="wm"></span>
+					<span class="yad"></span>
+					<span class="mc"></span>
+					<span class="vs"></span>
+					<span class="qw"></span>
+					<span class="sv"></span>
+				</div>
+				<div class="ftl">Полезные ссылки</div>
+				<div class="links">
+					<a href="#">Рамки</a>
+					<a href="#">Рамки А4</a>
+					<a href="#">Пластиковые рамки</a>
+					<a href="#">Рамки А3</a>
+					<a href="#">Деревянные рамки</a>
+					<a href="#">Металлические рамки</a>
+					<a href="#">Фотоальбомы</a>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+</body>
+</html>

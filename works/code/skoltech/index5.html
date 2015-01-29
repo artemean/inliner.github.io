@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SKOLTECH</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />	
+    <link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<body>
+<header class="main_head">
+	<nav class="navbar navbar-default" role="navigation">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"><img src="images/skoltech_logo.png" alt="" /></a>
+		</div>
+		
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Курсы</a></li>
+				<li><a href="#">Университеты</a></li>
+				<li><a href="#">Как это работает</a></li>
+				<li><a href="#" class="lnk_rigistr">Регистрация</a></li>
+				<li><a href="#" class="lnk_enter" data-toggle="modal" data-target="#myModal">Вход</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>	
+</header>
+
+<div class="container-fluid">
+	<div class="nav2_container">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<ul class="nav2">
+					<li><a href="#">Все курсы</a></li>
+					<li class="active"><a href="#">Курсы по вузам</a></li>
+					<li><a href="#">По темам</a></li>
+				</ul>								
+			</div>
+			<div class="col-sm-6 col-xs-12">
+			  <form class="navbar-form navbar-right" role="search">
+					<input type="text" class="form-control" placeholder="Поиск">
+					<button type="submit" class="btn btn-success">Найти</button>
+			  </form>								
+			</div>
+		</div>
+
+	</div>	
+</div>	
+<div class="container-fluid">
+	<div class="courses_sort clearfix">
+		<div class="dropdown sorting">
+		  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+			<span class="caret"></span>Сортировка по дате
+			</button>
+		  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			<li><a href="#">По дате начала курса</a></li>
+			<li><a href="#">По теме</a></li>
+			<li><a href="#">По университету</a></li>
+			<li><a href="#">В свободном доступе</a></li>
+		  </ul>
+		</div>
+		<div class="courses_sort_text">
+			Лучшие онлайн-курсы в главных университетах страны
+		</div>
+		<div class="courses_sort_text_hidden">
+			онлайн-курсы
+		</div>
+	</div>
+	
+	<div class="courses_container">
+		<div class="courses_container_inner clearfix">
+			<div class="school_name clearfix">
+				<a href="#"><span class="school_logo"><img src="images/mgu.png" alt="МГУ"></span>Московский государственный университет имени М. В. Ломоносова</a>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_01.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_02.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_03.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_01.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_01.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="more_button"><a href="#" type="submit" class="btn btn-success">Еще 245 курсов</a></div>
+
+	<div class="courses_container">
+		<div class="courses_container_inner clearfix">
+			<div class="school_name clearfix">
+				<a href="#"><span class="school_logo"><img src="images/skol.png" alt="Сколково"></span>Сколково<br>Московская школа управления</a>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_04.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_05.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_01.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_01.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="more_button"><a href="#" type="submit" class="btn btn-success">Еще 245 курсов</a></div>
+
+	<div class="courses_container">
+		<div class="courses_container_inner clearfix">
+			<div class="school_name clearfix">
+				<a href="#"><span class="school_logo"><img src="images/rggu.png" alt="Сколково"></span>Российский государственный гуманитарный университет</a>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_01.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_02.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+			<div class="cours_block">
+				<a href="#" class="cours_img_block">
+					<div class="cour_title">
+						Биологические часы и астрономия
+					</div>
+					<img src="images/cours_img_03.jpg" alt="" />
+				</a>
+				<div class="cours_info">
+					<a href="#">МГУ</a> &bull; 6.00.1x<br />
+					Сентябрь, 27, 2014<br />
+					Первая часть курса<br />
+				</div>
+				<div class="cours_buttons">
+					<a href="#">Подробнее</a>
+					<a href="#">Записаться</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="more_button"><a href="#" type="submit" class="btn btn-success">Еще 245 курсов</a></div>
+	
+</div>
+<footer class="main_footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<div class="copy_social_buttons">
+					<p>2014 &copy; Skoltech</p>
+					<div class="social_buttons">
+						<a href="#"><img src="images/fb_icon.png" alt="" /></a>
+						<a href="#"><img src="images/vk_icon.png" alt="" /></a>
+						<a href="#"><img src="images/gp_icon.png" alt="" /></a>
+						<a href="#"><img src="images/tw_icon.png" alt="" /></a>
+						<a href="#"><img src="images/in_icon.png" alt="" /></a>
+					</div>
+					<a href="#" class="lang">English</a>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<ul class="footer_menu">
+					<li><a href="#">Курсы</a></li>
+					<li><a href="#">Универститеты</a></li>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>			
+			<div class="col-sm-4 col-xs-12">
+				<ul class="footer_menu">
+					<li><a href="#">Как это работает</a></li>
+					<li><a href="#">Преподавателям</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>			
+			</div>			
+			<div class="col-sm-2 col-xs-12">
+				<ul class="footer_menu">
+					<li><a href="#">Регистрация</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal">Вход</a></li>
+				</ul>			
+			</div>						
+		</div>
+	</div>
+</footer>
+<!-- Modal Login popup-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="cross"></span><span class="cr_t">Закрыть окно</span></button>
+				<h4 class="modal-title" id="myModalLabel">Авторизация</h4>
+			</div>
+			<div class="modal-body container-fluid">
+				<div class="row">
+					<div class="col-sm-4 col-sm-push-8">
+						<div class="modal_info">
+							<h4>Добро пожаловать!</h4>
+							<p>регистрация дает доступ к полной информации по курсам, размещенным на платформе </p>
+						</div>
+					</div>
+					<div class="col-sm-8 col-sm-pull-4">
+						<form role="form" class="login_form">
+							<div class="form-group">
+								<label for="InputEmail1">E-mail</label>
+								<input type="email" class="form-control" id="InputEmail1" placeholder="Введите email">
+							</div>
+							<div class="form-group">
+								<label for="InputPassword1">Пароль</label>
+								<input type="password" class="form-control" id="InputPassword1" placeholder="Пароль">
+							</div>
+							<div class="checkbox remember_check">
+								<label><input type="checkbox"> Запомнить меня</label>
+							</div>
+							<button type="submit" class="btn btn-default modal_sbm">Зарегистрироваться</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- End of Modal Login popup -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/misc.js"></script>
+	
+</body>
+</html>

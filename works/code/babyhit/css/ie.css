@@ -1,0 +1,41 @@
+div {zoom:1;}
+*+html .slidesjs-pagination li {display:inline;}
+.ui-tabs-nav li, .carousel_item, .pages a, .wrap, .shop_body .main_header nav li a, .ybut, .gbut, .sect_ttl, .sub_sects, .nav_ttl, .side_column .r_button, .pagination a, .reviews, .sct_in, .sub_ttl, .sidebar .additional, .side_column .additional {behavior: url(js/PIE.htc); position:relative;}
+*+html .shb {width: 741px;}
+.tabs {background:url(../images/boy.png) 100% 3px no-repeat; padding:9px 0 0;}
+.ui-tabs-nav {margin:0 0 0 1px;}
+.ui-tabs-nav li {margin: 7px 0 0; z-index: 100;}
+.ui-tabs-nav {margin-left:0;}
+.main_header nav li {border:0; background:url(../images/li.png) 0 0 no-repeat; width:136px;}
+.main_header nav li:first-child {background:#81b53a url(../images/li.png) 0 -70px no-repeat; width:115px;}
+.shop_body .main_header nav li {background: none;}
+.shop_body .main_header nav li a {display: inline-block; position: relative; line-height:15px;}
+.auth2 {behavior: url(js/PIE.htc);}
+*+html .cs_row {padding:0 0 28px;}
+*+html .shop_body .share a {margin:5px 0 0 4px;}
+@font-face {
+    font-family: 'PFBeauSansProRegular';
+    src: url('pfbeausanspro-reg.eot');
+    src: url('pfbeausanspro-reg.eot') format('embedded-opentype'),
+         url('pfbeausanspro-reg.woff') format('woff'),
+         url('pfbeausanspro-reg.ttf') format('truetype'),
+         url('pfbeausanspro-reg.svg#PFBeauSansProRegular') format('svg');
+}
+*+html .sort_met {display: inline;}
+*+html .sort_met li {display: inline;}
+*+html .stars li {display: inline;}
+*+html .sct_in {display: inline;}
+*+html .what {display: inline;}
+*+html .dtab {display: inline;}
+*+html .side_column .r_button {width: 138px;}
+.small_carousel_ttl {padding:3px 0 0; height: 35px;}
+.sub_ttl {padding:5px 11px 0; height: 44px;}
+.content {padding: 0 14px 18px 16px;}
+
+.text_block ul li {background:url(../images/dot2.gif) 0 2px no-repeat;}
+.text_block blockquote {background:url(../images/d1.gif) 0 0 repeat-y;}
+.items_tr td {background:url(../images/d2.gif) 0 100% repeat-x;}
+.main_header {z-index: 1000;}
+.shop_body .main_header nav li {text-align: left!important;}
+*+html .main_header nav ul {margin: 35px 0 0;}
+.news_block {padding:0 8px 10px 0;}

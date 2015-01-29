@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class="main_body">
+	<div class="main">
+		<header>
+			<div class="top_line">
+				<nav class="navigation">
+					<ul>
+						<li><a href="#">О магазине</a></li>
+						<li><a href="#">Полезная информация</a></li>
+						<li><a href="#">Состояние заказа</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="question">
+					<div class="question_in">
+						<span class="js">Как заказать?</span>
+						<a href="#">Задать вопрос</a>
+					</div>
+				</div>
+				<div class="how_popup">
+					<ul>
+						<li><a href="#">Способы оплаты</a></li>
+						<li><a href="#">Дисконтная система</a></li>
+						<li><a href="#">Обмен и возврат</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Сервисные центы</a></li>
+					</ul>
+				</div>
+				<div class="login">
+					<div class="login_in">
+						<span class="js">Войти</span>
+						<a href="#">Регистрация</a>
+					</div>
+				</div>
+				<div class="login_popup">
+					<form class="login_form" action="some.php">
+						<fieldset>
+							<input type="text" class="inp2" value="Email" />
+							<input type="password" value="Пароль" class="inp2" />
+							<input type="submit" value="Войти" class="sbm2" />
+							<a href="#">Забыли пароль?</a>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="logo"><a href="#"><img src="images/logo.png" width="215" height="62" alt="Крошка Антошка" /></a></div>
+			<div class="prod_catalog">
+				<div class="pi"><span class="js">КАТАЛОГ ПРОДУКЦИИ</span></div>
+			</div>
+			<div class="side_menu">
+				<div class="side_menu_in">
+					<div class="menu_ttl">КАТАЛОГ ПРОДУКЦИИ</div>
+					<div class="menu_filter">
+						<span class="brd">Весь</span>
+						<span class="js">Новинки</span>
+					</div>
+					<ul>
+						<li><a href="#">Велосипеды, электромобили и другое</a></li>
+						<li><a href="#">Деревянные игрушки</a></li>
+						<li class="active">Детское оружие
+							<ul>
+								<li><a href="#">Бинокли</a></li>
+								<li><a href="#">Оружие на батарейках (музыкальное)</a></li>
+								<li><a href="#">Пневматическое оружие</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Игрушки на батарейках</a></li>
+						<li><a href="#">Игрушки на Радиоуправлении</a></li>
+						<li><a href="#">Коллекционные модели (металл)</a></li>
+						<li><a href="#">Конструкторы, строительные наборы</a></li>
+						<li><a href="#">Куклы и аксессуары</a></li>
+						<li><a href="#">Мягкая игрушка</a></li>
+						<li><a href="#">Надувные изделия INTEX</a></li>
+						<li><a href="#">Настольные и печатные игры</a></li>
+						<li><a href="#">Новый Год</a></li>
+						<li><a href="#">Обучающие игры для дошкольников</a></li>
+						<li><a href="#">Резиновые игрушки и пластизоль</a></li>
+						<li><a href="#">Сборные модели копии (пластмасс)</a></li>
+						<li><a href="#">Спорт и отдых</a></li>
+						<li><a href="#">Сувениры</a></li>
+						<li><a href="#">Товары для малышей</a></li>
+						<li><a href="#">Товары для праздника</a></li>
+						<li><a href="#">Товары зимнего ассортимента</a></li>
+						<li><a href="#">Товары летнего ассортимента</a></li>
+						<li><a href="#">Транспортная игрушка без механизмов</a></li>
+					</ul>
+				</div>
+			</div>
+			<form class="site_search" action="some.php">
+				<fieldset>
+					<div class="s_wrap"><div class="s_wrap_in"><input type="text" class="s_inp" value="Поиск" /></div></div>
+					<input type="submit" value="Найти" class="s_sbm" />
+				</fieldset>
+			</form>
+			<div class="where">
+				Интернет-магазин детских<br /> товаров в <span class="js">Екатеринбурге</span>
+				<div class="pick_city">
+					Ваш город определен автоматически.<br />
+					Если не согласны, <span class="js">выберите другой город.</span>
+					<span class="close"></span>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="phone">+7 (343) 234-56-78</div>
+				<span class="icq">3498579</span>
+				<a href="#" class="skype">antoshka</a>
+			</div>
+			<div class="cart_content">
+				<div class="cart_content_in">
+					<div class="cart_ttl">Корзина заказа</div>
+					В вашей корзине сейчас пусто. Вы можете посмотреть <a href="#">новинки</a> нашего <a href="#">каталога</a>.
+				</div>
+			</div>
+			<div class="cart"></div>
+		</header>
+		<div class="content">
+			<div class="product_slider news_sl">
+				<div class="slides_wrap">
+					<div class="slides_container">
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Муз. ударная установка 2056-NL</span>
+								<span class="price_sl">цена: 1 710,00 руб</span>
+								<span class="product_img"><img src="images/product1.jpg" width="75" height="57" alt="Муз. ударная установка 2056-NL" /></span>
+							</a>
+							<div class="toy car"></div>
+							<div class="toy pinno"></div>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Велосипед 3-х 01А голубой</span>
+								<span class="price_sl">цена: 664,78 руб</span>
+								<span class="product_img"><img src="images/product2.jpg" width="62" height="54" alt="Велосипед 3-х 01А голубой" /></span>
+							</a>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Шезлонг BR90008-2 детск. вибро.</span>
+								<span class="price_sl">цена: 1 786,22 руб</span>
+								<span class="product_img"><img src="images/product3.jpg" width="56" height="56" alt="Шезлонг BR90008-2 детск. вибро." /></span>
+							</a>
+							<div class="toy bear"></div>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Муз. ударная установка 2056-NL</span>
+								<span class="price_sl">цена: 1 710,00 руб</span>
+								<span class="product_img"><img src="images/product1.jpg" width="75" height="57" alt="Муз. ударная установка 2056-NL" /></span>
+							</a>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Велосипед 3-х 01А голубой</span>
+								<span class="price_sl">цена: 664,78 руб</span>
+								<span class="product_img"><img src="images/product2.jpg" width="62" height="54" alt="Велосипед 3-х 01А голубой" /></span>
+							</a>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Шезлонг BR90008-2 детск. вибро.</span>
+								<span class="price_sl">цена: 1 786,22 руб</span>
+								<span class="product_img"><img src="images/product3.jpg" width="56" height="56" alt="Шезлонг BR90008-2 детск. вибро." /></span>
+							</a>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Муз. ударная установка 2056-NL</span>
+								<span class="price_sl">цена: 1 710,00 руб</span>
+								<span class="product_img"><img src="images/product1.jpg" width="75" height="57" alt="Муз. ударная установка 2056-NL" /></span>
+							</a>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Велосипед 3-х 01А голубой</span>
+								<span class="price_sl">цена: 664,78 руб</span>
+								<span class="product_img"><img src="images/product2.jpg" width="62" height="54" alt="Велосипед 3-х 01А голубой" /></span>
+							</a>
+						</div>
+						<div class="product_slide">
+							<a href="#">
+								<span class="product_title">Шезлонг BR90008-2 детск. вибро.</span>
+								<span class="price_sl">цена: 1 786,22 руб</span>
+								<span class="product_img"><img src="images/product3.jpg" width="56" height="56" alt="Шезлонг BR90008-2 детск. вибро." /></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<a class="jcarousel-prev" href="#"></a>
+				<a class="jcarousel-next" href="#"></a>
+				<div class="all_items"><a href="#">Все 145</a></div>
+				<div class="slider_title"></div>
+			</div>
+			<div class="product_slider best_sl">
+				<div class="slides_wrap">
+					<div class="slides_container">
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Аэропорт с дорогой Play City /П-Е/ /2</span>
+							<span class="price_sl">цена: 914,42 руб</span>
+							<span class="product_img"><img src="images/product4.jpg" width="55" height="54" alt="Аэропорт с дорогой Play City /П-Е/ /2" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Гараж 431209 Автобат Норд /10</span>
+							<span class="price_sl">цена: 398,72 руб</span>
+							<span class="product_img"><img src="images/product5.jpg" width="69" height="51" alt="Гараж 431209 Автобат Норд /10" /></span></a>
+							<div class="toy ball"></div>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Коляска д/куклы 9302D</span>
+							<span class="price_sl">цена: 1 786,22 руб</span>
+							<span class="product_img"><img src="images/product6.jpg" width="53" height="53" alt="Коляска д/куклы 9302D" /></span></a>
+							<div class="toy racket"></div>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Аэропорт с дорогой Play City /П-Е/ /2</span>
+							<span class="price_sl">цена: 914,42 руб</span>
+							<span class="product_img"><img src="images/product4.jpg" width="55" height="54" alt="Аэропорт с дорогой Play City /П-Е/ /2" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Гараж 431209 Автобат Норд /10</span>
+							<span class="price_sl">цена: 398,72 руб</span>
+							<span class="product_img"><img src="images/product5.jpg" width="69" height="51" alt="Гараж 431209 Автобат Норд /10" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Коляска д/куклы 9302D</span>
+							<span class="price_sl">цена: 1 786,22 руб</span>
+							<span class="product_img"><img src="images/product6.jpg" width="53" height="53" alt="Коляска д/куклы 9302D" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Аэропорт с дорогой Play City /П-Е/ /2</span>
+							<span class="price_sl">цена: 914,42 руб</span>
+							<span class="product_img"><img src="images/product4.jpg" width="55" height="54" alt="Аэропорт с дорогой Play City /П-Е/ /2" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Гараж 431209 Автобат Норд /10</span>
+							<span class="price_sl">цена: 398,72 руб</span>
+							<span class="product_img"><img src="images/product5.jpg" width="69" height="51" alt="Гараж 431209 Автобат Норд /10" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Коляска д/куклы 9302D</span>
+							<span class="price_sl">цена: 1 786,22 руб</span>
+							<span class="product_img"><img src="images/product6.jpg" width="53" height="53" alt="Коляска д/куклы 9302D" /></span></a>
+						</div>
+					</div>
+				</div>
+				<a class="jcarousel-prev" href="#"></a>
+				<a class="jcarousel-next" href="#"></a>
+				<div class="all_items"><a href="#">Все 54</a></div>
+				<div class="slider_title"></div>
+			</div>
+			<div class="product_slider promo_sl ">
+				<div class="slides_wrap">
+					<div class="slides_container">
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Кубики Математика 12шт. в пак. 2351GT</span>
+							<span class="price_sl">цена: 92,34 руб</span>
+							<span class="product_img"><img src="images/product7.jpg" width="62" height="51" alt="Кубики Математика 12шт. в пак. 2351GT" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Мягкая игрушка Angry Birds 12 см. в ассорт.</span>
+							<span class="price_sl">цена: 466,23 руб</span>
+							<span class="product_img"><img src="images/product8.jpg" width="66" height="32" alt="Мягкая игрушка Angry Birds 12 см. в ассорт." /></span></a>
+							<div class="toy loco"></div>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Велосипед 3-х 01А голубой</span>
+							<span class="price_sl">цена: 664,78 руб</span>
+							<span class="product_img"><img src="images/product2.jpg" width="62" height="54" alt="Велосипед 3-х 01А голубой" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Кубики Математика 12шт. в пак. 2351GT</span>
+							<span class="price_sl">цена: 92,34 руб</span>
+							<span class="product_img"><img src="images/product7.jpg" width="62" height="51" alt="Кубики Математика 12шт. в пак. 2351GT" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Мягкая игрушка Angry Birds 12 см. в ассорт.</span>
+							<span class="price_sl">цена: 466,23 руб</span>
+							<span class="product_img"><img src="images/product8.jpg" width="66" height="32" alt="Мягкая игрушка Angry Birds 12 см. в ассорт." /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Велосипед 3-х 01А голубой</span>
+							<span class="price_sl">цена: 664,78 руб</span>
+							<span class="product_img"><img src="images/product2.jpg" width="62" height="54" alt="Велосипед 3-х 01А голубой" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Кубики Математика 12шт. в пак. 2351GT</span>
+							<span class="price_sl">цена: 92,34 руб</span>
+							<span class="product_img"><img src="images/product7.jpg" width="62" height="51" alt="Кубики Математика 12шт. в пак. 2351GT" /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Мягкая игрушка Angry Birds 12 см. в ассорт.</span>
+							<span class="price_sl">цена: 466,23 руб</span>
+							<span class="product_img"><img src="images/product8.jpg" width="66" height="32" alt="Мягкая игрушка Angry Birds 12 см. в ассорт." /></span></a>
+						</div>
+						<div class="product_slide">
+							<a href="#"><span class="product_title">Велосипед 3-х 01А голубой</span>
+							<span class="price_sl">цена: 664,78 руб</span>
+							<span class="product_img"><img src="images/product2.jpg" width="62" height="54" alt="Велосипед 3-х 01А голубой" /></span></a>
+						</div>
+					</div>
+				</div>
+				<a class="jcarousel-prev" href="#"></a>
+				<a class="jcarousel-next" href="#"></a>
+				<div class="all_items"><a href="#">Все 7</a></div>
+				<div class="slider_title"></div>
+			</div>
+			
+			<div class="extra clearfloat">
+				<div class="ex_bl gift_card"><a href="#">Подарочная карта</a></div>
+				<div class="ex_bl qna"><a href="#">Вопросы и ответы</a></div>
+				<div class="ex_bl promos"><a href="#">Акции и специальные<br /> предложения</a></div>
+				<div class="ex_bl brands">
+					<div class="tm">
+						<a href="#"><img src="images/barbie.png" width="57" height="35" alt="" /></a>
+						<a href="#"><img src="images/hasbro.png" width="45" height="45" alt="" /></a>
+						<a href="#"><img src="images/disney.png" width="56" height="38" alt="" /></a>
+						<a href="#"><img src="images/mattel.png" width="43" height="44" alt="" /></a>
+						<a href="#"><img src="images/bakugan.png" width="53" height="38" alt="" /></a>
+						<a href="#"><img src="images/aurora.png" width="53" height="35" alt="" /></a>
+					</div>
+					<a href="#">Торговые марки</a>
+				</div>
+			</div>
+			<div class="pattern clearfloat">
+				<div class="w50">
+					<h2>ДеТСКиЕ ИГРуШкИ В ЕкАТЕрИНБУРгЕ</h2>
+					<p>Торговый дом «Крошка Антошка» предлагает широкий ассортимент детских игрушек оптом и в розницу в Екатеринбурге. Обратившись в компанию, вы с уверенностью можете рассчитывать на плодотворное сотрудничество при покупке детских игрушек оптом. Возможно, вы попали к нам по запросу: магазин игрушки оптом или оптовый склад игрушек, что ж вы попали куда нужно.</p>
+					<p>Продажа детских игрушек оптом и в розницу требует строгого соблюдения определенных правил и требований. Детские игрушки оптом от «Маркер Игрушка» — это гарантированное качество от ведущих мировых производителей.</p>
+					<p>Розничная и оптовая продажа игрушек осуществляется нашим Торговым домом благодаря многолетнему и плодотворному сотрудничеству с надежными поставщиками игрушек.</p>
+				</div>
+				<div class="w50">
+					<div class="ttl">
+						<h2>Новости</h2>
+						<a href="#" class="news_ico">Все новости</a>
+					</div>
+					<div class="news_excerpt clearfloat">
+						<div class="excerpt_txt">
+							<div class="excerpt_in">
+								<div class="excerpt_ttl"><a href="#">Поступили в продажу прогулочные коляски — трости!</a></div>
+								<p>В продаже прогулочные коляски - трость широкая цветовая гамма, возможность выбора расцветки. </p>
+							</div>
+						</div>
+						<div class="excerpt_img"><div class="excerpt_img_in"><a href="#"><img src="images/img1.jpg" width="100" height="66" alt="" /></a></div></div>
+					</div>
+					<div class="news_excerpt clearfloat">
+						<div class="excerpt_txt">
+							<div class="excerpt_in">
+								<div class="excerpt_ttl"><a href="#">Поздравляем С Днем Защитника Отечества!</a></div>
+								<p>Дорогие друзья и коллеги! Поздравляем представителей сильного пола С Днем Защитника Отечества!</p>
+							</div>
+						</div>
+						<div class="excerpt_img"><div class="excerpt_img_in"><a href="#"><img src="images/img2.jpg" width="100" height="66" alt="" /></a></div></div>
+					</div>
+					<div class="news_excerpt clearfloat">
+						<div class="excerpt_txt">
+							<div class="excerpt_in">
+								<div class="excerpt_ttl"><a href="#">Теперь мы работаем ЕЖЕДНЕВНО!</a></div>
+								<p>Мы идем на встречу вашим пожеланиям и теперь мы работаем ЕЖЕДНЕВНО! С Пн. по Вс. с 9:00 до 20:00!</p>
+							</div>
+						</div>
+						<div class="excerpt_img"><div class="excerpt_img_in"><a href="#"><img src="images/img3.jpg" width="100" height="66" alt="" /></a></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="w25">
+				<div class="copy">
+					&copy; 1996–2013 «Крошка Антошка»
+					<p>Детские товары и игрушки в розницу.</p>
+				</div>
+			</div>
+			<div class="w25">
+				+7 (343) 216-70-43, 216-70-44<br />
+				<address>г.Екатеринбург, ул. Черняховского, 86/1</address>
+				<a href="#" class="vk" title="Vkontakte"></a>
+				<a href="#" class="fb" title="facebook"></a>
+				<a href="#" class="tw" title="twitter"></a>
+			</div>
+			<div class="w25">
+				<ul class="simple_ul">
+					<li><a href="#">Задать вопрос</a></li>
+					<li><a href="#">Контактная информация</a></li>
+					<li><a href="#">Сервисные центры</a></li>
+				</ul>
+			</div>
+			<div class="w25">
+				<div class="make">Разработка<br /> и продвижение сайта<a href="#"></a></div>
+			</div>
+		</footer>
+	</div>
+	<div class="city_popup">
+		<form class="city_search" action="some.php">
+			<fieldset>
+				<input type="text" class="inp" value="Выбор города" />
+				<input type="submit" value="Найти" class="s_sbm" />
+			</fieldset>
+		</form>
+		<div class="cities">
+			<dl>
+				<dt>Свердловская область</dt>
+				<dd>
+					<div class="column">
+						<a href="#">Екатеринбург</a><br />
+						<a href="#">Верхняя Пышма</a><br />
+						<a href="#">Березовский</a>
+					</div>
+					<div class="column">
+						<a href="#">Арамиль</a><br />
+						<a href="#">Балтым</a><br />
+						<a href="#">Шувакиш</a>
+					</div>
+					<div class="column">
+						<a href="#">Среднеуральск</a><br />
+						<a href="#">Медный</a><br />
+						<a href="#">Кольцово</a>
+					</div>
+					<div class="column">
+						<a href="#">Большой Исток</a><br />
+						<a href="#">Старопышминск</a>
+					</div>
+				</dd>
+				
+				<dt>Тюменская область</dt>
+				<dd>
+					<div class="column"><a href="#">Тюмень</a></div>
+					<div class="column"><a href="#">Омутинское</a></div>
+					<div class="column"><a href="#">Тарманы</a></div>
+				</dd>
+				
+				<dt>Пермский край</dt>
+				<dd>
+					<div class="column">
+						<a href="#">Пермь</a><br />
+						<a href="#">Камская Поляна</a><br />
+						<a href="#">Нефтяников</a><br />
+						<a href="#">Замараево</a>
+					</div>
+					<div class="column">
+						<a href="#">Вышка 1</a><br />
+						<a href="#">Химики</a><br />
+						<a href="#">Ширяиха</a><br />
+						<a href="#">Гайва</a>
+					</div>
+					<div class="column">
+						<a href="#">Бродовский тракт</a><br />
+						<a href="#">Кировский</a><br />
+						<a href="#">Крым (Крымский)</a><br />
+						<a href="#">Ванькино</a>
+					</div>
+					<div class="column">
+						<a href="#">Лысьва</a><br />
+						<a href="#">Чусовой</a><br />
+						<a href="#">Заозерье</a>
+					</div>
+				</dd>
+				<dt>Свердловская область</dt>
+				<dd>
+					<div class="column">
+						<a href="#">Екатеринбург</a><br />
+						<a href="#">Верхняя Пышма</a><br />
+						<a href="#">Березовский</a>
+					</div>
+					<div class="column">
+						<a href="#">Арамиль</a><br />
+						<a href="#">Балтым</a><br />
+						<a href="#">Шувакиш</a>
+					</div>
+					<div class="column">
+						<a href="#">Среднеуральск</a><br />
+						<a href="#">Медный</a><br />
+						<a href="#">Кольцово</a>
+					</div>
+					<div class="column">
+						<a href="#">Большой Исток</a><br />
+						<a href="#">Старопышминск</a>
+					</div>
+				</dd>
+				
+				<dt>Тюменская область</dt>
+				<dd>
+					<div class="column"><a href="#">Тюмень</a></div>
+					<div class="column"><a href="#">Омутинское</a></div>
+					<div class="column"><a href="#">Тарманы</a></div>
+				</dd>
+				
+				<dt>Пермский край</dt>
+				<dd>
+					<div class="column">
+						<a href="#">Пермь</a><br />
+						<a href="#">Камская Поляна</a><br />
+						<a href="#">Нефтяников</a><br />
+						<a href="#">Замараево</a>
+					</div>
+					<div class="column">
+						<a href="#">Вышка 1</a><br />
+						<a href="#">Химики</a><br />
+						<a href="#">Ширяиха</a><br />
+						<a href="#">Гайва</a>
+					</div>
+					<div class="column">
+						<a href="#">Бродовский тракт</a><br />
+						<a href="#">Кировский</a><br />
+						<a href="#">Крым (Крымский)</a><br />
+						<a href="#">Ванькино</a>
+					</div>
+					<div class="column">
+						<a href="#">Лысьва</a><br />
+						<a href="#">Чусовой</a><br />
+						<a href="#">Заозерье</a>
+					</div>
+				</dd>
+			</dl>
+		</div>
+		<span class="close2"></span>
+	</div>
+	<div class="overlay"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/tinybox.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery.ikSelect.min.js" type="text/javascript"></script>
+<script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script src="js/misc.js" type="text/javascript"></script>
+	
+</body>
+</html>

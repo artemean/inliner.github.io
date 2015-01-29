@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="351px" height="351px" viewBox="0 0 351 351" enable-background="new 0 0 351 351" xml:space="preserve">
+<defs>
+</defs>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="351" height="351"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="175.5" cy="175.5" r="174"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M194.914,210.088c21.922-14.419,37.586-52.555,37.586-97.338c0-4.922-0.193-9.761-0.56-14.5H119.06
+		c-0.366,4.739-0.56,9.578-0.56,14.5c0,44.783,15.665,82.919,37.587,97.338c2.621,3.854,13.042,20.391,10.413,36.162
+		c-3,18-26,43-26,43h70c0,0-23-25-26-43C181.872,230.479,192.293,213.941,194.914,210.088z"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M233.5,121.25h28c0,0-2,41-21,61c-12.7,13.368-36,19-36,19l11-15c0,0,14-3,21-13s13-39,13-39h-18L233.5,121.25z"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M117.5,121.25h-28c0,0,2,41,21,61c12.7,13.368,36,19,36,19l-11-15c0,0-14-3-21-13s-13-39-13-39h18L117.5,121.25z"/>
+	
+		<circle clip-path="url(#SVGID_2_)" fill="none" stroke="#EF80A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.985,4.985" cx="176" cy="175.5" r="155.5"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#7C1236" points="164.107,164.237 159.956,149.042 155.803,164.237 153.261,164.237 
+		147.896,145.398 150.493,145.398 154.673,161.103 158.996,145.398 160.944,145.398 165.266,161.103 169.417,145.398 
+		172.016,145.398 166.649,164.237 	"/>
+	<rect x="174.639" y="145.398" clip-path="url(#SVGID_2_)" fill="#7C1236" width="2.344" height="18.839"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#7C1236" points="194.719,164.237 183.731,149.211 183.731,164.237 181.388,164.237 
+		181.388,145.398 183.789,145.398 194.635,160.113 194.635,145.398 196.979,145.398 196.979,164.237 	"/>
+</g>
+</svg>

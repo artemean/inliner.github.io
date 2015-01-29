@@ -1,0 +1,5 @@
+.banner_info {background:url(../images/w.png);}
+*+html .main_navigation li {display: inline;}
+*+html .socials li {display: inline;}
+*+html .ui-tabs-nav li {display: inline;}
+*+html .main_navigation li ul {margin:18px 0 0 -123px;}

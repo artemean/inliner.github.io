@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TITLE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.1.custom.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" />
+
+<!--[if IE]>
+<link rel="stylesheet" href="css/ie_all.css" type="text/css" />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class="main_body">
+	<div class="main">
+		<div class="top_line">
+			<ul class="icons">
+				<li class="home"><a title="На главную" href="#"></a></li>
+				<li class="sitemap"><a title="Карта сайта" href="#"></a></li>
+				<li class="email"><a title="Написать письмо" href="#"></a></li>
+				<li class="fav"><a title="В избранное" href="#"></a></li>
+			</ul>
+			<a href="#" class="reg"><span>Регистрация</span></a>
+			<div class="cab"><span>Вход в личный кабинет</span></div>
+			<div class="login">
+				<div class="enter"><span>Вход в личный кабинет</span></div>
+				<form action="some.php">
+					<fieldset>
+						<label for="log3">логин</label>
+						<div class="inpt2"><input id="log3" type="text" /></div>
+						<label for="log4">пароль</label>
+						<div class="inpt2"><input id="log4" type="password" /></div>
+						<input type="submit" class="sbm" value="войти" />
+						<a href="#">Забыли пароль?</a><br />
+						<a href="#">Регистрация</a>
+					</fieldset>
+				</form>
+				<span class="close"></span>
+			</div>
+		</div>
+		<header>
+			<div class="logo"><a href="#"><img src="images/logo.png" width="265" height="86" alt="Буквариус лого" /></a></div>
+			<div class="slogan">Онлайн-магазин учебников и методической литературы с доставкой по всей России</div>
+			<table class="navigation">
+				<tr>
+					<td class="active"><a href="#">О магазине</a></td>
+					<td><a href="#">Оплата и доставка</a></td>
+					<td><a href="#">Пресс-центр</a></td>
+					<td><a href="#">Оптовикам</a></td>
+					<td><a href="#">Наши партнеры</a></td>
+					<td>
+						<a href="#">Нужна помощь?</a>
+						<ul>
+							<li><a href="#">Как сделать заказ?</a></li>
+							<li><a href="#">Расширенный поиск продукции</a></li>
+							<li><a href="#">Часто задаваемы вопросы</a></li>
+						</ul>
+					</td>
+					<td><a href="#">Контакты</a></td>
+				</tr>
+			</table>
+			<div class="cart_block">
+				<div class="cart_block_ttl">Корзина заказов</div>
+				<div class="cart_count">у вас <a href="#">10 товаров</a><br />
+				на сумму <span class="cart_total">69 999 руб.</span></div>
+				<a href="#" class="n_color">Оформить заказ</a> | <a href="#">Статус заказа</a><br />
+				<a href="#">История заказов</a> | <a href="#">Избранное</a>
+			</div>
+			<div class="contacts_block">
+				<div class="phones"><b><span class="code">+7(495)</span> 961-23-62</b> <span class="under">(г.Москва)</span><br />
+				<b>8 800 2000 00</b> <span class="under">(бесплатно по России)</span></div>
+				<div class="sub_contacts">
+					<span class="js">обратный звонок</span><br />
+					<a href="mailto:mail@e-mail.com">mail@e-mail.com</a><br />
+					Режим работы:<br />
+					<span class="hilight">10:00 - 20:00</span> будни
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="wrapper">
+				<div class="content">
+					<div class="breadcrumbs">
+						<span><a href="#">главная</a></span>
+						<span><a href="#">корзина заказов</a></span>
+					</div>
+					<h1>Корзина заказов</h1>
+					<div class="cart_content">
+						<form action="some.php">
+							<fieldset>
+								<table><col class="col01" /><col class="col02" /><col class="col03" /><col class="col04" /><col class="col05" /><col class="col06" /><col class="col07" /><col class="col08" />
+									<tr>
+										<td><a href="#"><img src="images/book1.jpg" width="55" height="73" alt="Книга" /></a></td>
+										<td>
+											<a href="#">Английский с аудиодиском для первоклассников и подготовки к школе</a>
+											<div class="author">
+												Сергей Кузнецов
+												<div class="publisher">Издательство Эксмо</div>
+											</div>
+										</td>
+										<td class="spin"><input id="spinner1" name="value" value="1" /></td>
+										<td><span class="xx"></span></td>
+										<td class="prc">1 750.00 Р</td>
+										<td><span class="qq"></span></td>
+										<td class="prc">3 500.00 Р</td>
+										<td><span class="remove"></span></td>
+									</tr>
+									<tr>
+										<td><a href="#"><img src="images/book2.jpg" width="55" height="73" alt="Книга" /></a></td>
+										<td>
+											<a href="#">Английский с аудиодиском</a>
+											<div class="author">
+												Сергей Кузнецов
+												<div class="publisher">Издательство Эксмо</div>
+											</div>
+										</td>
+										<td class="spin"><input id="spinner2" name="value" value="1" /></td>
+										<td><span class="xx"></span></td>
+										<td class="prc">1 750.00 Р</td>
+										<td><span class="qq"></span></td>
+										<td class="prc">3 500.00 Р</td>
+										<td><span class="remove"></span></td>
+									</tr>
+									<tr>
+										<td><a href="#"><img src="images/book3.jpg" width="55" height="73" alt="Книга" /></a></td>
+										<td>
+											<a href="#">Английский с аудиодиском для первоклассников и подготовки к школе</a>
+											<div class="author">
+												Сергей Кузнецов
+												<div class="publisher">Издательство Эксмо</div>
+											</div>
+										</td>
+										<td class="spin"><input id="spinner3" name="value" value="1" /></td>
+										<td><span class="xx"></span></td>
+										<td class="prc">1 750.00 Р</td>
+										<td><span class="qq"></span></td>
+										<td class="prc">3 500.00 Р</td>
+										<td><span class="remove"></span></td>
+									</tr>
+									<tr>
+										<td><a href="#"><img src="images/book4.jpg" width="55" height="73" alt="Книга" /></a></td>
+										<td>
+											<a href="#">Английский с аудиодиском для первоклассников и подготовки к школе</a>
+											<div class="author">
+												Сергей Кузнецов
+												<div class="publisher">Издательство Эксмо</div>
+											</div>
+										</td>
+										<td class="spin"><input id="spinner4" name="value" value="2" /></td>
+										<td><span class="xx"></span></td>
+										<td class="prc">1 750.00 Р</td>
+										<td><span class="qq"></span></td>
+										<td class="prc">3 500.00 Р</td>
+										<td><span class="remove"></span></td>
+									</tr>
+								</table>
+								<div class="total">Заказов на сумму: <span>14 300.00 Р</span></div>
+								<div class="gift"><input id="chb1" type="checkbox" /><label for="chb1">Хочу подарить</label></div>
+								<div class="ttl">Курьерская доставка</div>
+								<div class="delivery">
+									<div><input type="radio" name="r_delivery" value="de1" id="rad1" /><label for="rad1">По Москве в пределах МКАД – 200 руб.</label></div>
+									<div><input type="radio" name="r_delivery" value="de2" id="rad2" /><label for="rad2">Города Подмосковья – 400 руб.</label></div>
+									<div><input type="radio" name="r_delivery" value="de3" id="rad3" /><label for="rad3">В городах России – 170 руб.</label></div>
+								</div>
+								<div class="cities">Екатеринбург, Воронеж, Омск, Челябинск, Иркутск, Казань, Новосибирск, Таганрог, Нижний Новгород, Хабаровск</div>
+								<div class="ttl">Доставка партнерскими службами</div>
+								<div class="delivery_type">
+									<div><input type="radio" name="delivery_t" value="det1" id="rad10" /><label for="rad10"><img src="images/pickpoint.png" width="56" height="29" alt="" />Название вида доставки, 600 руб.</label></div>
+									<div><input type="radio" name="delivery_t" value="det1" id="rad14" /><label for="rad14"><img src="images/boxberry.png" width="56" height="30" alt="" />Название вида доставки, 600 руб.</label></div>
+									<div><input type="radio" name="delivery_t" value="det1" id="rad13" /><label for="rad13"><img src="images/post.png" width="56" height="29" alt="" />Название вида доставки, 600 руб.</label></div>
+									<div><input type="radio" name="delivery_t" value="det1" id="rad12" /><label for="rad12"><img src="images/ems.png" width="56" height="30" alt="" />Название вида доставки, 600 руб.</label></div>
+									<div><input type="radio" name="delivery_t" value="det1" id="rad15" /><label for="rad15"><img src="images/spsr.png" width="56" height="30" alt="" />Название вида доставки, 600 руб.</label></div>
+									<div><input type="radio" name="delivery_t" value="det1" id="rad16" /><label for="rad16"><img src="images/dhl.png" width="56" height="30" alt="" />Название вида доставки, 600 руб.</label></div>
+								</div>
+								<div class="ttl">Платежная система:</div>
+								<div class="payments">
+									<div class="clearfloat">
+										<div class="left"><input type="radio" name="paymn" value="paym1" id="rad20" /></div>
+										<div class="pmnt">
+											<label for="rad20">Наложенный платеж</label><br />
+											Оплата наличными при получении заказа.<br />
+											Стоимость доставки увеличивается на 215 руб.<br />
+											<span class="ora">+доплатить при получении за денежный перевод: 143 руб.</span><br />
+											Итого переплата за наложенный платеж: 358 руб.
+										</div>
+									</div>
+									<div class="clearfloat">
+										<div class="left"><input type="radio" name="paymn" value="paym2" id="rad21" /></div>
+										<div class="pmnt">
+											<label for="rad21">Сбербанк</label><br />
+											Вы можете оплатить заказ в любом отделении Сбербанка. За услугу по переводу денег с Вас возьмут от 3% до 7% от стоимости заказа, в зависимости от региона. Перечисление денег зацмет порядка 10 дней.
+										</div>
+									</div>
+								</div>
+								<div class="totals">
+									<table>
+										<tr>
+											<td class="gr">Общий вес:</td>
+											<td>2 кг</td>
+										</tr>
+										<tr>
+											<td class="gr">Товаров на:</td>
+											<td>5 000 Р</td>
+										</tr>
+										<tr>
+											<td class="gr">Доставка:</td>
+											<td>345 Р</td>
+										</tr>
+										<tr>
+											<td class="gr">Итоговая сумма:</td>
+											<td class="price">14 300.00 Р</td>
+										</tr>
+									</table>
+									<input class="sbm3" type="submit" value="Начать оформление заказа" />
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<aside>
+				<div class="side_search">
+					<form action="some.php">
+						<fieldset>
+							<div class="inpt">
+								<input type="text" class="inptr"  />
+								<input type="submit" value="" class="sbmtr" title="Начать поиск" />
+							</div>
+						</fieldset>
+					</form>
+					<span class="js">Расширенный поиск по каталогу</span>
+				</div>
+				<div class="nav_ttl">Каталог</div>
+				<ul class="side_nav">
+					<li><a href="#">Дошкольная литература</a></li>
+					<li><a href="#">Начальная школа 1-4 класс</a></li>
+					<li><a href="#">Основная школа 5-9 класс</a></li>
+					<li><a href="#">Старшая школа 10-11 класс</a></li>
+					<li><a href="#">Внеклассное чтение</a></li>
+					<li><a href="#">Итоговая аттестация</a></li>
+					<li><a href="#">Спец. Коррекц. Программы</a></li>
+					<li><a href="#">Методическая литература </a></li>
+					<li><a href="#">Профессиональное образование</a></li>
+					<li><a href="#">Журналы, бланки, книги учета.</a></li>
+				</ul>
+				<div class="question">
+					<div class="cons"><span class="link_consult">Нужна консультация? Задайте Ваш вопрос!</span></div>
+					<a href="#" class="all_q">Все часто задаваемы вопросы</a>
+				</div>
+			</aside>
+			<footer>
+				<table class="footer_nav">
+					<tr>
+						<td class="active"><a href="#">О магазине</a></td>
+						<td><a href="#">Оплата и доставка</a></td>
+						<td><a href="#">Пресс-центр</a></td>
+						<td><a href="#">Оптовикам</a></td>
+						<td><a href="#">Наши партнеры</a></td>
+						<td><a href="#">Нужна помощь?</a></td>
+						<td><a href="#">Контакты</a></td>
+					</tr>
+				</table>
+				<div class="copyright">
+					<div>Сopyright 2012<br />
+					<a href="#">Буквариус</a></div>
+					Все права защищены
+				</div>
+				<div class="s_map"><a href="#">карта сайта</a></div>
+				<div class="contacts_block">
+					<div class="phones"><b><span class="code">+7(495)</span> 961-23-62</b> <span class="under">(г.Москва)</span><br />
+					<b>8 800 2000 00</b> <span class="under">(бесплатно по России)</span></div>
+					<div class="sub_contacts">
+						<span class="js">обратный звонок</span><br />
+						<a href="mailto:mail@e-mail.com">mail@e-mail.com</a><br />
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="popup consult">
+		<div class="popup_ttl">Задать вопрос</div>
+		<form action="some.php">
+			<fieldset>
+				<table><col class="col1" /><col />
+					<tr>
+						<td><label for="inp10">Фамилия:</label></td>
+						<td><div class="inpt2"><input id="inp10" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp11">Имя<span class="ora">*</span>:</label></td>
+						<td><div class="inpt2"><input id="inp11" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp12"><span class="ora">Укажите Ваш E-mail*</span>:</label></td>
+						<td><div class="inpt2"><input id="inp12" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp13">Укажите Ваш телефон:</label></td>
+						<td><div class="inpt2"><input id="inp13" type="text" /></div></td>
+					</tr>
+					<tr>
+						<td><label>Ваш вопрос<span class="ora">*</span>:</label></td>
+						<td><div class="inpt2"><textarea rows="4" cols="30"></textarea></div></td>
+					</tr>
+					<tr>
+						<td><label for="inp">Введите код<span class="ora">*</span></label></td>
+						<td>
+							<div class="captcha"><img src="images/captcha.png" width="132" height="27" alt="" /></div>
+							<div class="inpt2 t_code"><input id="inp" type="text" /></div>
+							<p class="clear ora">Обращаем Ваше внимание, что все поля, отмеченные символом *, являются обязательными для заполнения!</p>
+							<input type="submit" class="s_sbm" value="отправить" />
+						</td>
+					</tr>
+				</table>
+				<p class="thanks">Спасибо! Ваш вопрос принят и будет обработан нашими специалистами в ближайшее время.</p>
+			</fieldset>
+		</form>
+		
+		<span class="close"></span>
+	</div>
+
+<script src="js/jquery-1.9.1.min.js" type="text/javascript" ></script>
+<script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript" ></script>
+<script src="js/ui.datepicker-ru.js" type="text/javascript" ></script>
+<script src="js/slides.min.jquery.js" type="text/javascript" ></script>
+<script src="js/jquery.jscrollpane.min.js" type="text/javascript" ></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript" ></script>
+<script src="js/jquery.customSelect.min.js" type="text/javascript" ></script>
+<script src="js/misc.js" type="text/javascript" ></script>
+	
+</body>
+</html>

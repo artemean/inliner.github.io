@@ -1,0 +1,53 @@
+.buts a, .promo, .ad_block, .tag, .bbut, .art2, .drop_down, .catalogue {behavior:url(js/PIE.htc); position:relative;}
+*+html .navigation ul {z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '<li class="last"></li>'));}
+*+html .navigation ul .last {margin-left:100%;}
+*+html .product {display:inline;}
+.additional {border:1px #f17e00 solid; border-left:5px #f17e00 solid;}
+*+html .chb input {margin:0px 7px 0 0;}
+*+html .phones {display:inline;}
+
+*+html .main_column ul li {//z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<span class="li_s"></span>'));}
+*+html ol {list-style:decimal;}
+*+html .main_column .li_s {width:22px; height:14px; background:url(../images/b1.gif) 0 5px no-repeat; display:inline-block;}
+*+html .main_column ul ul .li_s {width:22px; height:14px; background:url(../images/b2.gif) 0 4px no-repeat; display:inline-block;}
+*+html .main_column ul ul ul .li_s {width:22px; height:14px; background:url(../images/b3.gif) 0 2px no-repeat; display:inline-block;}
+
+*+html .specs .li_s {display:none;}
+*+html .ammount3 {display:inline;}
+*+html .art2 {display:inline;}
+*+html .item_opts .avail {display:inline;}
+*+html .item_details .pr2 {display:inline;}
+*+html .incart {display:inline;}
+*+html .print {display:inline;}
+*+html .share {display:inline;}
+*+html .all {display:inline;}
+*+html .item_details .discount {display:inline;}
+.item_opts * {vertical-align:middle;}
+.drop_down {background:url(../images/a1.gif) 100% 20px no-repeat;}
+.drop_down:hover {background:url(../images/a1.gif) 100% -77px no-repeat;}
+{filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);}
+.single_thumb img {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);}
+.single_thumb img:hover {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+
+.td2 {border-right:0;}
+.trl td {border-bottom:0;}
+
+*+html .infl input {margin:0 10px 0 0;}
+
+.tag {background:#ffdc72 url(../images/b5.gif) 0 -318px repeat-x;}
+.bbut {background:#fa5f1b url(../images/b5.gif) 0 0 repeat-x;}
+.bbut:hover {background:#fa601d url(../images/b5.gif) 0 -82px repeat-x;}
+.bbut:active {background:#fb721a url(../images/b5.gif) 0 -165px repeat-x;}
+.bbut.disabled_bbut {background:#fcaf8d url(../images/b5.gif) 0 -247px repeat-x;}
+*+html .submit_here {overflow:hidden;}
+.submit_here {position:relative;}
+
+.buts a {background:url(../images/b4.gif) 0 0 repeat-x;}
+.avail {background:url(../images/b6.gif) 0 7px no-repeat;}
+.no_avail {background:url(../images/b6.gif) 0 -22px no-repeat;}
+
+.schedule {border:1px #f17e00 solid; border-top:5px #f17e00 solid;}
+
+.specs li {background:url(../images/d.gif) 0 100% repeat-x; }
+
+.catalogue {}

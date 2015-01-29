@@ -1,0 +1,25 @@
+.logo h1, .f_ttl, .form_ttl, .ttl2, .side_block_ttl, .info_block h2, .news_block h2, .sec_ttl {font-family:Impact, sans-serif;}
+.sec_ttl {font-size: 20px;}
+.lbl {font-family:Impact, sans-serif; width:100px;}
+.info_block h2, .news_block h2 {font-size: 28px;}
+.site_search, .c_block form, .nsb, .cat_prod_block, .cart_content_block, .bbk, .info_block, .news_block  {border:1px solid #e7e7e7!important; border-top:0!important; border-bottom:2px solid #e7e7e7;}
+.product_cats {height:46px;}
+.product_cats li {height:43px; line-height:14px;}
+.product_cats li span {height: 42px; padding: 0 0 1px;}
+*+html .product_cats li span {display:block;}
+.product_cats li span a {display:inline-block; position:relative;}
+*+html .top_head nav li {display:inline;}
+.delievery ol {margin:0 0 0 10px;}
+textarea {overflow:auto;}
+.side_block_ttl {font-size: 22px;}
+.ttl2 {font-size:32px;}
+.cat_prod_block {width: 323px;}
+.side_block .ui-slider-handle {top:100%;}
+*+html .slidesjs-pagination li {display: inline;}
+*+html .phones_wrap {vertical-align: baseline; height:auto;}
+.product_cats li span a {z-index: expression( /* оптимизированный expression, который сработает только при загрузке страницы */
+runtimeStyle.zIndex = 1,
+this == ((41/2)-parseInt(offsetHeight)/2) <0 ? style.marginTop="0" : style.marginTop=(41/2)-(parseInt(offsetHeight)/2) +'px');}
+.login_popup {border:2px solid #0f4f80;}
+.tin {position: relative;}
+.in1 {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=1); zoom:1;}
