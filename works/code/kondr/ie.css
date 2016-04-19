@@ -1,0 +1,19 @@
+/*div {zoom:1;}
+ol {zoom:0;}
+ol li {zoom:0;}
+ul {zoom:0;}
+div a {zoom:0;}*/
+
+/*#main {width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?'1000px');}*/
+.holder {width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1076?'1000px':((document.documentElement.clientWidth||document.body.clientWidth)>1376?'1280px':''));}
+/*.someblock {_background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (sizingmethod='crop', src='images/model_hover.png');}
+.anotherblock img{_behavior: url("images/png.htc");}*/
+
+.logo {bottom:-18px;}
+.monitor .next, .monitor .prev {_bottom:30px; }
+.sections h2 {font-weight:bold;}
+.bg0 {_background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (sizingmethod='scale', src='images/black.png');}
+.bg0 img{_behavior: url("images/png.htc");}
+.filter h2 {font-weight:bold;}
+.tri {bottom:-27px; _bottom:-35px;}
+.paz a {_background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (sizingmethod='crop', src='images/inpaz.png');}
