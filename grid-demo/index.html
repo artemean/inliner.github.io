@@ -1,83 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grid example</title>
+    <title>Grid example remote JSON</title>
     <link rel="stylesheet" href="css/kendo.common.min.css" />
     <link rel="stylesheet" href="css/kendo.default.min.css" />
+    <link rel="stylesheet" href="css/grid.css" />
 
     <script src="js/jquery.min.js"></script>
     <script src="js/kendo.all.min.js"></script>
     <script src="js/jszip.min.js"></script>
+    <script src="js/grid.js"></script>
 </head>
 <body>
-<script src="data/products.js"></script>
 
-<div id="example">
-    <div id="grid"></div>
+<div class="grid-container">
+    <div class="grid-title">
+        Institutional investor:
+        <strong>BlackRock Advisors, LLC</strong>
+    </div>
+    <div class="main-grid" id="grid"></div>
+    <div class="save-box">
+        <span class="save-box__info">You can save your grid settings</span>
+        <button class="save-box__button k-button" id="save">Save State</button>
+        <button class="save-box__button k-button" id="load">Load State</button>
+    </div>
 
     <script>
-        $(document).ready(function() {
-            $("#grid").kendoGrid({
-                toolbar: ["excel"],
-                excel: {
-                    fileName: "Kendo UI Grid Export.xlsx",
-                    //proxyURL: "//demos.telerik.com/kendo-ui/service/export",
-                    filterable: true
-                },
-                dataSource: {
-                    data: products,
-                    schema: {
-                        model: {
-                            fields: {
-                                ProductName: { type: "string" },
-                                UnitPrice: { type: "number" },
-                                UnitsInStock: { type: "number" },
-                                Discontinued: { type: "boolean" }
-                            }
-                        }
-                    },
 
-                    pageSize: 200,
-//                    group: {
-//                        field: "Discontinued", aggregates: [
-//                            { field: "ProductName", aggregate: "count" },
-//                            { field: "UnitPrice", aggregate: "sum"},
-//                            { field: "UnitsOnOrder", aggregate: "average" },
-//                            { field: "UnitsInStock", aggregate: "count" }
-//                        ]
-//                    },
-                    aggregate: [ { field: "ProductName", aggregate: "count" },
-                        { field: "UnitPrice", aggregate: "sum" },
-                        { field: "UnitsOnOrder", aggregate: "average" },
-                        { field: "UnitsInStock", aggregate: "min" },
-                        { field: "UnitsInStock", aggregate: "max" }]
-                },
-                height: 550,
-                groupable: true,
-//                scrollable: true,
-                scrollable: {
-//                    virtual: true
-                },
-                sortable: true,
-                filterable: true,
-                reorderable: true,
-                resizable: true,
-//                pageable: {
-//                    input: true,
-//                    numeric: false
-//                },
-                columns: [
-                    {field: "ProductName", aggregates: ["count"], footerTemplate: "Total Count: #=count#"},
-                    { field: "UnitPrice", title: "Unit Price", format: "{0:c}", width: "130px", aggregates: ["sum"], footerTemplate: "#= kendo.toString(sum, 'c') #" },
-                    { field: "UnitsInStock", title: "Units In Stock", width: "130px" },
-                    { field: "Discontinued", width: "130px" }
-//                    {field: "ProductName"},
-//                    { field: "UnitPrice", title: "Unit Price", format: "{0:c}", width: "130px"},
-//                    { field: "UnitsInStock", title: "Units In Stock", width: "130px" },
-//                    { field: "Discontinued", width: "130px" }
-                ]
-            });
-        });
     </script>
 </div>
 
