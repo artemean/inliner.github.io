@@ -12,7 +12,7 @@ $(document).ready(function() {
 //                    data: products,
 
             transport: {
-                read: "data/data.json",
+                read: "data/data2.json",
                 type: "json"
             },
             schema: {
@@ -66,7 +66,8 @@ $(document).ready(function() {
                 footerTemplate: "Total Count: #=count#",
                 locked: true,
                 lockable: true,
-                width: 150
+                filterable: { multi: true }
+                ,width: 150
             },
             {
                 field: "Tranche",

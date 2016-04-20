@@ -38,3 +38,7 @@ body {
 .save-box__button {
     margin-right: 15px;
 }
+
+.k-grid-header .k-header .k-link {
+    margin-right: 18px;
+}
