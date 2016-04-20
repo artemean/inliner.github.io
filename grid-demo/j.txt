@@ -1,0 +1,27 @@
+[
+  '{{repeat(5, 10000)}}',
+  {
+    Issuer: '{{company()}}',
+    Tranche: '{{firstName()}}',
+    Broker_Alpha: '{{company().toUpperCase()}}',
+    Pricing_Date: '{{date(new Date(2014, 0, 1), new Date(), "YY-MMM-dd")}}',
+    Transaction_Type: function () {
+      var types = ['Preffered', 'Bond'];
+      return types[Math.floor(Math.random() * (2 - 0)) + 0];
+    },
+    Product_Type: function () {
+      var types = ['PFD', 'IG', 'IPO'];
+      return types[Math.floor(Math.random() * (2 - 0)) + 0];
+    },
+    Indication: function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (250000000 - 120000)) + 120000;
+    },
+    Allocation: function getRandomInt(min, max) {
+      return this.Indication - Math.floor(Math.random() * (3500000 - 15000)) + 15000;
+    },
+    Percent_allocation: function (Indication, Allocation){
+      return Math.floor((this.Allocation / this.Indication) * 100) + '%';
+    },
+    Some: '{{floating(0, 10, 2)}}'
+  }
+]
