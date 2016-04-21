@@ -2,12 +2,12 @@ $(document).ready(function() {
     var grid = $("#grid");
 
     grid.kendoGrid({
-        //toolbar: ["excel"],
-        //excel: {
-        //    fileName: "Kendo UI Grid Export.xlsx",
-        //    //proxyURL: "//demos.telerik.com/kendo-ui/service/export",
-        //    filterable: true
-        //},
+        toolbar: ["excel"],
+        excel: {
+            fileName: "Kendo UI Grid Export.xlsx",
+            //proxyURL: "//demos.telerik.com/kendo-ui/service/export",
+            filterable: true
+        },
         dataSource: {
 //                    data: products,
 
