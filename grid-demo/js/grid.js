@@ -2,12 +2,12 @@ $(document).ready(function() {
     var grid = $("#grid");
 
     grid.kendoGrid({
-        toolbar: ["excel"],
-        excel: {
-            fileName: "Kendo UI Grid Export.xlsx",
-            //proxyURL: "//demos.telerik.com/kendo-ui/service/export",
-            filterable: true
-        },
+        //toolbar: ["excel"],
+        //excel: {
+        //    fileName: "Kendo UI Grid Export.xlsx",
+        //    //proxyURL: "//demos.telerik.com/kendo-ui/service/export",
+        //    filterable: true
+        //},
         dataSource: {
 //                    data: products,
 
@@ -31,17 +31,15 @@ $(document).ready(function() {
                     }
                 }
             },
-//                    group: {
-//                        field: "Discontinued", aggregates: [
-//                            { field: "ProductName", aggregate: "count" },
-//                            { field: "UnitPrice", aggregate: "sum"},
-//                            { field: "UnitsOnOrder", aggregate: "average" },
-//                            { field: "UnitsInStock", aggregate: "count" }
-//                        ]
-//                    },
-            aggregate: [ { field: "Issuer", aggregate: "count" },
-                { field: "Indication", aggregate: "min" },
-                { field: "Some", aggregate: "sum" }],
+            //        group: {
+            //            field: "Product_Type", aggregates: [
+            //                { field: "Indication", aggregate: "sum" },
+            //                { field: "Allocation", aggregate: "sum"}
+            //            ]
+            //        },
+            //aggregate: [ { field: "Issuer", aggregate: "count" },
+            //    { field: "Indication", aggregate: "min" },
+            //    { field: "Some", aggregate: "sum" }],
             pageSize: 100
         },
 
@@ -63,74 +61,77 @@ $(document).ready(function() {
             {
                 field: "Issuer",
                 title: "Issuer",
-                footerTemplate: "Total Count: #=count#",
-                locked: true,
-                lockable: true,
+                //footerTemplate: "Total Count: #=count#",
+                //locked: true,
+                //lockable: true,
                 filterable: { multi: true }
-                ,width: 150
+                //,width: 150
             },
             {
                 field: "Tranche",
                 title: "Tranche",
-                locked: false,
-                lockable: true
-                ,width: 150
+                filterable: { multi: true }
+                //locked: false,
+                //lockable: true
+                //,width: 150
             },
             {
                 field: "Broker_Alpha",
-                title: "Broker Alpha",
-                locked: false,
-                lockable: true
-                ,width: 150
+                title: "Broker Alpha"
+                //locked: false,
+                //lockable: true
+                //,width: 150
             },
             {
                 field: "Pricing_Date",
-                title: "Pricing Date",
-                locked: false,
-                lockable: true
-                ,width: 150
+                title: "Pricing Date"
+                //locked: false,
+                //lockable: true
+                //,width: 150
             },
 
             {
                 field: "Transaction_Type",
-                title: "Transaction Type",
-                locked: false,
-                lockable: true
-                ,width: 150
+                title: "Transaction Type"
+                //locked: false,
+                //lockable: true
+                //,width: 150
             },
             {
                 field: "Product_Type",
-                title: "Product Type",
-                locked: false,
-                lockable: true
-                ,width: 150
+                title: "Product Type"
+                //locked: false,
+                //lockable: true
+                //,width: 150
             },
             {
                 field: "Indication",
                 title: "Indication",
-                format: "{0:c0}",
-                aggregates: ["min"],
-                footerTemplate: "Min: #= kendo.toString(min, 'c') #"
-                ,width: 150
+                format: "{0:c0}"
+                //aggregates: ["min"],
+                //footerTemplate: "Min: #= kendo.toString(min, 'c') #",
+                //groupFooterTemplate: "Sum: #=sum#"
+                //,width: 150
             },
             {
                 field: "Allocation",
                 title: "Allocation",
                 format: "{0:c0}"
-                ,width: 150
+                //groupFooterTemplate: "Sum: #= kendo.toString(sum, 'c') #"
+                //,width: 150
             },
             {
                 field: "Percent_allocation",
                 title: "Percent allocation"
-                ,width: 150
+                //,width: 150
             },
             {
                 field: "Some",
                 title: "Some",
-                format: "{0:c}",
-                aggregates: ["sum"],
-                footerTemplate: "Sum: #= kendo.toString(sum, 'c') #"
-                ,width: 150
+                format: "{0:c}"
+                //aggregates: ["sum"],
+                //footerTemplate: "Sum: #= kendo.toString(sum, 'c') #"
+                //,width: 150
             }
         ]
     });
