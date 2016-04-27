@@ -1,0 +1,292 @@
+{
+  "prefix": "",
+  "name": "Grid",
+  "columns": [{
+    "encoded": true,
+    "field": "Issuer",
+    "title": "Issuer",
+    "filterable": {
+      "multi": true
+    },
+    "headerAttributes": {
+      "id": "b8edfc32-613d-44ef-9b48-5820a20572c9"
+    }
+  }, {
+    "encoded": true,
+    "field": "Tranche",
+    "title": "Tranche",
+    "filterable": {
+      "multi": true
+    },
+    "headerAttributes": {
+      "id": "29f86fbb-be78-45d5-82ef-f7eb7b8e2cae"
+    }
+  }, {
+    "encoded": true,
+    "field": "Broker_Alpha",
+    "title": "Broker Alpha",
+    "headerAttributes": {
+      "id": "9e79b34b-a018-4a3d-9b14-aae22821464c"
+    },
+    "width": 201
+  }, {
+    "encoded": true,
+    "field": "Pricing_Date",
+    "title": "Pricing Date",
+    "headerAttributes": {
+      "id": "b5314459-60ae-4f42-826e-e9f18743042f"
+    }
+  }, {
+    "encoded": true,
+    "field": "Transaction_Type",
+    "title": "Transaction Type",
+    "headerAttributes": {
+      "id": "f8943d1d-7f11-45c6-b3ce-0c04082d3c0e"
+    }
+  }, {
+    "encoded": true,
+    "field": "Product_Type",
+    "title": "Product Type",
+    "headerAttributes": {
+      "id": "670c944d-7cd4-4a0e-9a02-1ab604094498"
+    }
+  }, {
+    "encoded": true,
+    "field": "Indication",
+    "title": "Indication",
+    "format": "{0:c0}",
+    "headerAttributes": {
+      "id": "5ea58fbb-2e64-46a3-bd2c-29aab6146dd9"
+    }
+  }, {
+    "encoded": true,
+    "field": "Allocation",
+    "title": "Allocation",
+    "format": "{0:c0}",
+    "headerAttributes": {
+      "id": "4d5cc088-0515-4d49-93dd-e4374711c6ff"
+    }
+  }, {
+    "encoded": true,
+    "field": "Percent_allocation",
+    "title": "Percent allocation",
+    "headerAttributes": {
+      "id": "ae32d13e-3e56-4a07-84ec-d0e76ed92ab0"
+    }
+  }, {
+    "encoded": true,
+    "field": "Some",
+    "title": "Some",
+    "format": "{0:c}",
+    "headerAttributes": {
+      "id": "89f455ec-4c13-46b2-9e4a-f00c992c34c7"
+    }
+  }],
+  "toolbar": ["excel"],
+  "autoBind": true,
+  "filterable": true,
+  "scrollable": {
+    "virtual": true
+  },
+  "sortable": true,
+  "selectable": false,
+  "allowCopy": false,
+  "navigatable": false,
+  "pageable": false,
+  "editable": false,
+  "groupable": true,
+  "rowTemplate": "",
+  "altRowTemplate": "",
+  "noRecords": false,
+  "dataSource": {
+    "data": null,
+    "schema": {
+      "model": {
+        "fields": {
+          "Issuer": {
+            "type": "string"
+          },
+          "Tranche": {
+            "type": "string"
+          },
+          "Broker_Alpha": {
+            "type": "string"
+          },
+          "Pricing_Date": {
+            "type": "string"
+          },
+          "Transaction_Type": {
+            "type": "string"
+          },
+          "Product_Type": {
+            "type": "string"
+          },
+          "Indication": {
+            "type": "number"
+          },
+          "Allocation": {
+            "type": "number"
+          },
+          "Percent_allocation": {
+            "type": "string"
+          },
+          "Some": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "offlineStorage": null,
+    "serverSorting": false,
+    "serverPaging": false,
+    "serverFiltering": false,
+    "serverGrouping": false,
+    "serverAggregates": false,
+    "batch": false,
+    "transport": {
+      "read": "data/data5000.json",
+      "type": "json",
+      "dataSource": null
+    },
+    "pageSize": 100,
+    "table": null,
+    "fields": [{
+      "encoded": true,
+      "field": "Issuer",
+      "title": "Issuer",
+      "filterable": {
+        "multi": true
+      },
+      "headerAttributes": {
+        "id": "b8edfc32-613d-44ef-9b48-5820a20572c9"
+      }
+    }, {
+      "encoded": true,
+      "field": "Tranche",
+      "title": "Tranche",
+      "filterable": {
+        "multi": true
+      },
+      "headerAttributes": {
+        "id": "29f86fbb-be78-45d5-82ef-f7eb7b8e2cae"
+      }
+    }, {
+      "encoded": true,
+      "field": "Broker_Alpha",
+      "title": "Broker Alpha",
+      "headerAttributes": {
+        "id": "9e79b34b-a018-4a3d-9b14-aae22821464c"
+      },
+      "width": 201
+    }, {
+      "encoded": true,
+      "field": "Pricing_Date",
+      "title": "Pricing Date",
+      "headerAttributes": {
+        "id": "b5314459-60ae-4f42-826e-e9f18743042f"
+      }
+    }, {
+      "encoded": true,
+      "field": "Transaction_Type",
+      "title": "Transaction Type",
+      "headerAttributes": {
+        "id": "f8943d1d-7f11-45c6-b3ce-0c04082d3c0e"
+      }
+    }, {
+      "encoded": true,
+      "field": "Product_Type",
+      "title": "Product Type",
+      "headerAttributes": {
+        "id": "670c944d-7cd4-4a0e-9a02-1ab604094498"
+      }
+    }, {
+      "encoded": true,
+      "field": "Indication",
+      "title": "Indication",
+      "format": "{0:c0}",
+      "headerAttributes": {
+        "id": "5ea58fbb-2e64-46a3-bd2c-29aab6146dd9"
+      }
+    }, {
+      "encoded": true,
+      "field": "Allocation",
+      "title": "Allocation",
+      "format": "{0:c0}",
+      "headerAttributes": {
+        "id": "4d5cc088-0515-4d49-93dd-e4374711c6ff"
+      }
+    }, {
+      "encoded": true,
+      "field": "Percent_allocation",
+      "title": "Percent allocation",
+      "headerAttributes": {
+        "id": "ae32d13e-3e56-4a07-84ec-d0e76ed92ab0"
+      }
+    }, {
+      "encoded": true,
+      "field": "Some",
+      "title": "Some",
+      "format": "{0:c}",
+      "headerAttributes": {
+        "id": "89f455ec-4c13-46b2-9e4a-f00c992c34c7"
+      }
+    }],
+    "select": null,
+    "page": 1,
+    "sort": [{
+      "field": "Broker_Alpha",
+      "dir": "asc"
+    }],
+    "group": [{
+      "field": "Product_Type",
+      "dir": "asc",
+      "aggregates": []
+    }]
+  },
+  "height": 550,
+  "resizable": true,
+  "reorderable": true,
+  "columnMenu": true,
+  "detailTemplate": null,
+  "columnResizeHandleWidth": 3,
+  "mobile": "",
+  "messages": {
+    "editable": {
+      "cancelDelete": "Cancel",
+      "confirmation": "Are you sure you want to delete this record?",
+      "confirmDelete": "Delete"
+    },
+    "commands": {
+      "create": "Add new record",
+      "cancel": "Cancel changes",
+      "save": "Save changes",
+      "destroy": "Delete",
+      "edit": "Edit",
+      "update": "Update",
+      "canceledit": "Cancel",
+      "excel": "Export to Excel",
+      "pdf": "Export to PDF"
+    },
+    "noRecords": "No records available."
+  },
+  "excel": {
+    "proxyURL": "//demos.telerik.com/kendo-ui/service/export",
+    "allPages": false,
+    "filterable": true,
+    "fileName": "Kendo UI Grid Export.xlsx"
+  },
+  "pdf": {
+    "fileName": "Export.pdf",
+    "proxyURL": "",
+    "paperSize": "auto",
+    "allPages": false,
+    "landscape": false,
+    "margin": null,
+    "title": null,
+    "author": null,
+    "subject": null,
+    "keywords": null,
+    "creator": "Kendo UI PDF Generator v.2016.1.412",
+    "date": null
+  }
+}
