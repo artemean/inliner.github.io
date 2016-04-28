@@ -60,7 +60,9 @@ $(document).ready(function() {
         filterable: {
             //extra: false
         },
-        //columnMenu: true,
+        columnMenu: {
+            sortable: false
+        },
 //                pageable: {
 //                    input: true,
 //                    numeric: false
