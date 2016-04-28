@@ -1,10 +1,10 @@
 [
-  '{{repeat(5, 5000)}}',
+  '{{repeat(5, 3000)}}',
   {
-    Issuer: '{{company()}}',
+    Issue: '{{company()}}',
     Product_Type: function () {
       var types = ['PFD', 'IG', 'IPO'];
-      return types[Math.floor(Math.random() * (2 - 0)) + 0];
+      return types[Math.floor(Math.random() * (3 - 0)) + 0];
     },
     Tranche: '{{firstName()}}',
     Pricing_Date: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}',
@@ -19,11 +19,11 @@
     },
     Hedge_Type: function () {
       var types = ['TYPE_1', 'TYPE_2', 'TYPE_3', 'TYPE_4', 'TYPE_5', 'TYPE_6', 'TYPE_7', 'TYPE_8', 'TYPE_9', 'TYPE_10'];
-      return types[Math.floor(Math.random() * (10 - 0)) + 0];
+      return types[Math.floor(Math.random() * (11 - 0)) + 0];
     },
     Security_Type: function () {
       var types = ['SEC_1', 'SEC_2', 'SEC_3', 'SEC_4', 'SEC_5', 'SECE_6', 'SEC_7', 'SECA', 'SECB', 'SECC'];
-      return types[Math.floor(Math.random() * (10 - 0)) + 0];
+      return types[Math.floor(Math.random() * (11 - 0)) + 0];
     },
     Retention_Allocation: function getRandomInt(min, max) {
       return Math.floor(Math.random() * (250000000 - 120000)) + 120000;

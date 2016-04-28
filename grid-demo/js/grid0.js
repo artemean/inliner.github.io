@@ -60,7 +60,7 @@ $(document).ready(function() {
         filterable: {
             //extra: false
         },
-        //columnMenu: true,
+        columnMenu: true,
 //                pageable: {
 //                    input: true,
 //                    numeric: false
@@ -193,16 +193,15 @@ $(document).ready(function() {
                         }
                     }
                 }
+            },
+            {
+                field: "Some",
+                title: "Some",
+                format: "{0:c}"
+                //aggregates: ["sum"],
+                //footerTemplate: "Sum: #= kendo.toString(sum, 'c') #"
+                //,width: 150
             }
-            //{
-            //    field: "Some",
-            //    title: "Some",
-            //    format: "{0:c}",
-            //    columnMenu: true
-            //    //aggregates: ["sum"],
-            //    //footerTemplate: "Sum: #= kendo.toString(sum, 'c') #"
-            //    //,width: 150
-            //}
             //{
             //    field: "Transaction_Type",
             //    title: "Transaction Type"
