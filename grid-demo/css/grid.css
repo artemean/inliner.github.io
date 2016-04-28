@@ -35,10 +35,18 @@ body {
     margin-right: 15px;
 }
 
-.save-box__button {
+.generic__button {
     margin-right: 15px;
 }
 
 .k-grid-header .k-header .k-link {
     margin-right: 18px;
+}
+
+.generic-popup {
+    display: none;
+}
+
+.list-view {
+    margin-bottom: 20px;
 }

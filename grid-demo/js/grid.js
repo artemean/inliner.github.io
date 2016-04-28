@@ -12,7 +12,7 @@ $(document).ready(function() {
 //                    data: products,
 
             transport: {
-                read: "data/data5000.json",
+                read: "data/data500.json",
                 type: "json"
             },
             schema: {
@@ -168,7 +168,15 @@ $(document).ready(function() {
             {
                 field: "Retention_Allocation",
                 title: "Retention  Allocation",
-                format: "{0:c0}"
+                format: "{0:c0}",
+                filterable: {
+                    operators: {
+                        number: {
+                            gte: "Greater or equal",
+                            lte: "Less or equal"
+                        }
+                    }
+                }
             },
             {
                 field: "Sales_Person",
@@ -225,4 +233,56 @@ $(document).ready(function() {
             gridData.setOptions(JSON.parse(options));
         }
     });
+
+
+
+    $("#window").kendoWindow({
+        width: 500,
+        visible: false,
+        modal: true,
+        title: "Edit user settings"
+    }).data("kendoWindow");
+
+    $("#save-modal").kendoWindow({
+        visible: false,
+        modal: true,
+        title: "Save to Allocation layout"
+    }).data("kendoWindow");
+
+    $("#revert-modal").kendoWindow({
+        visible: false,
+        modal: true,
+        title: "Revert Allocation layout"
+    }).data("kendoWindow");
+
+    $("#openButton").click(function(){
+        var win = $("#window").data("kendoWindow");
+
+        $("#listView").kendoListView({
+            dataSource: [
+                { name: "Allocation" },
+                { name: "Indication" }
+            ],
+            template: "<div>#:name#</div>",
+            selectable: "single"
+        });
+
+        win.center().open();
+    });
+
+    $("#save-settings").click(function(){
+        var saveWin = $("#save-modal").data("kendoWindow");
+        saveWin.center().open();
+    });
+
+    $("#revert-settings").click(function(){
+        var revertWin = $("#revert-modal").data("kendoWindow");
+        revertWin.center().open();
+    });
+
+
+
+
+
+
 });
