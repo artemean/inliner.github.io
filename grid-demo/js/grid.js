@@ -224,15 +224,17 @@ $(document).ready(function() {
 
     $("#save").click(function (e) {
         e.preventDefault();
-        localStorage["kendo-grid-options"] = kendo.stringify(gridData.getOptions());
+        localStorage["kendo-grid-options"] = kendo.stringify(gridData.getOptions().columns);
         console.log(gridData.getOptions());
     });
 
     $("#load").click(function (e) {
         e.preventDefault();
-        var options = localStorage["kendo-grid-options"];
+        var columnsSettings = JSON.parse(localStorage["kendo-grid-options"]);
+        var options = gridData.getOptions();
+        options.columns = columnsSettings;
         if (options) {
-            gridData.setOptions(JSON.parse(options));
+            gridData.setOptions(options);
         }
     });
 
