@@ -12,21 +12,25 @@
 
 
 </head>
-<body>
+<body class="">
+
+<input type="hidden" name="investorId" id="investorId" value="123456">
+<input type="hidden" name="investorType" id="investorType" value="some">
+<input type="hidden" name="investorName" id="investorName" value="BlackRock Advisors, LLC">
 
 <div class="grid-container">
     <div class="grid-title">
         Institutional investor:
         <strong>BlackRock Advisors, LLC</strong>
     </div>
-    <div class="main-grid" id="grid"></div>
     <div class="save-box">
         <span class="save-box__info">You can save your grid settings</span>
-        <button class="generic__button k-button" id="save">Save State</button>
-        <button class="generic__button k-button" id="load">Load State</button>
-        <button class="generic__button k-button" id="openButton">Settings</button>
+        <button class="generic__button k-button" id="save">Save Settings</button>
+        <button class="generic__button k-button" id="load">Load Settings</button>
+        <button class="generic__button k-button" id="loadDefault">Load Default Settings</button>
+        <!--<button class="generic__button k-button" id="openButton">Settings</button>-->
     </div>
-
+    <div class="main-grid" id="grid"></div>
 </div>
 
 <div id="window" class="generic-popup">
@@ -54,6 +58,7 @@
 <!--<script src="js/kendo.custom.min.js"></script>-->
 <script src="js/kendo.all.min.js"></script>
 <script src="js/jszip.min.js"></script>
+<script src="js/columnSettings.js"></script>
 <script src="js/grid.js"></script>
 
 </body>
