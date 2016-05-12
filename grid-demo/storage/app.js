@@ -25,7 +25,7 @@ router.get('/', function(req, res) {
 });
 app.use('/api', router);
 
-var def = require('./default');
+//var def = require('./default');
 
 
 
@@ -36,8 +36,6 @@ var mongoose   = require('mongoose');
 mongoose.connect( 'mongodb://layoutuser:Password1@ds021182.mlab.com:21182/userLayout' );
 
 var Layout = require('./model');
-console.log(Layout);
-
 
 router.get('/default', function(req, res) {
     //res.json({ message: 'Default!' });
@@ -48,13 +46,13 @@ router.get('/default', function(req, res) {
     //
     //    res.json(data);
     //});
-    return Layout.find({_id: "5734473fdcba0f089281436a" })
-        .exec(
-            function(err, data) {
-                if (err)
-                    res.send(err);
 
-                res.json(data);
-            }
-        );
+    Layout.find(function(err, data) {
+        if (err) {
+            res.send([]);
+        } else {
+            res.json(parse(data));
+        }
+    });
+
 });

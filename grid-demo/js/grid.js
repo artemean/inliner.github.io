@@ -12,113 +12,119 @@ $(document).ready(function() {
         grid.data("kendoGrid").resize();
     });
 
-    $.ajax({
-        url: 'http://api.mlab.com/api/1/databases/userlayout/collections/defaultLayout?apiKey=C96sHyGy2r5sSf-ibDakmsV5ypO-ea1Y',
-        type: 'GET',
-        contentType: "application/json",
-        success: function() { alert('hello!'); },
-        error: function() { alert('boo!'); }
-        //beforeSend: setHeader
-    });
-
-
-    function setHeader(xhr) {
-        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-    }
-
-    //$.getJSON( "http://api.mlab.com/api/1/databases/userlayout/collections/defaultLayout?apiKey=C96sHyGy2r5sSf-ibDakmsV5ypO-ea1Y&callback=?")
-    //    .fail(function() {
-    //        console.log( "error" );
-    //    })
-    //    .done(function( data ) {
-    //    columnsSet = data.columns;
-    //    console.log(columnsSet);
-    //
-    //    grid.kendoGrid({
-    //        toolbar: ["excel"],
-    //        excelExport: function (e) {
-    //            var sheet = e.workbook.sheets[0];
-    //            var allocationPercentColumnIndex;
-    //            var pricingDateColumnIndex;
-    //
-    //            var headerRow = sheet.rows[0];
-    //
-    //            for (var i = 0; i < sheet.columns.length; i++) {
-    //                if (headerRow.cells[i].value === columnSettings.allocationPercentColumnTitle) {
-    //                    allocationPercentColumnIndex = i;
-    //                }
-    //                else if (headerRow.cells[i].value === columnSettings.pricingDateColumnTitle) {
-    //                    pricingDateColumnIndex = i;
-    //                }
-    //            }
-    //
-    //            for (var rowIndex = 1; rowIndex < sheet.rows.length; rowIndex++) {
-    //                var row = sheet.rows[rowIndex];
-    //                for (var cellIndex = 0; cellIndex < row.cells.length; cellIndex++) {
-    //                    if (rowIndex % 2 === 0) {
-    //                        row.cells[cellIndex].background = "#d5d5d5";
-    //                    }
-    //                    if (allocationPercentColumnIndex === cellIndex) {
-    //                        var val = row.cells[cellIndex].value;
-    //                        if (val !== undefined && val !== null) {
-    //                            row.cells[cellIndex].value = val / 100;
-    //                        }
-    //                        row.cells[cellIndex].format = "0.00%";
-    //                    }
-    //                    else if (pricingDateColumnIndex === cellIndex) {
-    //                        row.cells[cellIndex].format = "yyyy-MM-dd";
-    //                    }
-    //                }
-    //            }
-    //        },
-    //        excel: {
-    //            fileName: inverstorName + ".xlsx",
-    //            filterable: true,
-    //            allPages: true
-    //        },
-    //        dataSource: {
-    //            transport: {
-    //                //read: "../../web.api/InvestorHistory/" + inverstorId + '?investorType=' + inverstorType,
-    //                read: "data/data500.json",
-    //                type: "json"
-    //            },
-    //            schema: {
-    //                model: {
-    //                    fields: {
-    //                        issue: { type: "string" },
-    //                        productType: { type: "string" },
-    //                        tranche: { type: "string" },
-    //                        pricingDate: { type: "date" },
-    //                        indication: { type: "number" },
-    //                        allocation: { type: "number" },
-    //                        allocationPercentage: { type: "number" },
-    //                        retentionAllocation: { type: "number" },
-    //                        salesPerson: { type: "string" },
-    //                        region: { type: "string" }
-    //                    }
-    //                }
-    //            },
-    //            sort: [{
-    //                field: "pricingDate",
-    //                dir: "desc"
-    //            }],
-    //            pageSize: 100
-    //        },
-    //        scrollable: {
-    //            virtual: true
-    //        },
-    //        sortable: true,
-    //        reorderable: true,
-    //        groupable: true,
-    //        resizable: true,
-    //        filterable: true,
-    //        columnMenu: {
-    //            sortable: false
-    //        },
-    //        //columns: columnsSet || columnSettings.columns
-    //        columns: columnsSet
-    //    });
+    //$.ajax({
+    //    url: 'http://api.mlab.com/api/1/databases/userlayout/collections/defaultLayout?apiKey=C96sHyGy2r5sSf-ibDakmsV5ypO-ea1Y',
+    //    type: 'GET',
+    //    contentType: "application/json",
+    //    headers: {"Access-Control-Allow-Origin": "*"},
+    //    success: function() { alert('hello!'); },
+    //    error: function() { alert('boo!'); }
+    //    //beforeSend: setHeader
     //});
+
+
+    //$.ajax( { url: "http://api.mlab.com/api/1/databases/userlayout/collections/defaultLayout?apiKey=C96sHyGy2r5sSf-ibDakmsV5ypO-ea1Y",
+    //    data: JSON.stringify( { "x" : 1 } ),
+    //    type: "POST",
+    //    contentType: "application/json",
+    //    success: function() { console.log('success'); },
+    //    error: function() { console.log('error'); }
+    //});
+
+
+    $.getJSON( "http://api.mlab.com/api/1/databases/userlayout/collections/defaultLayout?apiKey=C96sHyGy2r5sSf-ibDakmsV5ypO-ea1Y&callback=?")
+        .fail(function() {
+            console.log( "error" );
+        })
+        .done(function( data ) {
+        columnsSet = data.columns;
+        console.log(columnsSet);
+
+        grid.kendoGrid({
+            toolbar: ["excel"],
+            excelExport: function (e) {
+                var sheet = e.workbook.sheets[0];
+                var allocationPercentColumnIndex;
+                var pricingDateColumnIndex;
+
+                var headerRow = sheet.rows[0];
+
+                for (var i = 0; i < sheet.columns.length; i++) {
+                    if (headerRow.cells[i].value === columnSettings.allocationPercentColumnTitle) {
+                        allocationPercentColumnIndex = i;
+                    }
+                    else if (headerRow.cells[i].value === columnSettings.pricingDateColumnTitle) {
+                        pricingDateColumnIndex = i;
+                    }
+                }
+
+                for (var rowIndex = 1; rowIndex < sheet.rows.length; rowIndex++) {
+                    var row = sheet.rows[rowIndex];
+                    for (var cellIndex = 0; cellIndex < row.cells.length; cellIndex++) {
+                        if (rowIndex % 2 === 0) {
+                            row.cells[cellIndex].background = "#d5d5d5";
+                        }
+                        if (allocationPercentColumnIndex === cellIndex) {
+                            var val = row.cells[cellIndex].value;
+                            if (val !== undefined && val !== null) {
+                                row.cells[cellIndex].value = val / 100;
+                            }
+                            row.cells[cellIndex].format = "0.00%";
+                        }
+                        else if (pricingDateColumnIndex === cellIndex) {
+                            row.cells[cellIndex].format = "yyyy-MM-dd";
+                        }
+                    }
+                }
+            },
+            excel: {
+                fileName: inverstorName + ".xlsx",
+                filterable: true,
+                allPages: true
+            },
+            dataSource: {
+                transport: {
+                    //read: "../../web.api/InvestorHistory/" + inverstorId + '?investorType=' + inverstorType,
+                    read: "data/data500.json",
+                    type: "json"
+                },
+                schema: {
+                    model: {
+                        fields: {
+                            issue: { type: "string" },
+                            productType: { type: "string" },
+                            tranche: { type: "string" },
+                            pricingDate: { type: "date" },
+                            indication: { type: "number" },
+                            allocation: { type: "number" },
+                            allocationPercentage: { type: "number" },
+                            retentionAllocation: { type: "number" },
+                            salesPerson: { type: "string" },
+                            region: { type: "string" }
+                        }
+                    }
+                },
+                sort: [{
+                    field: "pricingDate",
+                    dir: "desc"
+                }],
+                pageSize: 100
+            },
+            scrollable: {
+                virtual: true
+            },
+            sortable: true,
+            reorderable: true,
+            groupable: true,
+            resizable: true,
+            filterable: true,
+            columnMenu: {
+                sortable: false
+            },
+            //columns: columnsSet || columnSettings.columns
+            columns: columnsSet
+        });
+    });
 
 
 
