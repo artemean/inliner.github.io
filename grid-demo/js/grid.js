@@ -32,13 +32,13 @@ $(document).ready(function() {
     //});
 
 
-    $.getJSON( "http://api.mlab.com/api/1/databases/userlayout/collections/defaultLayout?apiKey=C96sHyGy2r5sSf-ibDakmsV5ypO-ea1Y&callback=?")
+    $.getJSON( "http://localhost:3000/api/default")
         .fail(function() {
             console.log( "error" );
         })
         .done(function( data ) {
-        columnsSet = data.columns;
-        console.log(columnsSet);
+
+        columnsSet = data[0].columns;
 
         grid.kendoGrid({
             toolbar: ["excel"],
@@ -124,38 +124,51 @@ $(document).ready(function() {
             //columns: columnsSet || columnSettings.columns
             columns: columnsSet
         });
+
+            gridData = grid.data("kendoGrid");
+
+            var dSource = gridData.dataSource;
+            console.log(dSource);
+            $.each(dSource.options.schema.model.fields, function (propertyName, propertyValue) {
+                //alert(filter.field);
+                console.log(propertyName, propertyValue);
+            });
+
+
+
+
+
+
+            $("#save").click(function (event) {
+                event.preventDefault();
+                localStorage["kendo-grid-options"] = kendo.stringify(gridData.getOptions().columns);
+                console.log(gridData.getOptions());
+            });
+
+            $("#load").click(function (event) {
+                event.preventDefault();
+                columnsSet = JSON.parse(localStorage["kendo-grid-options"]);
+                var options = gridData.getOptions();
+                options.columns = columnsSet;
+                if (options) {
+                    gridData.setOptions(options);
+                }
+            });
+
+            $("#loadDefault").click(function (event) {
+                event.preventDefault();
+                //var columnsSettings = JSON.parse(localStorage["kendo-grid-options"]);
+                var options = gridData.getOptions();
+                options.columns = columnSettings.columns;
+                if (options) {
+                    gridData.setOptions(options);
+                }
+            });
+
+
     });
 
 
-
-
-    gridData = grid.data("kendoGrid");
-
-    $("#save").click(function (event) {
-        event.preventDefault();
-        localStorage["kendo-grid-options"] = kendo.stringify(gridData.getOptions().columns);
-        console.log(gridData.getOptions());
-    });
-
-    $("#load").click(function (event) {
-        event.preventDefault();
-        columnsSet = JSON.parse(localStorage["kendo-grid-options"]);
-        var options = gridData.getOptions();
-        options.columns = columnsSet;
-        if (options) {
-            gridData.setOptions(options);
-        }
-    });
-
-    $("#loadDefault").click(function (event) {
-        event.preventDefault();
-        //var columnsSettings = JSON.parse(localStorage["kendo-grid-options"]);
-        var options = gridData.getOptions();
-        options.columns = columnSettings.columns;
-        if (options) {
-            gridData.setOptions(options);
-        }
-    });
 
 
 
