@@ -171,7 +171,7 @@ gridApp.initGrid = function (){
             if (e.field == "productType") {
                 //console.log(e.container.find(".k-filter-item"));
                 //console.log(e.container.find(".k-animation-container"));
-                var el = e.container.find(".k-filter-item").css({"width": "200px", "color": "#333"}).addClass("qweasdzxc");
+                //var el = e.container.find(".k-filter-item").css({"width": "200px", "color": "#333"}).addClass("qweasdzxc");
                 initCheckboxFilter.call(this, e);
             }
         }
