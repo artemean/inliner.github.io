@@ -1,7 +1,7 @@
 [
   {
     "issue": "Cablam",
-    "productType": "IG",
+    "productType": "ABC, BCD, CDE",
     "tranche": "Odonnell",
     "pricingDate": "2015-05-26T06:12:34 -03:00",
     "indication": 187163011,
@@ -13,7 +13,7 @@
   },
   {
     "issue": "Quilm",
-    "productType": "IG",
+    "productType": "BCD, CDE",
     "tranche": "Nannie",
     "pricingDate": "2015-03-12T07:31:14 -02:00",
     "indication": 242200789,
@@ -25,7 +25,7 @@
   },
   {
     "issue": "Makingway",
-    "productType": "IG",
+    "productType": "ABC, CDE, TRE",
     "tranche": "Lucinda",
     "pricingDate": "2014-08-09T08:55:35 -03:00",
     "indication": 62159707,
@@ -37,7 +37,7 @@
   },
   {
     "issue": "Acium",
-    "productType": "PFD",
+    "productType": "ABC, QWE, ASD",
     "tranche": "Joni",
     "pricingDate": "2015-11-25T09:58:51 -02:00",
     "indication": 169033814,
@@ -49,7 +49,7 @@
   },
   {
     "issue": "Enerforce",
-    "productType": "PFD",
+    "productType": "QWE, ZXC, ERT, ABC, BCD, CDE",
     "tranche": "Jodie",
     "pricingDate": "2014-10-06T07:46:06 -03:00",
     "indication": 177107748,
@@ -97,7 +97,7 @@
   },
   {
     "issue": "Acrodance",
-    "productType": "IPO",
+    "productType": null,
     "tranche": "Erma",
     "pricingDate": "2015-10-03T12:56:02 -03:00",
     "indication": 60379073,

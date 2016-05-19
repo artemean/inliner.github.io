@@ -13,7 +13,6 @@
 
 </head>
 <body class="">
-
 <input type="hidden" name="investorId" id="investorId" value="123456">
 <input type="hidden" name="investorType" id="investorType" value="some">
 <input type="hidden" name="investorName" id="investorName" value="BlackRock Advisors, LLC">
@@ -23,14 +22,19 @@
         Institutional investor:
         <strong>BlackRock Advisors, LLC</strong>
     </div>
+
+    <div class="main-grid" id="grid"></div>
     <div class="save-box">
         <span class="save-box__info">You can save your grid settings</span>
         <button class="generic__button k-button" id="save">Save Settings</button>
-        <button class="generic__button k-button" id="load">Load Settings</button>
+        <button class="generic__button k-button" id="load">Load Saved Settings</button>
         <button class="generic__button k-button" id="loadDefault">Load Default Settings</button>
         <!--<button class="generic__button k-button" id="openButton">Settings</button>-->
     </div>
-    <div class="main-grid" id="grid"></div>
+</div>
+
+<div id="columns-list">
+    <div id="columns-list-container"></div>
 </div>
 
 <div id="window" class="generic-popup">

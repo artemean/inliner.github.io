@@ -1,288 +1,208 @@
-{
-  "prefix": "",
-  "name": "Grid",
-  "columns": [{
-    "encoded": true,
-    "field": "Issuer",
-    "title": "Issuer",
-    "filterable": {
-      "multi": true
-    },
-    "headerAttributes": {
-      "id": "7b654c07-18f2-4080-8fc9-9e5d9ead4e0b"
-    },
-    "width": 133
-  }, {
-    "encoded": true,
-    "field": "Tranche",
-    "title": "Tranche",
-    "filterable": {
-      "multi": true
-    },
-    "headerAttributes": {
-      "id": "fbc075be-56b6-4c7b-a86e-26db33802587"
-    }
-  }, {
-    "encoded": true,
-    "field": "Broker_Alpha",
-    "title": "Broker Alpha",
-    "headerAttributes": {
-      "id": "841a59be-d0b9-43ae-aa95-04218759b9f1"
-    }
-  }, {
-    "encoded": true,
-    "field": "Pricing_Date",
-    "title": "Pricing Date",
-    "headerAttributes": {
-      "id": "a1ba575f-e6a9-462e-9e90-2ae957e20821"
-    }
-  }, {
-    "encoded": true,
-    "field": "Transaction_Type",
-    "title": "Transaction Type",
-    "headerAttributes": {
-      "id": "99217bce-bee6-4128-b0b9-30d1d85ee2ca"
-    }
-  }, {
-    "encoded": true,
-    "field": "Product_Type",
-    "title": "Product Type",
-    "headerAttributes": {
-      "id": "8cf71bb0-c421-48e4-aa7e-1c4c26e44974"
-    }
-  }, {
-    "encoded": true,
-    "field": "Indication",
-    "title": "Indication",
-    "format": "{0:c0}",
-    "headerAttributes": {
-      "id": "98fd504b-0627-4686-8791-f2cc1b980beb"
-    }
-  }, {
-    "encoded": true,
-    "field": "Allocation",
-    "title": "Allocation",
-    "format": "{0:c0}",
-    "headerAttributes": {
-      "id": "aa6dce7d-bbfc-4f80-84d7-09f50ffb255d"
-    }
-  }, {
-    "encoded": true,
-    "field": "Percent_allocation",
-    "title": "Percent allocation",
-    "headerAttributes": {
-      "id": "1e1e26ba-d9b3-4b65-b8e5-009987799ce4"
-    }
-  }, {
-    "encoded": true,
-    "field": "Some",
-    "title": "Some",
-    "format": "{0:c}",
-    "headerAttributes": {
-      "id": "8a4ec55f-9b9b-44cc-9d8f-73d68ad84535"
-    }
-  }],
-  "toolbar": ["excel"],
-  "autoBind": true,
-  "filterable": true,
-  "scrollable": {
-    "virtual": true
-  },
-  "sortable": true,
-  "selectable": false,
-  "allowCopy": false,
-  "navigatable": false,
-  "pageable": false,
-  "editable": false,
-  "groupable": true,
-  "rowTemplate": "",
-  "altRowTemplate": "",
-  "noRecords": false,
-  "dataSource": {
-    "data": null,
-    "schema": {
-      "model": {
-        "fields": {
-          "Issuer": {
-            "type": "string"
-          },
-          "Tranche": {
-            "type": "string"
-          },
-          "Broker_Alpha": {
-            "type": "string"
-          },
-          "Pricing_Date": {
-            "type": "string"
-          },
-          "Transaction_Type": {
-            "type": "string"
-          },
-          "Product_Type": {
-            "type": "string"
-          },
-          "Indication": {
-            "type": "number"
-          },
-          "Allocation": {
-            "type": "number"
-          },
-          "Percent_allocation": {
-            "type": "string"
-          },
-          "Some": {
-            "type": "number"
-          }
+[
+  {
+    "encoded":true,
+    "hidden":true,
+    "field":"issue",
+    "title":"Issue",
+    "filterable":{
+      "extra":false,
+      "operators":{
+        "string":{
+          "contains":"Contains"
         }
       }
     },
-    "offlineStorage": null,
-    "serverSorting": false,
-    "serverPaging": false,
-    "serverFiltering": false,
-    "serverGrouping": false,
-    "serverAggregates": false,
-    "batch": false,
-    "transport": {
-      "read": "data/data5000.json",
-      "type": "json",
-      "dataSource": null
+    "headerAttributes":{
+      "id":"f096e159-46b7-4090-acad-e8a12d0d4200",
+      "style":"display:none"
     },
-    "pageSize": 100,
-    "table": null,
-    "fields": [{
-      "encoded": true,
-      "field": "Issuer",
-      "title": "Issuer",
-      "filterable": {
-        "multi": true
-      },
-      "headerAttributes": {
-        "id": "7b654c07-18f2-4080-8fc9-9e5d9ead4e0b"
-      },
-      "width": 133
-    }, {
-      "encoded": true,
-      "field": "Tranche",
-      "title": "Tranche",
-      "filterable": {
-        "multi": true
-      },
-      "headerAttributes": {
-        "id": "fbc075be-56b6-4c7b-a86e-26db33802587"
-      }
-    }, {
-      "encoded": true,
-      "field": "Broker_Alpha",
-      "title": "Broker Alpha",
-      "headerAttributes": {
-        "id": "841a59be-d0b9-43ae-aa95-04218759b9f1"
-      }
-    }, {
-      "encoded": true,
-      "field": "Pricing_Date",
-      "title": "Pricing Date",
-      "headerAttributes": {
-        "id": "a1ba575f-e6a9-462e-9e90-2ae957e20821"
-      }
-    }, {
-      "encoded": true,
-      "field": "Transaction_Type",
-      "title": "Transaction Type",
-      "headerAttributes": {
-        "id": "99217bce-bee6-4128-b0b9-30d1d85ee2ca"
-      }
-    }, {
-      "encoded": true,
-      "field": "Product_Type",
-      "title": "Product Type",
-      "headerAttributes": {
-        "id": "8cf71bb0-c421-48e4-aa7e-1c4c26e44974"
-      }
-    }, {
-      "encoded": true,
-      "field": "Indication",
-      "title": "Indication",
-      "format": "{0:c0}",
-      "headerAttributes": {
-        "id": "98fd504b-0627-4686-8791-f2cc1b980beb"
-      }
-    }, {
-      "encoded": true,
-      "field": "Allocation",
-      "title": "Allocation",
-      "format": "{0:c0}",
-      "headerAttributes": {
-        "id": "aa6dce7d-bbfc-4f80-84d7-09f50ffb255d"
-      }
-    }, {
-      "encoded": true,
-      "field": "Percent_allocation",
-      "title": "Percent allocation",
-      "headerAttributes": {
-        "id": "1e1e26ba-d9b3-4b65-b8e5-009987799ce4"
-      }
-    }, {
-      "encoded": true,
-      "field": "Some",
-      "title": "Some",
-      "format": "{0:c}",
-      "headerAttributes": {
-        "id": "8a4ec55f-9b9b-44cc-9d8f-73d68ad84535"
-      }
-    }],
-    "select": null,
-    "page": 1,
-    "sort": [{
-      "field": "Issuer",
-      "dir": "asc"
-    }],
-    "group": []
-  },
-  "height": 550,
-  "resizable": true,
-  "reorderable": true,
-  "columnMenu": true,
-  "detailTemplate": null,
-  "columnResizeHandleWidth": 3,
-  "mobile": "",
-  "messages": {
-    "editable": {
-      "cancelDelete": "Cancel",
-      "confirmation": "Are you sure you want to delete this record?",
-      "confirmDelete": "Delete"
+    "attributes":{
+      "style":"display:none"
     },
-    "commands": {
-      "create": "Add new record",
-      "cancel": "Cancel changes",
-      "save": "Save changes",
-      "destroy": "Delete",
-      "edit": "Edit",
-      "update": "Update",
-      "canceledit": "Cancel",
-      "excel": "Export to Excel",
-      "pdf": "Export to PDF"
+    "footerAttributes":{
+      "style":"display:none"
+    }
+  },
+  {
+    "encoded":true,
+    "hidden":true,
+    "field":"productType",
+    "title":"Product Type",
+    "columnMenu":false,
+    "headerAttributes":{
+      "id":"84a6400e-34ce-4956-85fc-9fec5d1d4446",
+      "style":"display:none"
     },
-    "noRecords": "No records available."
+    "attributes":{
+      "style":"display:none"
+    },
+    "footerAttributes":{
+      "style":"display:none"
+    }
   },
-  "excel": {
-    "proxyURL": "//demos.telerik.com/kendo-ui/service/export",
-    "allPages": false,
-    "filterable": true,
-    "fileName": "Kendo UI Grid Export.xlsx"
+  {
+    "encoded":true,
+    "hidden":true,
+    "field":"tranche",
+    "title":"Tranche",
+    "filterable":{
+      "extra":false,
+      "operators":{
+        "string":{
+          "contains":"Contains"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"6356dc94-3b4a-4ee9-b7af-fdb1540925ad",
+      "style":"display:none"
+    },
+    "attributes":{
+      "style":"display:none"
+    },
+    "footerAttributes":{
+      "style":"display:none"
+    }
   },
-  "pdf": {
-    "fileName": "Export.pdf",
-    "proxyURL": "",
-    "paperSize": "auto",
-    "allPages": false,
-    "landscape": false,
-    "margin": null,
-    "title": null,
-    "author": null,
-    "subject": null,
-    "keywords": null,
-    "creator": "Kendo UI PDF Generator v.2016.1.412",
-    "date": null
+  {
+    "encoded":true,
+    "hidden":true,
+    "field":"pricingDate",
+    "title":"Pricing Date",
+    "format":"{0:yyyy-MM-dd}",
+    "filterable":{
+      "ui":"datepicker",
+      "operators":{
+        "date":{
+          "gte":"After",
+          "lte":"Before"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"6bff64da-a4ab-46be-bf3c-7d59341be7fb",
+      "style":"display:none"
+    },
+    "attributes":{
+      "style":"display:none"
+    },
+    "footerAttributes":{
+      "style":"display:none"
+    }
+  },
+  {
+    "encoded":true,
+    "hidden":true,
+    "field":"indication",
+    "title":"Indication",
+    "format":"{0:n}",
+    "filterable":{
+      "operators":{
+        "number":{
+          "gte":"Greater or equal",
+          "lte":"Less or equal"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"9dfc8b2d-8a75-4dec-9a75-587b525bfff4",
+      "style":"display:none"
+    },
+    "attributes":{
+      "style":"display:none"
+    },
+    "footerAttributes":{
+      "style":"display:none"
+    }
+  },
+  {
+    "encoded":true,
+    "hidden":true,
+    "field":"allocation",
+    "title":"Allocation",
+    "format":"{0:n}",
+    "filterable":{
+      "operators":{
+        "number":{
+          "gte":"Greater or equal",
+          "lte":"Less or equal"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"0484bbab-bda5-4767-8908-b16a634a1c9e",
+      "style":"display:none"
+    },
+    "attributes":{
+      "style":"display:none"
+    },
+    "footerAttributes":{
+      "style":"display:none"
+    }
+  },
+  {
+    "encoded":true,
+    "field":"allocationPercentage",
+    "title":"% Allocation",
+    "filterable":{
+      "operators":{
+        "number":{
+          "gte":"Greater or equal",
+          "lte":"Less or equal"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"fb47c9b1-1e65-408b-82ce-0eb0b251a7e5"
+    }
+  },
+  {
+    "encoded":true,
+    "field":"retentionAllocation",
+    "title":"Retention Allocation",
+    "format":"{0:n}",
+    "filterable":{
+      "operators":{
+        "number":{
+          "gte":"Greater or equal",
+          "lte":"Less or equal"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"bf9c0e75-0f2a-4a34-9ffb-35b3834e9396"
+    }
+  },
+  {
+    "encoded":true,
+    "field":"salesPerson",
+    "title":"Sales Person",
+    "filterable":{
+      "extra":false,
+      "operators":{
+        "string":{
+          "contains":"Contains"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"1f0e8452-5dfb-4f6b-98f9-2e63efca1e22"
+    }
+  },
+  {
+    "encoded":true,
+    "field":"region",
+    "title":"Region",
+    "filterable":{
+      "extra":false,
+      "operators":{
+        "string":{
+          "contains":"Contains"
+        }
+      }
+    },
+    "headerAttributes":{
+      "id":"b1561b16-af07-42a3-9777-4b7ead74e528"
+    }
   }
-}
+]

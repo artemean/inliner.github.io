@@ -16,7 +16,14 @@ body {
 }
 
 .main-grid {
-    height: 70%;
+    height: 75%;
+}
+
+.grid-title {
+    color: #999;
+    font-size: 14px;
+    padding: 15px 0;
+    margin-bottom: 20px;
 }
 
 .k-multicheck-wrap .k-label {
@@ -39,12 +46,6 @@ body {
     margin: -1px 3px 0 0;
 }
 
-.grid-title {
-    color: #999;
-    font-size: 14px;
-    padding: 15px 0;
-    margin-bottom: 30px;
-}
 .grid-title strong {
     display: block;
     color: #666;
@@ -76,4 +77,18 @@ body {
 
 .list-view {
     margin-bottom: 20px;
+}
+
+.right {
+    float: right;
+}
+
+.list-item {
+    padding: 5px;
+}
+
+.item-checkbox {
+    margin: 0 5px 0 0;
+    padding: 0;
+    vertical-align: middle;
 }
